@@ -1,0 +1,19 @@
+﻿- type: entity
+  id: Scp2501
+  parent: BaseItemScp
+  name: странная клешня
+  description: Массивная механическая перчатка. Возможно, с помощью нее можно что-то сжать.
+  components:
+  - type: Sprite
+    sprite: _Scp/Objects/Scp/scp-2501.rsi
+    layers:
+    - state: icon
+  - type: Item
+    size: Ginormous
+  - type: MovementSpeedModifier
+    walkModifier: 0.5
+    sprintModifier: 0.5
+  - type: Scp2501
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.5
+  - type: HeldSpeedModifier
