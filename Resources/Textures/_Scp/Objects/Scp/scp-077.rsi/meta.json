@@ -1,0 +1,17 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "peper & MIDUZKA",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        { "name": "scp_077_r_1" },
+        { "name": "scp_077_r_2" },
+        { "name": "scp_077_r_3" },
+        { "name": "scp_077_green" },
+        { "name": "scp_077_blue" },
+        { "name": "book" }
+    ]
+}

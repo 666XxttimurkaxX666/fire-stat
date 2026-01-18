@@ -1,0 +1,57 @@
+﻿- type: entity
+  id: Scp077
+  parent: BaseItemScp
+  name: ???
+  components:
+  - type: Sprite
+    sprite: _Scp/Objects/Scp/scp-077.rsi
+    layers:
+    - state: scp_077_r_1
+    - state: scp_077_blue
+  - type: Scp077
+  - type: Appearance
+
+- type: entity
+  id: Scp077Book
+  parent: BookBase
+  name: Руническая документация Фонда
+  description: Старая книга, но достоверная документация.
+  components:
+  - type: Sprite # Полностью переписываем спрайт
+    sprite: _Scp/Objects/Scp/scp-077.rsi
+    layers:
+    - state: book # Теперь он будет искать ТОЛЬКО этот стейт
+  - type: Paper
+    title: Руническое руководство
+    content: |
+      [bold]РУКОВОДСТВО ПО РУНАМ SCP-077[/bold]
+      
+      Символы на объекте соответствуют следующим слогам:
+      
+      0-0  —  Луун
+      VvV  —  Ареш
+      X_X  —  Гхал
+      ~W~  —  Гхап
+      *Z*  —  Лрр
+      Y=Y  —  Щзац
+      S+S  —  Шзац
+      <M>  —  Орх
+      L&L  —  Иммо
+      
+      [italic]ВАЖНО: Руны, выгравированные на SCP-077 должны быть произнесены целиком, внятно и строго двумя людьми в унисон. Погрешность в произношении между двумя людьми может быть 3 секунды. Неверное произношение рун понесет тяжелые последствия для читающего.[/italic]
+    stampState: "paper_stamp-hos"
+    stampedBy:
+    - stampedColor: '#cc0000'
+      stampedName: stamp-component-stamped-name-regional-command
+
+- type: entity
+  id: Scp077GasCloud
+  parent: BaseFoam
+  name: хуй знает как его сделать
+  components:
+  - type: Sprite
+    drawdepth: Effects
+    sprite: Effects/chemsmoke.rsi
+    state: chemsmoke
+  - type: TimedDespawn
+    lifetime: 10
