@@ -14,6 +14,8 @@ ui-options-grain-strength = Сила шейдера зернистости
 ui-options-grain-strength-tooltip =
     Определяет интенсивность эффектов шейдера зернистости.
     Чем больше, тем больше будет "шуршания" на экране
+ui-options-field-of-view-blur-enabled = Размытие поля зрения
+ui-options-field-of-view-blur-enabled-tooltip = Размывает область за пределами поля зрения. Отключите для повышения производительности или если эффект мешает.
 ui-options-field-of-view-blur-scale = Качество текстуры размытия
 ui-options-field-of-view-blur-scale-tooltip =
     Определяет качество текстуры размытия. Чем больше, тем более ресурсозатратная текстура
@@ -62,10 +64,6 @@ ui-options-scp-audio-muffling-enabled = Подавление звуков
 ui-options-scp-audio-muffling-enabled-tooltip =
     В зависимости от расположения источника делает звук глухим или тихим.
     Может вызывать проблемы с производительностью на слабых системах.
-ui-options-scp-audio-muffling-use-high-frequency-update = Использовать частый просчет подавления звуков
-ui-options-scp-audio-muffling-use-high-frequency-update-tooltip =
-    Определяет частоту проверок системы подавления звуков, с включенной опцией ~2-3 чаще обычного.
-    Крайне не рекомендуется при проблемах с производительностью, гарантированно будет вызывать понижение FPS
 ui-options-scp-game-auto-open-character-window-enabled = Автооткрытие меню персонажа
 ui-options-scp-game-auto-open-character-window-enabled-tooltip =
     Будет ли меню персонажа автоматически открываться при заходе на новую должность.

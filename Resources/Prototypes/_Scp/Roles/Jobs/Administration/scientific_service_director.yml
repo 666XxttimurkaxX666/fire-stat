@@ -7,8 +7,9 @@
   - !type:DepartmentTimeRequirement
     department: ScientificService
     time: 54000
+  - !type:AgeRequirement
+    requiredAge: 35
   weight: 960
-  startingGear: ScientificServiceDirectorGear
   icon: JobScientificServiceDirector
   supervisors: job-supervisors-director
   canBeAntag: true
@@ -40,10 +41,16 @@
 - type: startingGear
   id: ScientificServiceDirectorGear
   equipment:
+    eyes: ClothingEyesGlasses
+    neck: ClothingNeckScarfRD
+    jumpsuit: ClothingUniformJumpsuitResearchDirector
+    gloves: ClothingHandsGlovesLatex
+    shoes: ClothingShoesColorBrown
+    back: ClothingBackpackScience
     id: KeyCardScientificServiceDirector
+    ears: ClothingHeadsetAltScientificService
     pocket1: HandheldRoboAnalyzer
     pocket2: ScientificServiceDirectorPDA
-    ears: ClothingHeadsetAltScientificService
   storage:
     back:
     - Flash

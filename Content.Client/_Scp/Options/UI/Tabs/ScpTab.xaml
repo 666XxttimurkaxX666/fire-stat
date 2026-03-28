@@ -20,6 +20,9 @@
                                  ToolTip="{Loc ui-options-grain-strength-tooltip}"/>
 
                 <!-- Поле зрения -->
+                <CheckBox Name="FieldOfViewBlurEnabled"
+                          Text="{Loc ui-options-field-of-view-blur-enabled}"
+                          ToolTip="{Loc ui-options-field-of-view-blur-enabled-tooltip}"/>
                 <ui:OptionSlider Name="FieldOfViewBlurScale"
                                  Title="{Loc ui-options-field-of-view-blur-scale}"
                                  ToolTip="{Loc ui-options-field-of-view-blur-scale-tooltip}"/>
@@ -69,9 +72,6 @@
                 <CheckBox Name="AudioMufflingEnabled"
                           Text="{Loc ui-options-scp-audio-muffling-enabled}"
                           ToolTip="{Loc ui-options-scp-audio-muffling-enabled-tooltip}" />
-                <CheckBox Name="AudioMufflingHighFrequencyUpdate"
-                          Text="{Loc ui-options-scp-audio-muffling-use-high-frequency-update}"
-                          ToolTip="{Loc ui-options-scp-audio-muffling-use-high-frequency-update-tooltip}" />
 
                 <!-- ИГРА -->
                 <Label Text="{Loc ui-options-scp-game}" StyleClasses="LabelKeyText"/>

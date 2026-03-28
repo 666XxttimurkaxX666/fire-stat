@@ -150,7 +150,7 @@
     - id: BluespaceArtifact
     - id: BureaucraticError
     - id: ClericalError
-    - id: CockroachMigration
+    - id: ScpCockroachMigration
     - id: GreytideVirus
     - id: IonStorm
     - id: MassHallucinations
@@ -166,3 +166,9 @@
   table: !type:AllSelector
     children:
     - id: Scp2054X
+
+- type: entity
+  id: FreeScpRule
+  parent: BaseGameRule
+  components:
+  - type: FreeScpRule

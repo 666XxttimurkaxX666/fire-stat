@@ -4,10 +4,14 @@
   description: job-description-general-technical-specialist
   playTimeTracker: JobGeneralTechnicalSpecialist
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: EngineeringTechnicalService
-      time: 7200
-  startingGear: GeneralTechnicalSpecialistGear
+  - !type:DepartmentTimeRequirement
+    department: EngineeringTechnicalService
+    time: 7200
+  - !type:AgeRequirement
+    requiredAge: 27
+  - !type:AgeRequirement
+    requiredAge: 75
+    inverted: true
   icon: JobGeneralTechnicalSpecialist
   supervisors: job-supervisors-chief-technical-specialist
   displayWeight: 10
@@ -26,8 +30,16 @@
 - type: startingGear
   id: GeneralTechnicalSpecialistGear
   equipment:
+    head: ClothingHeadHatBeretEngineering
     eyes: ClothingEyesGlassesMeson
-    belt: ClothingBeltUtilityEngineering
-    ears: ClothingHeadsetEngineeringTechnicalService
+    mask: ClothingMaskBandRed
+    neck: ClothingNeckScarfStripedRed
+    outerClothing: ClothingOuterWinterColorRed
+    jumpsuit: ClothingUniformJumpsuitEngineering
+    gloves: ClothingHandsGlovesFingerlessInsulated
+    shoes: ClothingShoesColorRed
+    back: ClothingBackpackEngineering
     id: KeyCardGeneralTechnicalSpecialist
+    ears: ClothingHeadsetEngineeringTechnicalService
+    belt: ClothingBeltUtilityEngineering
     pocket2: ScpEngineeringPDA

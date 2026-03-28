@@ -7,6 +7,11 @@
   - !type:DepartmentTimeRequirement
     department: ExternalAdministrativeZoneSecurityService
     time: 43200
+  - !type:AgeRequirement
+    requiredAge: 29
+  - !type:AgeRequirement
+    requiredAge: 65
+    inverted: true
   icon: JobExternalAdministrativeZoneCommandant
   supervisors: job-supervisors-security-commander
   canBeAntag: false
@@ -59,18 +64,26 @@
         Fear: 60
         Terror: 350
       baseJitterTime: 2
-      fallOffChance: 1
+      fallOffChance: 0.01
 
 - type: startingGear
   id: ExternalAdministrativeZoneCommandantGear
   equipment:
     head: ClothingHeadHatCapLeatherSquadLeader
-    ears: ClothingHeadsetAltExternalAdministrativeZoneSecurityService
     eyes: ClothingEyesGlassesSecurity
+    mask: ClothingMaskSecurityBandBlack
     neck: ClothingNeckMantleSecurity
     jumpsuit: ClothingUniformJumpsuitSquadLeader
     outerClothing: ClothingOuterArmorSecurity
     gloves: ClothingHandsGlovesColorBlackAlt
     shoes: ClothingShoesBootsSecurityGuard
+    back: ClothingBackpackSecurity
+    suitstorage: WeaponSubMachineGunMP7
     id: KeyCardLightContainmentZoneSecurityCommandant
+    ears: ClothingHeadsetAltExternalAdministrativeZoneSecurityService
+    belt: ScpClothingBeltSecurityWebbingFilled
+    pocket1: WeaponTaser
     pocket2: ScpSecurityPDA
+  storage:
+    back:
+    - ScpRadioHandheldSecurityEnabled

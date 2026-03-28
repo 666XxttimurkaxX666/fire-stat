@@ -113,7 +113,7 @@
     - id: RCDAmmo
     - id: RubberStampChiefTechnicalSpecialist
     - id: FlippoLighterSunriseCe
-    - id: VariantCubeBoxSunrise
+    - id: MonkeyCubeBox
 
 - type: entity
   id: ScpLockerChiefTechnicalSpecialistFilled
@@ -168,7 +168,6 @@
     - id: ClothingHeadsetAltScientificService
     - id: DoorRemoteScientificService
     - id: DoorRemoteScpChambers
-    - id: HandTeleporter
     - id: ProtolatheMachineCircuitboard
     - id: ResearchComputerCircuitboard
     - id: RubberStampScientificServiceDirector

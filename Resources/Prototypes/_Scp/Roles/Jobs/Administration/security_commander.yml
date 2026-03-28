@@ -10,8 +10,12 @@
   - !type:DepartmentTimeRequirement
     department: ExternalAdministrativeZoneSecurityService
     time: 36000
+  - !type:AgeRequirement
+    requiredAge: 31
+  - !type:AgeRequirement
+    requiredAge: 75
+    inverted: true
   weight: 955
-  startingGear: SecurityCommanderGear
   icon: JobSecurityCommander
   supervisors: job-supervisors-director
   canBeAntag: false
@@ -66,16 +70,24 @@
         Fear: 60
         Terror: 350
       baseJitterTime: 2
-      fallOffChance: 1
+      fallOffChance: 0.01
 
 - type: startingGear
   id: SecurityCommanderGear
   equipment:
+    head: ClothingHeadHatHoshat
     eyes: ClothingEyesGlassesSecurity
-    id: KeyCardSecurityCommander
+    neck: ClothingNeckScarfHos
+    outerClothing: ClothingOuterCoatHoSTrench
+    jumpsuit: ClothingUniformJumpsuitHoS
     gloves: ClothingHandsGlovesCombat
+    shoes: ClothingShoesBootsSecurityGuard
+    back: ClothingBackpackSecurity
+    id: KeyCardSecurityCommander
     ears: ClothingHeadsetAltSecurityAdministration
+    belt: ScpClothingBeltSecurityWebbingFilled
     pocket2: SecurityCommanderPDA
   storage:
     back:
     - Flash
+    - ScpRadioHandheldSecurityEnabled

@@ -10,7 +10,11 @@
   - !type:DepartmentTimeRequirement
     department: EngineeringTechnicalService
     time: 10800
-  startingGear: ProductionSpecialistGear
+  - !type:AgeRequirement
+    requiredAge: 25
+  - !type:AgeRequirement
+    requiredAge: 75
+    inverted: true
   icon: JobProductionSpecialist
   supervisors: job-supervisors-scientific-service-director
   displayWeight: 10
@@ -35,6 +39,12 @@
 - type: startingGear
   id: ProductionSpecialistGear
   equipment:
-    ears: ClothingHeadsetScientificService
+    head: ClothingHeadHatCorpsoft
+    neck: ClothingNeckTieSci
+    jumpsuit: ClothingUniformJumpsuitRoboticist
+    outerClothing: ClothingOuterCoatRobo
+    shoes: ClothingShoesColorWhite
+    back: ClothingBackpackScience
     id: KeyCardProductionSpecialist
+    ears: ClothingHeadsetScientificService
     pocket2: ScpResearchPDA

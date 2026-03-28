@@ -7,6 +7,11 @@
   - !type:DepartmentTimeRequirement
     department: HeavyContainmentSecurityService
     time: 14400
+  - !type:AgeRequirement
+    requiredAge: 27
+  - !type:AgeRequirement
+    requiredAge: 65
+    inverted: true
   icon: JobHeavyContainmentZoneOfficer
   supervisors: job-supervisors-heavy-containment-zone-commandant
   canBeAntag: false
@@ -54,18 +59,26 @@
         Fear: 60
         Terror: 350
       baseJitterTime: 2
-      fallOffChance: 1
+      fallOffChance: 0.01
 
 - type: startingGear
   id: HeavyContainmentZoneOfficerGear
   equipment:
-    mask: ClothingMaskSecurityBandBlack
+    head: ClothingHeadHelmetBasic
     eyes: ClothingEyesGlassesSecurityGuard
+    mask: ClothingMaskSecurityBandBlack
+    neck: ClothingNeckMantleSecurity
+    jumpsuit: ClothingUniformSecurityBlack
+    outerClothing: ClothingOuterArmorSecurity
+    gloves: ClothingHandsGlovesColorBlack
+    shoes: ClothingShoesBootsSecurityGuard
+    back: ClothingBackpackSecurity
+    suitstorage: WeaponSubMachineGunMP5
     id: KeyCardHeavyContainmentZoneOfficer
     ears: ClothingHeadsetHeavyContainmentSecurityService
-    head: ClothingHeadHelmetBasic
-    gloves: ClothingHandsGlovesColorBlack
+    belt: ScpClothingBeltSecurityWebbingFilled
+    pocket1: WeaponPistolG22
     pocket2: ScpSecurityPDA
   storage:
     back:
-    - Flash
+    - ScpRadioHandheldSecurityEnabled

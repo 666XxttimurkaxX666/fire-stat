@@ -4,8 +4,13 @@
   description: job-description-junior-heavy-containment-zone-officer
   playTimeTracker: JobJuniorHeavyContainmentZoneOfficer
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 7200
+  - !type:OverallPlaytimeRequirement
+    time: 7200
+  - !type:AgeRequirement
+    requiredAge: 23
+  - !type:AgeRequirement
+    requiredAge: 45
+    inverted: true
   icon: JobJuniorHeavyContainmentZoneOfficer
   supervisors: job-supervisors-heavy-containment-zone-commandant
   canBeAntag: false
@@ -43,16 +48,24 @@
         Fear: 2.2
         Terror: 5
       baseJitterTime: 3
-      fallOffChance: 2
+      fallOffChance: 0.02
 
 - type: startingGear
   id: JuniorHeavyContainmentZoneOfficerGear
   equipment:
+    head: ClothingHeadHelmetBasic
+    eyes: ClothingEyesGlassesSecurity
     mask: ClothingMaskSecurityBandBlack
+    jumpsuit: ClothingUniformSecurityBlack
+    outerClothing: ClothingOuterArmorSecurity
+    gloves: ClothingHandsGlovesSecurity
+    shoes: ClothingShoesBootsSecurityGuard
+    back: ClothingBackpackSecurity
     id: KeyCardJuniorHeavyContainmentZoneOfficer
     ears: ClothingHeadsetHeavyContainmentSecurityService
+    belt: ScpClothingBeltSecurityWebbingFilled
     pocket1: HyperLinkBookCorporateLaw
     pocket2: ScpSecurityPDA
   storage:
     back:
-    - Flash
+    - ScpRadioHandheldSecurityEnabled
