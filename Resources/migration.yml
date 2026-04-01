@@ -1959,10 +1959,10 @@ EncryptionKeyEngineering: EncryptionKeyEngineeringTechnicalService
 EncryptionKeyMedical: EncryptionKeyMedicalService
 EncryptionKeyScience: EncryptionKeyScientificService
 EncryptionKeyService: EncryptionKeyFoodAndSanitationService
+EncryptionKeySecurity: ScpEncryptionKeySecurity
 #
 EncryptionKeyMedicalScience: null
 EncryptionKeyRobo: null
-EncryptionKeySecurity: null
 EncryptionKeySyndie: null
 EncryptionKeyBinarySyndicate: null
 EncryptionKeyFreelance: null
@@ -2729,5 +2729,10 @@ FenceWoodSmallGate: ScpFenceWoodSmallGate
 FloorTileItemWood: ScpFloorTileItemWood
 FloorTileItemWoodLarge: ScpFloorTileItemWoodLarge
 FloorTileItemWoodPattern: ScpFloorTileItemWoodPattern
+
+# почему это существовало
+ClothingUniformJumpsuitBlueDirectorFormal: ClothingUniformJumpsuitDirector
+ClothingHeadHatCapDirector: ClothingHeadHatDirector
+ClothingHandsGlovesDirector: ClothingHandsGlovesDirectorSpecial
 
 # Fire added end
