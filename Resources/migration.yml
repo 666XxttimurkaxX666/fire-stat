@@ -992,6 +992,8 @@ ComfyBrownChair: ComfyChairBrown
 CartridgeRifle: CartridgeRifleSP
 MagazinePistolHighCapacity: MagazinePistolHighCapacitySP
 StorageCanisterBase: StorageCanister
+BulletAK570_90mmHE: BulletAK57090mmHE
+WeaponTurretVespera50mm: ShuttleGunVespera50mm
 # region Sunrise-End
 
 # Санрайз насрал опять
@@ -2578,6 +2580,7 @@ ClothingMaskGasRRH: null
 TableStone: ScpTable
 TableWeb: ScpTable
 TableXeno: ScpTable
+TableCarpet: ScpTableWood
 
 # Удаленные стены
 ScpWallConcreteLightContaimentCrack: ScpWallConcreteLightContainment
