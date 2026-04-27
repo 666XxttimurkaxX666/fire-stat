@@ -26,6 +26,7 @@
       - SunriseUplink # рыбаплинк
       - PillCanister
       - Pen
+      - Bottle
   - type: StorageFill
     contents:
     - id: BookScp049Diary
@@ -36,4 +37,6 @@
     - id: Cautery
     - id: Retractor
     - id: Scalpel
+    - id: BoneSetter
+    - id: BoneGel
     - id: Scp049Contract
