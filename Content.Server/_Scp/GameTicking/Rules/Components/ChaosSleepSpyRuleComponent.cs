@@ -6,10 +6,10 @@ namespace Content.Server._Scp.GameTicking.Rules.Components;
 public sealed partial class ChaosSleepSpyRuleComponent : Component
 {
     [DataField]
-    public Color CodeWordColor = Color.FromHex("#cc3b3b");
+    public Color CodeWordColor = Color.Firebrick;
 
     [DataField]
-    public SoundSpecifier GreetSoundNotification = new SoundPathSpecifier("/Audio/_Scp/Themes/The_Chaos_Insurgency_Theme.ogg");
+    public SoundSpecifier GreetSoundNotification = new SoundPathSpecifier("/Audio/_Scp/Themes/Chaos_Spy_Theme.ogg");
 
     [ViewVariables]
     public string[]? CodeWords;

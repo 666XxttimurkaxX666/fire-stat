@@ -20,6 +20,9 @@
     transferDelay: 180
   - type: Scp
     class: Euclid
+  - type: Scp082
+  - type: ScpHoldable
+    minimumHolderCount: 3
   - type: Hands
     showInHands: false
   - type: MobThresholds
@@ -115,7 +118,7 @@
         shape:
           !type:PhysShapeAabb
           bounds: "-0.25,-0.4,0.25,0.4"
-        density: 500
+        density: 1000
         mask:
         - MobMask
         layer:

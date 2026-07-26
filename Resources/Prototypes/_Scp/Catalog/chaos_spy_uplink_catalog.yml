@@ -269,6 +269,19 @@
   - !type:ListingLimitedStockCondition
     stock: 2
 
+- type: listing
+  id: ChaosSpyUplinkClothingHandsChameleonThief
+  name: uplink-clothing-chameleon-thieving-gloves-name
+  description: uplink-clothing-chameleon-thieving-gloves-desc
+  productEntity: ClothingHandsChameleonThief
+  cost:
+    SupplyPoint: 3
+  categories:
+  - ChaosSpyEquipment
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 2
+
 # region Medkits
 
 - type: listing
@@ -465,3 +478,13 @@
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 2
+
+# Not for sale
+- type: listing
+  id: ChaosSpyUplinkUplinkImplanter
+  productEntity: ChaosSpyUplinkImplanter
+  cost:
+    SupplyPoint: 1
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1

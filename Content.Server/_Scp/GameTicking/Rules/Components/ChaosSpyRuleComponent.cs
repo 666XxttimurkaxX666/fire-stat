@@ -53,13 +53,13 @@ public sealed partial class ChaosSpyRuleComponent : Component
     public string[]? CodeWords;
 
     [DataField]
-    public Color CodeWordColor = Color.FromHex("#cc3b3b");
+    public Color CodeWordColor = Color.Firebrick;
 
     [ViewVariables]
     public EntityUid? ChaosSleepSpyRuleEnt;
 
     [DataField]
-    public SoundSpecifier GreetSoundNotification = new SoundPathSpecifier("/Audio/_Scp/Themes/The_Chaos_Insurgency_Theme.ogg");
+    public SoundSpecifier GreetSoundNotification = new SoundPathSpecifier("/Audio/_Scp/Themes/Chaos_Spy_Theme.ogg");
 
     [ViewVariables]
     public bool HasChaosRaidRule;
