@@ -1,0 +1,15 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-3.0",
+    "copyright": "timur",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "SCP-542",
+            "directions": 4
+        }
+    ]
+}
