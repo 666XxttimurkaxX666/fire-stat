@@ -5567,3 +5567,77 @@
     message: Изменение для администрации. Теперь создание спящего агента вручную выводит сообщение в чат.
   id: 517
   url: https://github.com/makura-games/project-fire/pull/1123
+- author: timur
+  time: '2026-08-26T11:09:24.0000000+00:00'
+  changes:
+  - type: Add
+    message: Добавлен SCP-059
+  id: 518
+  url: https://github.com/makura-games/project-fire/pull/1076
+- author: Wardex
+  time: '2026-08-25T18:55:24.0000000+00:00'
+  changes:
+  - type: Add
+    message: Добавлен уровень угрозы "Лаймовый"
+  id: 519
+  url: https://github.com/makura-games/project-fire/pull/1132
+- author: timur
+  time: '2026-08-25T18:47:45.0000000+00:00'
+  changes:
+  - type: Fix
+    message: исправлен баг с лёгкими SCP-049
+  id: 520
+  url: https://github.com/makura-games/project-fire/pull/1134
+- author: timur
+  time: '2026-08-27T16:45:24.0000000+00:00'
+  changes:
+  - type: Add
+    message: Добавлены руки и инвентарь человека для SCP-059-1
+  - type: Remove
+    message: Убран пацифизм с SCP-059-1
+  - type: Tweak
+    message: Рецепт гризеофульвина был упрощён до 1 фалангимина и 4 субстанции SCP-059
+  - type: Fix
+    message: Осколки SCP-059 больше не сохраняются между раундами
+  - type: Fix
+    message: Огромный кристалл SCP-059 больше нельзя взять в руки как предмет
+  - type: Fix
+    message: Исправлен баг с нерабочим биологическим костюмом СБ от SCP-059
+  id: 521
+  url: https://github.com/makura-games/project-fire/pull/1138
+- author: timur
+  time: '2026-08-28T10:08:19.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: Теперь гермозатворы нельзя вскрыть ломом
+  - type: Tweak
+    message: Шанс открытия шлюзов способностью "Осквернить" SCP-173 повышен с 35% до 50%
+  - type: Tweak
+    message: Шейдер экрана РИИ был ослаблен
+  - type: Tweak
+    message: Уменьшен размер SCP-005 в инвентаре
+  - type: Tweak
+    message: Из аплинка было убрано множество ЛРП вещей и категорий
+  - type: Remove
+    message: Ванильные антагонисты убраны из меню персонализации
+  - type: Remove
+    message: уши, хвосты и рога убраны из меню персонализации
+  id: 522
+  url: https://github.com/makura-games/project-fire/pull/1135
+- author: timur
+  time: '2026-08-29T21:56:41.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: респрайт одежды научного отдела
+  - type: Tweak
+    message: белые кеды были заменены на шнурованные туфли в снаряжении научного отдела
+  - type: Tweak
+    message: фиолетовый галстук был удален из снаряжения научного отдела
+  - type: Tweak
+    message: красный и черный галстуки были добавлены в снаряжение научного отдела
+  - type: Tweak
+    message: чёрная водолазка была добавлена в снаряжение научного отдела
+  - type: Tweak
+    message: фиолетовые перчатки были заменены на чёрные в снаряжении научного отдела
+  id: 523
+  url: https://github.com/makura-games/project-fire/pull/1141
