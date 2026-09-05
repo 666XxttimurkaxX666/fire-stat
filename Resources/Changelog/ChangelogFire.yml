@@ -5663,3 +5663,64 @@
     message: Теперь SCP-082 может выбрать костюм в лодауте
   id: 525
   url: https://github.com/makura-games/project-fire/pull/1140
+- author: timur
+  time: '2026-08-30T17:48:29.0000000+00:00'
+  changes:
+  - type: Add
+    message: Добавлен SCP-3199
+  - type: Remove
+    message: SCP-2054 был убран из геймрула и эффектов от узла
+  id: 526
+  url: https://github.com/makura-games/project-fire/pull/1143
+- author: timur
+  time: '2026-08-31T07:09:32.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: Измерение SCP-106 переработано
+  id: 527
+  url: https://github.com/makura-games/project-fire/pull/1145
+- author: Wardex
+  time: '2026-09-01T11:37:32.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: SCP-457 теперь каждые 5 секунд всасывает ближайшие сущности поблизости, которые могут гореть
+  id: 528
+  url: https://github.com/makura-games/project-fire/pull/1146
+- author: Data_deleted
+  time: '2026-09-03T18:27:42.0000000+00:00'
+  changes:
+  - type: Add
+    message: Добавлены огнетушители в терминал Эпсилон-11
+  - type: Add
+    message: 'Добавлены: АК-103, AR 18 M в терминал Эпсилон-11'
+  - type: Add
+    message: 'Добавлены: АШ-12, АК-103, AR18 M в терминал Ню-7'
+  - type: Add
+    message: Добавлены дробовики в терминал Бета-7
+  - type: Add
+    message: Всем Мобильным Оперативный Группам в терминал добавлены Векторы
+  - type: Add
+    message: Лазерное оружие удалено из терминалов всех МОГ, за исключением Альфа-1
+  id: 529
+  url: https://github.com/makura-games/project-fire/pull/1149
+- author: timur
+  time: '2026-09-04T14:25:43.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: Респрайт обычного противогаза и противопульного щита
+  id: 530
+  url: https://github.com/makura-games/project-fire/pull/1150
+- author: timur
+  time: '2026-09-04T14:59:31.0000000+00:00'
+  changes:
+  - type: Add
+    message: Добавлена новая карта Sector No02
+  id: 531
+  url: https://github.com/makura-games/project-fire/pull/1144
+- author: Wardex
+  time: '2026-09-04T15:33:45.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: 'Карты обновлены до последней версии: Compact, Standard, Modular'
+  id: 532
+  url: https://github.com/makura-games/project-fire/pull/1151
