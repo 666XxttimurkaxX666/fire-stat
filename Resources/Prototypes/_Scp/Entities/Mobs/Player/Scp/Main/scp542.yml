@@ -1,0 +1,164 @@
+﻿- type: entity
+  id: Scp542
+  name: ???
+  suffix: SCP-542
+  parent:
+  - BaseScpSapient
+  - MobCombat
+  - MobBloodstream
+  components:
+  - type: Body
+    prototype: Scp542
+    requiredLegs: 2
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      100: 0.9
+      180: 0.8
+      240: 0.7
+  - type: TTS
+    voice: ChocolateFabricWonka
+  - type: Mood
+  - type: Blinkable
+  - type: AutoGhostRole
+    disconnectDelay: 600
+    pollDuration: 900
+    transferDelay: 180
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Scp/Mobs/Scp/scp-542.rsi
+    layers:
+    - state: SCP-542
+    - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
+      sprite: Objects/Misc/handcuffs.rsi
+      state: body-overlay-2
+      color: "#ffffff"
+      visible: false
+  - type: Scp
+    class: Euclid
+  - type: NpcFactionMember
+    factions:
+    - SimpleNeutral
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2
+    baseSprintSpeed: 5
+  - type: GhostPanelAntagonistMarker
+    name: ghost-panel-antagonist-scp-name
+    description: ghost-panel-antagonist-scp-description
+    priority: 0
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      300: Dead
+  - type: GhostRole
+    makeSentient: true
+    name: ghost-role-information-scp542-name
+    description: ghost-role-information-scp542-description
+    raffle:
+      settings: short
+    job: Scp542
+  - type: GhostTakeoverAvailable
+  - type: GuideHelp
+    guides:
+    - ScpResearch
+  - type: Loadout
+    prototypes: [ Scp542Gear ]
+  - type: Thirst
+  - type: Hunger
+  - type: Cuffable
+  - type: SurgeryTarget
+  - type: UserInterface
+    interfaces:
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+      enum.StoreUiKey.Key:
+        type: StoreBoundUserInterface
+      enum.SurgeryUIKey.Key:
+        type: SurgeryBui
+  - type: HumanoidAppearance
+    species: Scp542
+
+- type: startingGear
+  id: Scp542Gear
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+    jumpsuit: ClothingUniformJumpsuitLawyerBlack
+    belt: ClothingBeltStorageWaistbag
+    pants: ClothingPantsManHearts
+    socks: ClothingKneeWhite
+    pocket1: LuxuryPen
+  inhand:
+  - OffsetCaneWood
+
+- type: body
+  id: Scp542
+  name: "???"
+  root: torso
+  slots:
+    head:
+      part: HeadHuman
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+        tongue: OrganHumanTongue # Sunrise-edit
+        eye_implant: null
+    torso:
+      part: TorsoHuman
+      connections:
+      - right arm # STARLIGHT-SURGERY EDITED, be careful to not delete this
+      - left arm
+      - right leg
+      - left leg
+      organs:
+        heart: OrganHumanHeart
+        lungs: OrganHumanLungs
+        stomach: OrganHumanStomach
+        liver: OrganHumanLiver
+        kidneys: OrganHumanKidneys
+        cavity: null # Sunrise-edit
+    right arm:
+      part: RightArmHuman
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmHuman
+      connections:
+      - left hand
+    right hand:
+      part: RightHandHuman
+    left hand:
+      part: LeftHandHuman
+    right leg:
+      part: RightLegHuman
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegHuman
+      connections:
+      - left foot
+    right foot:
+      part: RightFootHuman
+    left foot:
+      part: LeftFootHuman
+
+- type: species
+  id: Scp542
+  name: species-name-human
+  roundStart: false
+  stationRecordsHidden: true
+  prototype: Scp542
+  bodyTypes:
+  - Scp542
+  defaultSkinTone: "#fff9e2"
+  markingLimits: MobHumanMarkingLimits
+  maleFirstNames: NamesHumanFirst
+  femaleFirstNames: NamesHumanFirst
+  dollPrototype: Scp542
+  skinColoration: TintedHues
+
+- type: bodyType
+  id: Scp542
+  name: body-scp-542
+  sprites:
+    RFoot: MobHumanRFoot

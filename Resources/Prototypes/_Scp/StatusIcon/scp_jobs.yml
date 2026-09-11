@@ -69,3 +69,11 @@
     sprite: /Textures/_Scp/Interface/Misc/scp_job_icons.rsi
     state: 082
   jobName: job-name-scp082
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconScp542
+  icon:
+    sprite: /Textures/_Scp/Interface/Misc/scp_job_icons.rsi
+    state: 457
+  jobName: job-name-scp542
