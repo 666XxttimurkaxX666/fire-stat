@@ -8,7 +8,9 @@
   - MobRespirator
   - InventoryBase
   - StripableInventoryBase
+  - AppearanceScpHumanoid
   components:
+  - type: SoundWhileAlive
   - type: AutoGhostRole
     disconnectDelay: 600
     pollDuration: 900
@@ -59,7 +61,6 @@
     angle: 240
   - type: Hands
   - type: Body
-    prototype: Human
   - type: ComplexInteraction
   - type: Buckle
   - type: Stripping

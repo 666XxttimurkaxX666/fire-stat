@@ -3,8 +3,9 @@ using Content.Server._Sunrise.ScaleSprite;
 using Content.Server._Sunrise.VentCraw;
 using Content.Server.Stack;
 using Content.Shared._Scp.Helpers;
+using Content.Shared._Scp.Mobs.Components;
 using Content.Shared._Scp.Other.Events;
-using Content.Shared._Scp.Scp457;
+using Content.Shared._Scp.SafeTime;
 using Content.Shared.Atmos.Components;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Chemistry.Components.SolutionManager;
@@ -19,7 +20,6 @@ using Content.Shared.Item;
 using Content.Shared.Materials;
 using Content.Shared.Physics;
 using Content.Shared.Stacks;
-using Content.Shared.Weapons.Melee.Events;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
@@ -34,6 +34,7 @@ public sealed class Scp457System : EntitySystem
     [Dependency] private readonly DamageableSystem _damageable = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
+    [Dependency] private readonly SharedSafeTimeSystem _safeTime = default!;
     [Dependency] private readonly ScaleSpriteSystem _scaleSprite = default!;
     [Dependency] private readonly SharedSolutionContainerSystem _solution = default!;
     [Dependency] private readonly StackSystem _stack = default!;
@@ -43,8 +44,9 @@ public sealed class Scp457System : EntitySystem
     private EntityQuery<FlammableComponent> _flammableQuery;
     private EntityQuery<ReactiveComponent> _reactiveQuery;
     private EntityQuery<PhysicalCompositionComponent> _compositionQuery;
+    private EntityQuery<ScpComponent> _scpQuery;
 
-    private TimeSpan DecayInterval = TimeSpan.FromSeconds(12);
+    private TimeSpan DecayInterval = TimeSpan.FromSeconds(18);
 
     public override void Initialize()
     {
@@ -53,9 +55,9 @@ public sealed class Scp457System : EntitySystem
         _flammableQuery = GetEntityQuery<FlammableComponent>();
         _reactiveQuery = GetEntityQuery<ReactiveComponent>();
         _compositionQuery = GetEntityQuery<PhysicalCompositionComponent>();
+        _scpQuery = GetEntityQuery<ScpComponent>();
 
         SubscribeLocalEvent<Scp457Component, MapInitEvent>(OnMapInit);
-        SubscribeLocalEvent<Scp457Component, Scp457AbsorbActionEvent>(OnAbsorbAction);
         SubscribeLocalEvent<Scp457Component, ScpIngestionConsumedEvent>(OnConsumed);
         SubscribeLocalEvent<Scp457Component, HitByWaterEvent>(OnHitByWater);
         SubscribeLocalEvent<Scp457Component, VentCrawlAttemptEvent>(OnVentCrawlAttempt);
@@ -69,6 +71,12 @@ public sealed class Scp457System : EntitySystem
         var query = EntityQueryEnumerator<Scp457Component>();
         while (query.MoveNext(out var uid, out var scp457))
         {
+            if (scp457.NextAutoAbsorb < _timing.CurTime)
+            {
+                TryAbsorbNearby((uid, scp457));
+                scp457.NextAutoAbsorb = _timing.CurTime + scp457.AutoAbsorbInterval;
+            }
+
             if (scp457.NextChangeObjectSize > _timing.CurTime)
                 continue;
 
@@ -82,6 +90,7 @@ public sealed class Scp457System : EntitySystem
     {
         ent.Comp.AppliedObjectSize = ent.Comp.ObjectSize;
         ent.Comp.NextChangeObjectSize = _timing.CurTime + DecayInterval;
+        ent.Comp.NextAutoAbsorb = _timing.CurTime + ent.Comp.AutoAbsorbInterval;
 
         if (TryComp<PassiveDamageComponent>(ent, out var passiveDamage))
             ent.Comp.BasePassiveDamage = new DamageSpecifier(passiveDamage.Damage);
@@ -96,14 +105,6 @@ public sealed class Scp457System : EntitySystem
             return;
 
         TryChangeSize(ent, ent.Comp.ObjectSizeFlammableAdd);
-    }
-
-    private void OnAbsorbAction(Entity<Scp457Component> ent, ref Scp457AbsorbActionEvent args)
-    {
-        if (args.Handled)
-            return;
-
-        args.Handled = TryAbsorbNearby(ent);
     }
 
     public bool TryAbsorbNearby(Entity<Scp457Component> ent)
@@ -151,6 +152,9 @@ public sealed class Scp457System : EntitySystem
     public bool CanConsume(Entity<Scp457Component> ent, EntityUid target)
     {
         if (!Exists(target) || !HasComp<ItemComponent>(target))
+            return false;
+
+        if (_scpQuery.HasComp(target)) // Что бы не кушал другие объекты (нп. 999, 1508, 2295, 131)
             return false;
 
         if (_flammableQuery.HasComponent(target))
@@ -227,6 +231,9 @@ public sealed class Scp457System : EntitySystem
 
     private void TryChangeSize(Entity<Scp457Component> ent, float delta)
     {
+        if (_safeTime.IsInSafeTime(ent.Owner, true, false))
+            return;
+
         var component = ent.Comp;
         var oldSize = component.ObjectSize;
         var newSize = Math.Clamp(oldSize + delta, component.MinimumObjectSize, component.ObjectSizeLimit);

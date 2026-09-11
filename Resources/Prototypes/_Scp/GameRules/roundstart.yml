@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   id: ScpModeNeutralized
   parent: BaseGameRule
   components:
@@ -236,6 +236,8 @@
       playerRatio: 10
       pickCommandStaff: true
       ignoreCanBeAntag: true
+      components:
+      - type: ChaosSpyMob
       blacklist:
         components:
         - AntagImmune
@@ -267,6 +269,8 @@
       max: 5
       playerRatio: 10
       pickCommandStaff: false
+      components:
+      - type: ChaosSpyMob
       blacklist:
         components:
         - AntagImmune
@@ -345,8 +349,8 @@
       tableId: ScpBasicCalmEventsTable
     - !type:NestedSelector
       tableId: ScpEventsTable
-    - !type:NestedSelector
-      tableId: ScpAntagEventsTable
+#    - !type:NestedSelector
+#      tableId: ScpAntagEventsTable
     - !type:NestedSelector
       tableId: CargoGiftsTable
     - !type:NestedSelector

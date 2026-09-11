@@ -629,14 +629,14 @@
     blacklist:
     - ScpUplinkMtfStorageCrateSubMachineGunMP5
     - ScpUplinkMtfStorageCrateSubMachineGunP90
-    - ScpUplinkMtfStorageCrateRifleFamas
-    - ScpUplinkMtfStorageCrateRifleG36
-    - ScpUplinkMtfStorageCrateRifleAR18
     - ScpUplinkMtfStorageCrateShotgunCombat
     - ScpUplinkMtfStorageCrateShotgunBulldog
-    - ScpUplinkMtfStorageCrateRifleBR64
     - ScpUplinkWeaponEarthGovLaserRifle
     - ScpUplinkWeaponEarthGovLaserSniper
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
 
@@ -653,109 +653,16 @@
     blacklist:
     - ScpUplinkMtfStorageCrateSubMachineGunMP5
     - ScpUplinkMtfStorageCrateSubMachineGunP90
-    - ScpUplinkMtfStorageCrateRifleFamas
-    - ScpUplinkMtfStorageCrateRifleG36
-    - ScpUplinkMtfStorageCrateRifleAR18
     - ScpUplinkMtfStorageCrateShotgunCombat
     - ScpUplinkMtfStorageCrateShotgunBulldog
-    - ScpUplinkMtfStorageCrateRifleBR64
     - ScpUplinkWeaponEarthGovLaserRifle
     - ScpUplinkWeaponEarthGovLaserSniper
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
-
-- type: listing
-  id: ScpUplinkMtfStorageCrateRifleFamas
-  productEntity: MtfStorageCrateRifleFamas
-  name: shop-name-famas
-  description: shop-desc-famas
-  icon: { sprite: _Scp/Interface/Misc/mtf_store_icon.rsi, state: famas }
-  categories:
-  - ScpPrimaryArms
-  conditions:
-  - !type:BuyBeforeCondition
-    blacklist:
-    - ScpUplinkMtfStorageCrateSubMachineGunMP5
-    - ScpUplinkMtfStorageCrateSubMachineGunP90
-    - ScpUplinkMtfStorageCrateRifleFamas
-    - ScpUplinkMtfStorageCrateRifleG36
-    - ScpUplinkMtfStorageCrateRifleAR18
-    - ScpUplinkMtfStorageCrateShotgunCombat
-    - ScpUplinkMtfStorageCrateShotgunBulldog
-    - ScpUplinkMtfStorageCrateRifleBR64
-    - ScpUplinkWeaponEarthGovLaserRifle
-    - ScpUplinkWeaponEarthGovLaserSniper
-    whitelist:
-    - ScpUplinkMtfUnlockPrimaryArms
-  - !type:BuyerJobCondition
-    blacklist:
-    - MHLeader # Б-7
-    - MHSpecialist
-    - MHCadet
-
-- type: listing
-  id: ScpUplinkMtfStorageCrateRifleG36
-  productEntity: MtfStorageCrateRifleG36
-  name: shop-name-g36box
-  description: shop-desc-g36box
-  icon: { sprite: _Sunrise/Interface/Misc/nt_icons.rsi, state: g36 }
-  categories:
-  - ScpPrimaryArms
-  conditions:
-  - !type:BuyBeforeCondition
-    blacklist:
-    - ScpUplinkMtfStorageCrateSubMachineGunMP5
-    - ScpUplinkMtfStorageCrateSubMachineGunP90
-    - ScpUplinkMtfStorageCrateRifleFamas
-    - ScpUplinkMtfStorageCrateRifleG36
-    - ScpUplinkMtfStorageCrateRifleAR18
-    - ScpUplinkMtfStorageCrateShotgunCombat
-    - ScpUplinkMtfStorageCrateShotgunBulldog
-    - ScpUplinkMtfStorageCrateRifleBR64
-    - ScpUplinkWeaponEarthGovLaserRifle
-    - ScpUplinkWeaponEarthGovLaserSniper
-    whitelist:
-    - ScpUplinkMtfUnlockPrimaryArms
-  - !type:BuyerJobCondition
-    blacklist:
-    - MHLeader # Б-7
-    - MHSpecialist
-    - MHCadet
-    - NTFLeader # Э-11
-    - NTFSpecialist
-    - NTFCadet
-
-- type: listing
-  id: ScpUplinkMtfStorageCrateRifleAR18
-  productEntity: MtfStorageCrateRifleAR18
-  name: shop-name-ar18box
-  description: shop-desc-ar18box
-  icon: { sprite: _Scp/Interface/Misc/uplink_icons.rsi, state: ar18 }
-  categories:
-  - ScpPrimaryArms
-  conditions:
-  - !type:BuyBeforeCondition
-    blacklist:
-    - ScpUplinkMtfStorageCrateSubMachineGunMP5
-    - ScpUplinkMtfStorageCrateSubMachineGunP90
-    - ScpUplinkMtfStorageCrateRifleFamas
-    - ScpUplinkMtfStorageCrateRifleG36
-    - ScpUplinkMtfStorageCrateRifleAR18
-    - ScpUplinkMtfStorageCrateShotgunCombat
-    - ScpUplinkMtfStorageCrateShotgunBulldog
-    - ScpUplinkMtfStorageCrateRifleBR64
-    - ScpUplinkWeaponEarthGovLaserRifle
-    - ScpUplinkWeaponEarthGovLaserSniper
-    whitelist:
-    - ScpUplinkMtfUnlockPrimaryArms
-  - !type:BuyerJobCondition
-    blacklist:
-    - MHLeader # Б-7
-    - MHSpecialist
-    - MHCadet
-    - NTFLeader # Э-11
-    - NTFSpecialist
-    - NTFCadet
 
 - type: listing
   id: ScpUplinkMtfStorageCrateShotgunCombat
@@ -770,21 +677,16 @@
     blacklist:
     - ScpUplinkMtfStorageCrateSubMachineGunMP5
     - ScpUplinkMtfStorageCrateSubMachineGunP90
-    - ScpUplinkMtfStorageCrateRifleFamas
-    - ScpUplinkMtfStorageCrateRifleG36
-    - ScpUplinkMtfStorageCrateRifleAR18
     - ScpUplinkMtfStorageCrateShotgunCombat
     - ScpUplinkMtfStorageCrateShotgunBulldog
-    - ScpUplinkMtfStorageCrateRifleBR64
     - ScpUplinkWeaponEarthGovLaserRifle
     - ScpUplinkWeaponEarthGovLaserSniper
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
-  - !type:BuyerJobCondition
-    blacklist:
-    - MHLeader # Б-7
-    - MHSpecialist
-    - MHCadet
 
 - type: listing
   id: ScpUplinkMtfStorageCrateShotgunBulldog
@@ -801,48 +703,14 @@
     blacklist:
     - ScpUplinkMtfStorageCrateSubMachineGunMP5
     - ScpUplinkMtfStorageCrateSubMachineGunP90
-    - ScpUplinkMtfStorageCrateRifleFamas
-    - ScpUplinkMtfStorageCrateRifleG36
-    - ScpUplinkMtfStorageCrateRifleAR18
     - ScpUplinkMtfStorageCrateShotgunCombat
     - ScpUplinkMtfStorageCrateShotgunBulldog
-    - ScpUplinkMtfStorageCrateRifleBR64
     - ScpUplinkWeaponEarthGovLaserRifle
     - ScpUplinkWeaponEarthGovLaserSniper
-    whitelist:
-    - ScpUplinkMtfUnlockPrimaryArms
-  - !type:BuyerJobCondition
-    blacklist:
-    - MHLeader # Б-7
-    - MHSpecialist
-    - MHCadet
-    - NTFLeader # Э-11
-    - NTFSpecialist
-    - NTFCadet
-
-- type: listing
-  id: ScpUplinkMtfStorageCrateRifleBR64
-  productEntity: MtfStorageCrateRifleBR64
-  name: shop-name-br64box
-  description: shop-desc-br64box
-  icon: { sprite: _Sunrise/Interface/Misc/nt_icons.rsi, state: br64 }
-  cost:
-    SupplyPoint: 3
-  categories:
-  - ScpPrimaryArms
-  conditions:
-  - !type:BuyBeforeCondition
-    blacklist:
-    - ScpUplinkMtfStorageCrateSubMachineGunMP5
-    - ScpUplinkMtfStorageCrateSubMachineGunP90
-    - ScpUplinkMtfStorageCrateRifleFamas
-    - ScpUplinkMtfStorageCrateRifleG36
-    - ScpUplinkMtfStorageCrateRifleAR18
-    - ScpUplinkMtfStorageCrateShotgunCombat
-    - ScpUplinkMtfStorageCrateShotgunBulldog
-    - ScpUplinkMtfStorageCrateRifleBR64
-    - ScpUplinkWeaponEarthGovLaserRifle
-    - ScpUplinkWeaponEarthGovLaserSniper
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
@@ -867,18 +735,21 @@
     blacklist:
     - ScpUplinkMtfStorageCrateSubMachineGunMP5
     - ScpUplinkMtfStorageCrateSubMachineGunP90
-    - ScpUplinkMtfStorageCrateRifleFamas
-    - ScpUplinkMtfStorageCrateRifleG36
-    - ScpUplinkMtfStorageCrateRifleAR18
     - ScpUplinkMtfStorageCrateShotgunCombat
     - ScpUplinkMtfStorageCrateShotgunBulldog
-    - ScpUplinkMtfStorageCrateRifleBR64
     - ScpUplinkWeaponEarthGovLaserRifle
     - ScpUplinkWeaponEarthGovLaserSniper
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
     blacklist:
+    - HDLeader # Ню-7
+    - HDSpecialist
+    - HDCadet
     - MHLeader # Б-7
     - MHSpecialist
     - MHCadet
@@ -899,21 +770,24 @@
     blacklist:
     - ScpUplinkMtfStorageCrateSubMachineGunMP5
     - ScpUplinkMtfStorageCrateSubMachineGunP90
-    - ScpUplinkMtfStorageCrateRifleFamas
-    - ScpUplinkMtfStorageCrateRifleG36
-    - ScpUplinkMtfStorageCrateRifleAR18
     - ScpUplinkMtfStorageCrateShotgunCombat
     - ScpUplinkMtfStorageCrateShotgunBulldog
-    - ScpUplinkMtfStorageCrateRifleBR64
     - ScpUplinkWeaponEarthGovLaserRifle
     - ScpUplinkWeaponEarthGovLaserSniper
     - ScpUplinkWeaponPulseRifle
     - ScpUplinkWeaponSniperPulseCarbineScp
     - ScpUplinkMtfStorageCrateShotgunCycler
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
     blacklist:
+    - HDLeader # Ню-7
+    - HDSpecialist
+    - HDCadet
     - MHLeader # Б-7
     - MHSpecialist
     - MHCadet
@@ -936,17 +810,17 @@
     blacklist:
     - ScpUplinkMtfStorageCrateSubMachineGunMP5
     - ScpUplinkMtfStorageCrateSubMachineGunP90
-    - ScpUplinkMtfStorageCrateRifleFamas
-    - ScpUplinkMtfStorageCrateRifleG36
-    - ScpUplinkMtfStorageCrateRifleAR18
     - ScpUplinkMtfStorageCrateShotgunCombat
     - ScpUplinkMtfStorageCrateShotgunBulldog
-    - ScpUplinkMtfStorageCrateRifleBR64
     - ScpUplinkWeaponEarthGovLaserRifle
     - ScpUplinkWeaponEarthGovLaserSniper
     - ScpUplinkWeaponPulseRifle
     - ScpUplinkWeaponSniperPulseCarbineScp
     - ScpUplinkMtfStorageCrateShotgunCycler
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
@@ -974,17 +848,17 @@
     blacklist:
     - ScpUplinkMtfStorageCrateSubMachineGunMP5
     - ScpUplinkMtfStorageCrateSubMachineGunP90
-    - ScpUplinkMtfStorageCrateRifleFamas
-    - ScpUplinkMtfStorageCrateRifleG36
-    - ScpUplinkMtfStorageCrateRifleAR18
     - ScpUplinkMtfStorageCrateShotgunCombat
     - ScpUplinkMtfStorageCrateShotgunBulldog
-    - ScpUplinkMtfStorageCrateRifleBR64
     - ScpUplinkWeaponEarthGovLaserRifle
     - ScpUplinkWeaponEarthGovLaserSniper
     - ScpUplinkWeaponPulseRifle
     - ScpUplinkWeaponSniperPulseCarbineScp
     - ScpUplinkMtfStorageCrateShotgunCycler
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
@@ -1012,17 +886,17 @@
     blacklist:
     - ScpUplinkMtfStorageCrateSubMachineGunMP5
     - ScpUplinkMtfStorageCrateSubMachineGunP90
-    - ScpUplinkMtfStorageCrateRifleFamas
-    - ScpUplinkMtfStorageCrateRifleG36
-    - ScpUplinkMtfStorageCrateRifleAR18
     - ScpUplinkMtfStorageCrateShotgunCombat
     - ScpUplinkMtfStorageCrateShotgunBulldog
-    - ScpUplinkMtfStorageCrateRifleBR64
     - ScpUplinkWeaponEarthGovLaserRifle
     - ScpUplinkWeaponEarthGovLaserSniper
     - ScpUplinkWeaponPulseRifle
     - ScpUplinkWeaponSniperPulseCarbineScp
     - ScpUplinkMtfStorageCrateShotgunCycler
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
@@ -1065,7 +939,6 @@
     - ScpUplinkMtfStorageCratePistolVP78
     - ScpUplinkMtfStorageCrateRevolverSpearhead
     - ScpUplinkWeaponEarthGovLaserPistol
-    - ScpUplinkMtfStorageCrateRevolverSpearheadBlack
     - ScpUplinkWeaponPulsePistolScp
     whitelist:
     - ScpUplinkMtfUnlockPistols
@@ -1086,7 +959,6 @@
     - ScpUplinkMtfStorageCratePistolVP78
     - ScpUplinkMtfStorageCrateRevolverSpearhead
     - ScpUplinkWeaponEarthGovLaserPistol
-    - ScpUplinkMtfStorageCrateRevolverSpearheadBlack
     - ScpUplinkWeaponPulsePistolScp
     whitelist:
     - ScpUplinkMtfUnlockPistols
@@ -1107,7 +979,6 @@
     - ScpUplinkMtfStorageCratePistolVP78
     - ScpUplinkMtfStorageCrateRevolverSpearhead
     - ScpUplinkWeaponEarthGovLaserPistol
-    - ScpUplinkMtfStorageCrateRevolverSpearheadBlack
     - ScpUplinkWeaponPulsePistolScp
     whitelist:
     - ScpUplinkMtfUnlockPistols
@@ -1128,7 +999,6 @@
     - ScpUplinkMtfStorageCratePistolVP78
     - ScpUplinkMtfStorageCrateRevolverSpearhead
     - ScpUplinkWeaponEarthGovLaserPistol
-    - ScpUplinkMtfStorageCrateRevolverSpearheadBlack
     - ScpUplinkWeaponPulsePistolScp
     whitelist:
     - ScpUplinkMtfUnlockPistols
@@ -1155,44 +1025,11 @@
     - ScpUplinkMtfStorageCratePistolVP78
     - ScpUplinkMtfStorageCrateRevolverSpearhead
     - ScpUplinkWeaponEarthGovLaserPistol
-    - ScpUplinkMtfStorageCrateRevolverSpearheadBlack
     - ScpUplinkWeaponPulsePistolScp
     whitelist:
     - ScpUplinkMtfUnlockPistols
   - !type:BuyerJobCondition
     blacklist:
-    - MHLeader # Б-7
-    - MHSpecialist
-    - MHCadet
-    - NTFLeader # Э-11
-    - NTFSpecialist
-    - NTFCadet
-
-- type: listing
-  id: ScpUplinkMtfStorageCrateRevolverSpearheadBlack
-  productEntity: MtfStorageCrateRevolverSpearheadBlack
-  name: shop-name-revolversbbox
-  description: shop-desc-revolversbbox
-  icon: { sprite: _Scp/Interface/Misc/mtf_store_icon.rsi, state: spearheadblack }
-  categories:
-  - ScpPistols
-  conditions:
-  - !type:BuyBeforeCondition
-    blacklist:
-    - ScpUplinkMtfStorageCratePistolACP14
-    - ScpUplinkMtfStorageCratePistolG22
-    - ScpUplinkMtfStorageCratePistolVP78
-    - ScpUplinkMtfStorageCrateRevolverSpearhead
-    - ScpUplinkWeaponEarthGovLaserPistol
-    - ScpUplinkMtfStorageCrateRevolverSpearheadBlack
-    - ScpUplinkWeaponPulsePistolScp
-    whitelist:
-    - ScpUplinkMtfUnlockPistols
-  - !type:BuyerJobCondition
-    blacklist:
-    - HDLeader # Ню-7
-    - HDSpecialist
-    - HDCadet
     - MHLeader # Б-7
     - MHSpecialist
     - MHCadet
@@ -1216,7 +1053,6 @@
     - ScpUplinkMtfStorageCratePistolVP78
     - ScpUplinkMtfStorageCrateRevolverSpearhead
     - ScpUplinkWeaponEarthGovLaserPistol
-    - ScpUplinkMtfStorageCrateRevolverSpearheadBlack
     - ScpUplinkWeaponPulsePistolScp
     whitelist:
     - ScpUplinkMtfUnlockPistols
@@ -1289,8 +1125,8 @@
     stock: 5
 
 - type: listing
-  id: ScpUplinkMagazineGlock22
-  productEntity: MagazineGlock22
+  id: ScpUplinkMagazinePistol
+  productEntity: MagazinePistol
   cost:
     SupplyPoint: 1
   categories:
@@ -1597,17 +1433,6 @@
     stock: 5
 
 - type: listing
-  id: ScpUplinkMagazineBoxRifleHP
-  productEntity: MagazineBoxRifleHP
-  cost:
-    SupplyPoint: 2
-  categories:
-  - ScpAmmo
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 5
-
-- type: listing
   id: ScpUplinkMagazineBoxHeavyRifleFMJ
   productEntity: MagazineBoxHeavyRifleFMJ
   cost:
@@ -1617,17 +1442,6 @@
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 8
-
-- type: listing
-  id: ScpUplinkMagazineBoxHeavyRifleHP
-  productEntity: MagazineBoxHeavyRifleHP
-  cost:
-    SupplyPoint: 2
-  categories:
-  - ScpAmmo
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 5
 
 - type: listing
   id: ScpUplinkMagazineBoxHeavyRifleAP
@@ -2575,3 +2389,167 @@
     - HDLeader # Ню-7
     - HDSpecialist
     - HDCadet
+
+- type: listing
+  id: ScpUplinkScpFireExtinguisherMini
+  icon: { sprite: Objects/Misc/fire_extinguisher_mini.rsi, state: fire_extinguisher_open }
+  productEntity: FireExtinguisherMini
+  categories:
+  - ScpRecontainment
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 3
+
+- type: listing
+  id: ScpUplinkMtfStorageCrateWeaponRifleAK103
+  productEntity: MtfStorageCrateRifleAK103
+  name: shop-name-ak103box
+  description: shop-desc-ak103box
+  icon: { sprite: _Scp/Interface/Misc/mtf_store_icon.rsi, state: AK_103  }
+  cost:
+    SupplyPoint: 1
+  categories:
+  - ScpPrimaryArms
+  conditions:
+  - !type:BuyBeforeCondition
+    blacklist:
+    - ScpUplinkMtfStorageCrateSubMachineGunMP5
+    - ScpUplinkMtfStorageCrateSubMachineGunP90
+    - ScpUplinkMtfStorageCrateShotgunCombat
+    - ScpUplinkMtfStorageCrateShotgunBulldog
+    - ScpUplinkWeaponEarthGovLaserRifle
+    - ScpUplinkWeaponEarthGovLaserSniper
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    whitelist:
+    - ScpUplinkMtfUnlockPrimaryArms
+  - !type:BuyerJobCondition
+    blacklist:
+    - MHSpecialist
+    - MHCadet
+    - NTFSpecialist
+    - NTFCadet
+
+- type: listing
+  id: ScpUplinkMtfStorageCrateWeaponRifleAsh12
+  productEntity: MtfStorageCrateWeaponRifleAsh12
+  name: shop-name-ash12
+  description: shop-desc-ash12
+  icon: { sprite: _Scp/Interface/Misc/mtf_store_icon.rsi, state: ash_12  }
+  cost:
+    SupplyPoint: 2
+  categories:
+  - ScpPrimaryArms
+  conditions:
+  - !type:BuyBeforeCondition
+    blacklist:
+    - ScpUplinkMtfStorageCrateSubMachineGunMP5
+    - ScpUplinkMtfStorageCrateSubMachineGunP90
+    - ScpUplinkMtfStorageCrateShotgunCombat
+    - ScpUplinkMtfStorageCrateShotgunBulldog
+    - ScpUplinkWeaponEarthGovLaserRifle
+    - ScpUplinkWeaponEarthGovLaserSniper
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    whitelist:
+    - ScpUplinkMtfUnlockPrimaryArms
+  - !type:BuyerJobCondition
+    blacklist:
+    - MHLeader # Б-7
+    - MHSpecialist
+    - MHCadet
+    - NTFLeader # Э-11
+    - NTFSpecialist
+    - NTFCadet
+
+- type: listing
+  id: ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+  productEntity: MtfStorageCrateWeaponSubMachineGunNewVector
+  name: shop-name-vector
+  description: shop-desc-vector
+  icon: { sprite: _Sunrise/Interface/Misc/nt_icons.rsi, state: vector }
+  categories:
+  - ScpPrimaryArms
+  conditions:
+  - !type:BuyBeforeCondition
+    blacklist:
+    - ScpUplinkMtfStorageCrateSubMachineGunMP5
+    - ScpUplinkMtfStorageCrateSubMachineGunP90
+    - ScpUplinkMtfStorageCrateShotgunCombat
+    - ScpUplinkMtfStorageCrateShotgunBulldog
+    - ScpUplinkWeaponEarthGovLaserRifle
+    - ScpUplinkWeaponEarthGovLaserSniper
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    whitelist:
+    - ScpUplinkMtfUnlockPrimaryArms
+
+- type: listing
+  id: ScpUplinkMtfStorageCrateWeaponRifleAR18M
+  productEntity: MtfStorageCrateWeaponWeaponRifleAR18M
+  name: shop-name-AR18M
+  description: shop-desc-AR18M
+  icon: { sprite: _Scp/Interface/Misc/mtf_store_icon.rsi, state: ar_18_m }
+  cost:
+    SupplyPoint: 1
+  categories:
+  - ScpPrimaryArms
+  conditions:
+  - !type:BuyBeforeCondition
+    blacklist:
+    - ScpUplinkMtfStorageCrateSubMachineGunMP5
+    - ScpUplinkMtfStorageCrateSubMachineGunP90
+    - ScpUplinkMtfStorageCrateShotgunCombat
+    - ScpUplinkMtfStorageCrateShotgunBulldog
+    - ScpUplinkWeaponEarthGovLaserRifle
+    - ScpUplinkWeaponEarthGovLaserSniper
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    whitelist:
+    - ScpUplinkMtfUnlockPrimaryArms
+  - !type:BuyerJobCondition
+    blacklist:
+    - MHCadet
+    - NTFCadet
+
+- type: listing
+  id: ScpUplinkMagazineLightRifleSP
+  productEntity: MagazineLightRifleSP
+  cost:
+    SupplyPoint: 1
+  categories:
+  - ScpAmmo
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 5
+
+- type: listing
+  id: ScpUplinkMagazineAsh12Slug
+  productEntity: MagazineAsh12Slug
+  cost:
+    SupplyPoint: 1
+  categories:
+  - ScpAmmo
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 5
+
+- type: listing
+  id: ScpUplinkMagazinePistolSubMachineGunSP
+  productEntity: MagazinePistolSubMachineGunSP
+  cost:
+    SupplyPoint: 1
+  categories:
+  - ScpAmmo
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 5
+
