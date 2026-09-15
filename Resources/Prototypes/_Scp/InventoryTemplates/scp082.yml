@@ -42,3 +42,9 @@
     uiWindowPos: 0,3
     strippingWindowPos: 0,0
     displayName: Eyes
+  - name: mask
+    slotTexture: mask
+    slotFlags: MASK
+    uiWindowPos: 0,1
+    strippingWindowPos: 0,1
+    displayName: Mask

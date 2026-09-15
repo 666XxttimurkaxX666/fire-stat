@@ -17,7 +17,7 @@
   - type: Clumsy # слишком большой чтобы взаимодействовать с чем то
     clumsyDefaultStunTime: 1
     gunShootFailStunTime: 1
-    сlumsyDefib: false
+    clumsyDefib: false
     clumsyHypo: false
     clumsySound:
       path: /Audio/Effects/chopstickbreak.ogg
@@ -36,7 +36,7 @@
       10000: Dead
   - type: Body
   - type: Inventory
-    templateId: scp082
+    templateId: scp3288Alpha
   - type: FieldOfView
     angle: 240
   - type: Hunger

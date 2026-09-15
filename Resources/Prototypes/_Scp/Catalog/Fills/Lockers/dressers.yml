@@ -202,3 +202,5 @@
       weight: 0.05
     - id: ClothingHeadHairLongScp082
       weight: 0.05
+    - id: ClothingMaskMimeScp082
+      weight: 0.05

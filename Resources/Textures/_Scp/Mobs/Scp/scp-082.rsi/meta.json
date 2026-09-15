@@ -169,6 +169,13 @@
     {
       "name": "hair2",
       "directions": 4
+    },
+    {
+      "name": "icon-mask"
+    },
+    {
+      "name": "mask1",
+      "directions": 4
     }
   ]
 }
