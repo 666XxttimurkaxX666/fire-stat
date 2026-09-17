@@ -118,5 +118,5 @@
       state: spell_default
   - type: InstantAction
     event: !type:InstantSpawnSpellEvent
-      prototype: EffectGoliathTentacleSpawn # TODO: собственные тентакли для 035
+      prototype: EffectGoliathTentacleSpawn # TODO: собственные щупальца для 035
       posData: !type:TargetInFront
