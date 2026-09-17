@@ -25,7 +25,7 @@ public sealed partial class Scp035MaskComponent : Component
     public List<LocId> Messages = [];
 
     [DataField]
-    public ProtoId<ReagentPrototype> ReagentName = "PoisonWine";
+    public ProtoId<ReagentPrototype> ReagentName = "Scp035Reagent";
 
     [DataField]
     public float ReagentRangeAvailable = 5;
