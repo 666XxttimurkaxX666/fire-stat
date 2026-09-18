@@ -5763,3 +5763,12 @@
     message: Игроки теперь могут таскать других игроков
   id: 535
   url: https://github.com/makura-games/project-fire/pull/1154
+- author: timur
+  time: '2026-09-18T13:39:13.0000000+00:00'
+  changes:
+  - type: Fix
+    message: ржавые стены больше не спавнятся в проходах
+  - type: Add
+    message: SCP-457, SCP-035 и SCP-059 были добавлены на карту sector No02
+  id: 536
+  url: https://github.com/makura-games/project-fire/pull/1156
