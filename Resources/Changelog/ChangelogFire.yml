@@ -5772,3 +5772,12 @@
     message: SCP-457, SCP-035 и SCP-059 были добавлены на карту sector No02
   id: 536
   url: https://github.com/makura-games/project-fire/pull/1156
+- author: Wardex
+  time: '2026-09-18T13:43:53.0000000+00:00'
+  changes:
+  - type: Fix
+    message: Комнатные растения теперь не спавнятся по два на тайл
+  - type: Fix
+    message: Лицо скромника теперь корректно лечится
+  id: 537
+  url: https://github.com/makura-games/project-fire/pull/1159
