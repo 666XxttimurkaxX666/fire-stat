@@ -23,3 +23,11 @@
   category: construction-category-tools
   objectType: Item
   description: crafting-menu-text-WH
+
+- type: construction
+  id: ScpBindle
+  graph: ScpBindle
+  startNode: start
+  targetNode: bindle
+  category: construction-category-storage
+  objectType: Item

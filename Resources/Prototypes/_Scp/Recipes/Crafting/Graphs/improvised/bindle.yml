@@ -1,0 +1,17 @@
+- type: constructionGraph
+  id: ScpBindle
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bindle
+          steps:
+          - material: Cloth
+            amount: 6
+            doAfter: 3
+          - material: MetalRod
+            amount: 1
+            doAfter: 2
+
+    - node: bindle
+      entity: ClothingBaseBindle
