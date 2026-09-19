@@ -1,2 +1,2 @@
-ent-ScpBaseSockMace = носок булава
+ent-ScpBaseSockMace = носок-булава
     .desc = Носок с мылом внутри. Как просто и эффективно!
