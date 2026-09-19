@@ -1,0 +1,39 @@
+- type: entity
+  parent: BaseItem
+  id: ScpBaseHotSpoon
+  components:
+  - type: Sprite
+    sprite: _Scp/Objects/Weapons/Melee/hot_spoon.rsi
+    state: icon-spoon
+  - type: MeleeWeapon
+#    angle: 180
+    wideAnimationRotation: 180
+    damage:
+      types:
+        Heat: 5
+  - type: DamageOnInteract
+    damage:
+      types:
+        Heat: 2
+    popupText: powered-light-component-burn-hand
+  - type: Item
+    sprite: Objects/Misc/utensils.rsi
+    heldPrefix: spoon
+  - type: Construction
+    graph: HotSpoon
+    node: hot spoon
+
+- type: entity
+  parent: ScpBaseHotSpoon
+  id: ScpHotClothSpoon
+  components:
+  - type: Sprite
+    sprite: _Scp/Objects/Weapons/Melee/hot_spoon.rsi
+    state: icon-spoon-cloth
+  - type: DamageOnInteract
+    damage:
+      types:
+        Heat: 0
+  - type: Construction
+    graph: HotSpoon
+    node: hot cloth spoon
