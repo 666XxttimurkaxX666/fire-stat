@@ -42,8 +42,8 @@
       #    - id: ScpEffectPolyTable
       #      weight: 2
       # Сломано TODO: вернём после фикса
-    - id: ScpEffectSwap
-      weight: 2
+#    - id: ScpEffectSwap
+#      weight: 2
 #    - id: ScpEffectCreateArtifacts
 #      weight: 1
 # Пока не работает
