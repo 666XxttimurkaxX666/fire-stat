@@ -113,30 +113,6 @@
     timeToMix: 0.5
     reactionTypes:
     - Stir
-# Fire edit start
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.25,-0.25,0.25,0.25"
-        density: 1
-        mask:
-        - ItemMask
-        restitution: 0.3
-        friction: 0.2
-  - type: AtmosExposed
-  - type: Temperature
-    currentTemperature: 290
-  - type: TemperatureDamage
-  - type: InternalTemperature
-    thickness: 0.02
-    area: 0.02
-  - type: Construction
-    graph: HotSpoon
-    node: start
-    defaultTarget: hot spoon
-# Fire edit end
 
 - type: entity
   parent: UtensilBasePlastic
