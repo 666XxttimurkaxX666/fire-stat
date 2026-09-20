@@ -74,7 +74,6 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: ArtifactBoltAirlocks
-    chance: 0.5
 
 - type: entity
   id: ScpEffectTeslaDischarge

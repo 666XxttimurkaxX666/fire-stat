@@ -12,8 +12,8 @@
       weight: 2
     - id: ScpArtifactShatterWindows
       weight: 2
-    - id: ScpEffectBoltAirlocks
-      weight: 3
+#    - id: ScpEffectBoltAirlocks
+#      weight: 3
     - id: ScpEffectTeslaDischarge
       weight: 1
 #    - id: ScpEffectSpawn2054X
