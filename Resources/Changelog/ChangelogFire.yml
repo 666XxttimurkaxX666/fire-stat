@@ -5781,3 +5781,18 @@
     message: Лицо скромника теперь корректно лечится
   id: 537
   url: https://github.com/makura-games/project-fire/pull/1159
+- author: timur
+  time: '2026-09-20T10:18:59.0000000+00:00'
+  changes:
+  - type: Add
+    message: Добавлены заказы на волокно SCP-2295 и аномальную ткань
+  - type: Tweak
+    message: Эффект узла на притяжение ослаблен
+  - type: Tweak
+    message: Выручка за заказы в логистике была значительно повышена
+  - type: Remove
+    message: Убраны заказы из логистики, не связанные с СЦП
+  - type: Remove
+    message: Удален эффект узла на телепортацию и болтировку шлюзов
+  id: 538
+  url: https://github.com/makura-games/project-fire/pull/1161
