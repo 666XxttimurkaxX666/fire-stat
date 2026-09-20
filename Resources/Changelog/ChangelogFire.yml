@@ -5796,3 +5796,24 @@
     message: Удален эффект узла на телепортацию и болтировку шлюзов
   id: 538
   url: https://github.com/makura-games/project-fire/pull/1161
+- author: timur
+  time: '2026-09-20T10:35:54.0000000+00:00'
+  changes:
+  - type: Add
+    message: Добавлены новые аксессуары для SCP-082
+  - type: Add
+    message: В начале раунда с шансом 50% в сумке SCP-049 может появиться его трость
+  - type: Add
+    message: Добавлена жидкость SCP-035
+  - type: Add
+    message: Добавлена новая способность призыва щупалец для SCP-035
+  - type: Tweak
+    message: Теперь SCP-082, SCP-3288, SCP-1589 неуклюже обращаются с огнестрельным оружием и другими вещами
+  - type: Tweak
+    message: Ожидание лотереи гост-роли SCP-035 снизилось с 30 до 10 секунд
+  - type: Tweak
+    message: Теперь никотин (т.е. сигареты) немного уменьшает страх
+  - type: Fix
+    message: Исправлен баг с боязнью от SCP-247
+  id: 539
+  url: https://github.com/makura-games/project-fire/pull/1157
