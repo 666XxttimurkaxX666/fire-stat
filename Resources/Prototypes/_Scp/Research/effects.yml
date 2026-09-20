@@ -241,7 +241,7 @@
   - type: XAEApplyComponents
     components:
     - type: GravityWell
-      maxRange: 10
+      maxRange: 5
       baseRadialAcceleration: 90
     - type: TimedRemoveComponents
       components:
