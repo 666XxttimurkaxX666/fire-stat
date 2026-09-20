@@ -2,7 +2,7 @@
 # SCP Items
 - type: cargoBounty
   id: BountyScp330Candy
-  reward: 9000
+  reward: 12000
   description: scp-bounty-description-scp-330-candy
   idPrefix: SCI
   entries:
@@ -14,7 +14,7 @@
 
 - type: cargoBounty
   id: BountyPlushieScp999
-  reward: 2500
+  reward: 4500
   description: scp-bounty-description-plushie-scp-999
   entries:
   - name: scp-bounty-item-plushie-scp-999
@@ -25,7 +25,7 @@
 
 - type: cargoBounty
   id: BountyScp999Jelly
-  reward: 3500
+  reward: 5500
   description: scp-bounty-description-jelly-scp-999
   idPrefix: SCI
   entries:
@@ -37,7 +37,7 @@
 
 - type: cargoBounty
   id: BountyScpUniversalCloth
-  reward: 3500
+  reward: 6500
   description: scp-bounty-description-universal-cloth
   idPrefix: SCI
   entries:
@@ -49,7 +49,7 @@
 
 - type: cargoBounty
   id: Scp2295Fiber1
-  reward: 3500
+  reward: 5500
   description: scp-bounty-description-fiber-scp-2295
   idPrefix: SCI
   entries:
@@ -61,7 +61,7 @@
 
 - type: cargoBounty
   id: BountyScp173PaintBall
-  reward: 7000
+  reward: 7500
   description: scp-bounty-description-scp-173-paint-ball
   idPrefix: SCI
   entries:
@@ -73,7 +73,7 @@
 
 - type: cargoBounty
   id: BountyScp173Shard
-  reward: 6500
+  reward: 8000
   description: scp-bounty-description-scp-173-shard
   idPrefix: SCI
   entries:
@@ -85,7 +85,7 @@
 
 - type: cargoBounty
   id: BountyScp096PhotoDeveloped
-  reward: 4000
+  reward: 8000
   description: scp-bounty-description-scp-096-photo
   idPrefix: SCI
   entries:
@@ -97,7 +97,7 @@
 
 - type: cargoBounty
   id: BountyEyeDroplets
-  reward: 3500
+  reward: 8500
   description: scp-bounty-description-scp-173-eye-droplets
   idPrefix: MTF
   entries:
@@ -109,7 +109,7 @@
 
 - type: cargoBounty
   id: BountyReinforcedMaskScp096
-  reward: 4000
+  reward: 8000
   description: scp-bounty-description-scp-096-reinforced-mask
   entries:
   - name: scp-bounty-item-scp-096-reinforced-mask
@@ -120,7 +120,7 @@
 
 - type: cargoBounty
   id: BountyClothingOuterAntiTeleportation
-  reward: 6000
+  reward: 8000
   description: scp-bounty-description-scp-106-anti-teleportation
   idPrefix: MTF
   entries:
@@ -132,7 +132,7 @@
 
 - type: cargoBounty
   id: BountyClothingHeadHelmetAiPowered
-  reward: 12000
+  reward: 14500
   description: scp-bounty-description-scp-096-helmet-ai
   entries:
   - name: scp-bounty-item-scp-096-helmet-ai
@@ -143,7 +143,7 @@
 
 - type: cargoBounty
   id: BountyClothingShoesSilent
-  reward: 4500
+  reward: 8000
   description: scp-bounty-description-scp-939-shoes-silent
   idPrefix: MTF
   entries:
@@ -155,7 +155,7 @@
 
 - type: cargoBounty
   id: BountyHeadAwareness
-  reward: 2500
+  reward: 8000
   description: scp-bounty-description-scp-head-awareness
   idPrefix: MTF
   entries:
