@@ -1,0 +1,15 @@
+﻿- type: entity
+  parent: ClothingBackpackSatchel
+  id: ClothingBaseBindle
+  components:
+  - type: Item
+    size: Ginormous
+  - type: Sprite
+    sprite: _Scp/Clothing/Back/Specific/bindle.rsi
+    state: icon
+  - type: Storage
+    grid:
+    - 0,0,3,2
+  - type: Construction
+    graph: ScpBindle
+    node: bindle
