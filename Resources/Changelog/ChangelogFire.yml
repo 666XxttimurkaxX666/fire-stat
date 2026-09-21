@@ -5826,3 +5826,16 @@
     message: Добавлена импровизированная сумка, которую можно скрафтить из 6 ткани и 1 стержня
   id: 540
   url: https://github.com/makura-games/project-fire/pull/1160
+- author: Data_deleted
+  time: '2026-09-21T15:14:06.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: Все лазерное оружие было убрано из исследовательских веток
+  - type: Tweak
+    message: Все блюспейс вещи были убраны из исследовательских веток
+  - type: Tweak
+    message: Все исследования стали чуть дешевле
+  - type: Tweak
+    message: Рельсатрон теперь возможно создать и изучить.
+  id: 541
+  url: https://github.com/makura-games/project-fire/pull/1158
