@@ -5839,3 +5839,10 @@
     message: Рельсатрон теперь возможно создать и изучить.
   id: 541
   url: https://github.com/makura-games/project-fire/pull/1158
+- author: timur
+  time: '2026-09-22T18:29:08.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: Карта Sector-02 обновлена
+  id: 542
+  url: https://github.com/makura-games/project-fire/pull/1163
