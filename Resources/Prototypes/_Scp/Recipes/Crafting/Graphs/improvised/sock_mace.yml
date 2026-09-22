@@ -1,0 +1,23 @@
+- type: constructionGraph
+  id: ScpSockMace
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: mace
+          steps:
+            - tag: ScpSocks
+              icon:
+                sprite: _Sunrise/Clothing/Socks/knee.rsi
+                state: white_icon
+              name: ent-ClothingNormWhite
+              doAfter: 1
+            - tag: Soap
+              icon:
+                sprite: Objects/Specific/Janitorial/soap.rsi
+                state: soap-4
+              name: ent-Soap
+              doAfter: 1
+
+    - node: mace
+      entity: ScpBaseSockMace

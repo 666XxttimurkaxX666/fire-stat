@@ -1,0 +1,48 @@
+- type: entity
+  parent: 
+  - BaseItem
+  - Clothing
+  id: ScpBaseSockMace
+  components:
+  - type: Item
+    sprite: _Sunrise/Clothing/Socks/knee.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Sprite
+    sprite: _Scp/Objects/Weapons/Melee/sock_mace.rsi
+    state: icon
+  - type: Construction
+    graph: ScpSockMace
+    node: mace
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 6
+    soundHit:
+      collection: MetalThud
+  - type: UseDelay
+    delay: 180
+  - type: UseDelayOnMeleeHit
+  - type: MeleeThrowOnHit
+    stunTime: 0.3
+    activateOnThrown: true
+    speed: 5
+    distance: 0.2
+  - type: ClothingSpeedModifier # с мылом в ноге не удобно ходить
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: Butcherable
+    butcheringType: Knife
+    spawned:
+    - id: MaterialCloth1
+      amount: 1
+    - id: Soap
+      amount: 1
+  - type: Clothing
+    quickEquip: true
+    slots:
+      - SOCKS
