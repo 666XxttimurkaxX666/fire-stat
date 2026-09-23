@@ -188,9 +188,6 @@
   id: Scp007
 
 - type: Tag
-  id: Scp208
-
-- type: Tag
   id: ScpCageDoor173
 
 - type: Tag
@@ -198,6 +195,9 @@
 
 - type: Tag
   id: Scp082Clothing
+
+- type: Tag
+  id: Scp208Clothing
 
 - type: Tag
   id: ScpSocks

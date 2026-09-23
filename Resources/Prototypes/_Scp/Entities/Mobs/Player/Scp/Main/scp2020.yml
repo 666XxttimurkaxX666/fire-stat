@@ -6,7 +6,7 @@
   - BaseScpFriendlySapient
   - MobCombat
   - MobBloodstream
-  - AppearanceScpHands
+  - AppearanceScpHumanoid
   components:
   - type: SlowOnDamage
     speedModifierThresholds:

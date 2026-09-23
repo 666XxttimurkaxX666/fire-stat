@@ -8,7 +8,7 @@
   - MobBloodstream
   - InventoryBase
   - StripableInventoryBase
-  - AppearanceScpHands
+  - AppearanceScpHumanoid
   components:
   - type: SlowOnDamage
     speedModifierThresholds:

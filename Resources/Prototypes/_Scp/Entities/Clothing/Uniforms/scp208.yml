@@ -11,8 +11,10 @@
     sprite: _Scp/Clothing/Uniforms/scp208-uniform.rsi
   - type: Item
     size: Normal
-  - type: ScpMask
-    safeTime: 0
-    targetWhitelist:
-      tags:
+  - type: Tag
+    tags:
+    - Scp208Clothing
+  - type: ItemEquipWhitelist
+    whitelist:
+      components:
       - Scp208
