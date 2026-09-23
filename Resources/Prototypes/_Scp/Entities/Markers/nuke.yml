@@ -1,0 +1,11 @@
+- type: entity
+  id: NukeDoorCloseMarker
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - sprite: Markers/cross.rsi
+      state: red
+    - sprite: Interface/Actions/actions_ai.rsi
+      state: bolt_door
+  - type: NukeCloseDoor

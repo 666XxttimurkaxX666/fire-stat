@@ -1,7 +1,14 @@
 ﻿- type: entity
   id: SCPResearchServer
   parent: ResearchAndDevelopmentServer
+  name: R&D server
+  description: Contains the collective knowledge of the station's scientists. Destroying it would send them back to the stone age. You don't want that do you?
   components:
   - type: TechnologyDatabase
     supportedDisciplines:
-    - SCP
+    - scp_industrial
+    - scp_arsenal
+    - scp_experimental
+    - scp_civilianservices
+    - scp_medical
+    - SCP # Fire

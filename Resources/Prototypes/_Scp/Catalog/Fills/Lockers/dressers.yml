@@ -144,7 +144,7 @@
       tags:
       - Scp082Clothing
     grid:
-    - 0,0,17,5
+    - 0,0,21,5
     maxItemSize: Ginormous
   - type: EntityTableContainerFill
     containers:
@@ -156,6 +156,8 @@
           tableId: DresserScp082FunnyEntityTable
         - !type:NestedSelector
           tableId: DresserScp082RandomEntityTable
+        - !type:NestedSelector
+          tableId: DresserScp082AccessoryEntityTable
 
 - type: entityTable
   id: DresserScp082BasicEntityTable
@@ -203,3 +205,16 @@
       weight: 0.05
     - id: ClothingUniformMonroeScp082
       weight: 0.04
+
+- type: entityTable
+  id: DresserScp082AccessoryEntityTable
+  table: !type:GroupSelector
+    children:
+    - id: ClothingEyesGlassesScp082
+      weight: 0.05
+    - id: ClothingHeadHairShortScp082
+      weight: 0.05
+    - id: ClothingHeadHairLongScp082
+      weight: 0.05
+    - id: ClothingMaskMimeScp082
+      weight: 0.05
