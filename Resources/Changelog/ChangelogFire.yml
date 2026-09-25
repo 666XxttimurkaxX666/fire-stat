@@ -5887,3 +5887,10 @@
     message: Музыка голосования отключена
   id: 545
   url: https://github.com/makura-games/project-fire/pull/1165
+- author: Wardex
+  time: '2026-09-25T15:18:30.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: 'Обновлены карты: Compact, Standard, Modular, Sector-02'
+  id: 546
+  url: https://github.com/makura-games/project-fire/pull/1168
