@@ -3,7 +3,10 @@
 
 - type: listing
   id: ChaosUplinkWeaponAK103
-  productEntity: WeaponRifleAK103
+  productEntity: ChaosStorageCrateMachineGunAK103
+  name: AK-103
+  description: chaos-catalog-weapon-ak103-description
+  icon: { sprite: _Scp/Objects/Weapons/ak_74/big.rsi, state: icon  }
   cost:
     SupplyPoint: 10
   categories:

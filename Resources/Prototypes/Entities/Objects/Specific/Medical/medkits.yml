@@ -5,7 +5,7 @@
   id: Medkit
   components:
   - type: Sprite
-    sprite: Objects/Specific/Medical/firstaidkits.rsi
+    sprite: _Scp/Objects/Specific/medkit.rsi #Fire Edit
     state: firstaid
   - type: Storage
     maxItemSize: Small
@@ -13,7 +13,7 @@
     - 0,0,5,1 # Sunrise-Edit
   - type: Item
     size: Large
-    sprite: Objects/Specific/Medical/firstaidkits.rsi
+    sprite: _Scp/Objects/Specific/medkit.rsi #Fire Edit
     heldPrefix: firstaid
   - type: PhysicalComposition
     materialComposition:

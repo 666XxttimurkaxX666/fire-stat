@@ -64,6 +64,16 @@
   name: store-category-scpspecweapon
   priority: 11
 
+- type: storeCategory
+  id: ScpRocket
+  name: store-category-scprocket
+  priority: 12
+
+- type: storeCategory
+  id: Scpbetaflame
+  name: store-category-scpbetaflame
+  priority: 13
+
 # region Chaos Uplink Categories
 
 - type: storeCategory

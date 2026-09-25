@@ -1,0 +1,9 @@
+- type: entity
+  parent: ClothingMessenger
+  id: ClothingBackpackMessengerGRU
+  name: military bag
+  description: A spacious backpack for Russian military special forces.
+  suffix: GRU
+  components:
+  - type: Sprite
+    sprite: _Scp/Clothing/Back/Backpacks/GRU.rsi

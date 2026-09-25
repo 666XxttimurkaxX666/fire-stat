@@ -423,6 +423,34 @@
       - id: C4
         amount: 5
 
+- type: entity
+  parent: BaseMtfStorageCrateSmallGranade
+  id: MtfStorageCrateDisposableRocketLauncher
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Storage
+    grid:
+    - 0,0,6,3
+  - type: StorageFill
+    contents:
+      - id: SunriseWeaponDisposableRocketLauncher
+      - id: SunriseWeaponDisposableRocketLauncher
+      - id: SunriseWeaponDisposableRocketLauncher
+
+- type: entity
+  parent: BaseMtfStorageCrateSmallGranade
+  id: MtfStorageCrateDisposableRocketLauncherIncendiary
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Storage
+    grid:
+    - 0,0,6,3
+  - type: StorageFill
+    contents:
+      - id: SunriseWeaponDisposableRocketLauncherIncendiary
+      - id: SunriseWeaponDisposableRocketLauncherIncendiary
+      - id: SunriseWeaponDisposableRocketLauncherIncendiary
+
 # Коробки экипировки Э-11
 - type: entity
   id: MtfStorageCrateMedicalNtf
