@@ -5871,3 +5871,19 @@
     message: Спрайты снаряжения отряда ГРУ были перерисованы.
   id: 543
   url: https://github.com/makura-games/project-fire/pull/1164
+- author: MrZero1984
+  time: '2026-09-25T14:50:20.0000000+00:00'
+  changes:
+  - type: Add
+    message: Добавлен РШ-12
+  id: 544
+  url: https://github.com/makura-games/project-fire/pull/1162
+- author: Wardex
+  time: '2026-09-25T14:51:23.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: Мусор теперь не переноситься в следующий раунд при режиме "Рейд Повстанцев Хаоса"
+  - type: Tweak
+    message: Музыка голосования отключена
+  id: 545
+  url: https://github.com/makura-games/project-fire/pull/1165
