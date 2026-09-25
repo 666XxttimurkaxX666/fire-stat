@@ -21,6 +21,8 @@
 	{"name": "raf_label"},
 	{"name": "hq_label"},
 	{"name": "crypt_gru"},
-	{"name": "gru_label"}
+	{"name": "gru_label"},
+  {"name": "crypt_black"},
+	{"name": "mtf_label"}
   ]
 }

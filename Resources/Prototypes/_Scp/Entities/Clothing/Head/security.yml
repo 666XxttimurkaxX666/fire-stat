@@ -76,3 +76,28 @@
   name: squad leader cap
   description: A regulation cap issued to squad leaders. Durable, practical, and a clear mark of authority.
   suffix: SCP Guard
+
+- type: entity
+  parent: [ClothingHeadHatHardhatBase, BaseSecurityContraband, HelmetSounds]
+  id: ClothingHeadHelmetSecuritylight
+  name: tactical helmet
+  description: The Foundation Security tactical helmet features a built-in flashlight—unlike the standard model—while offering the same level of protection.
+  suffix: SCP Guard
+  components:
+  - type: Sprite
+    sprite: _Scp/Clothing/Head/Helmets/security_light.rsi
+  - type: Clothing
+    sprite: _Scp/Clothing/Head/Helmets/security_light.rsi
+  - type: PointLight
+    radius: 8
+    energy: 3
+  - type: HideLayerClothing
+    slots:
+    - Hair
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9

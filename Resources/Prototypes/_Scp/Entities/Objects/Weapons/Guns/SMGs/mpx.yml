@@ -1,0 +1,69 @@
+- type: entity
+  name: SIG MPX
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubMachineGunSIGMPX
+  description: A submachine gun developed and modified by SIG Sauer, primarily chambered for the .35 Auto cartridge. One of Hunk's favorite SMGs.
+  components:
+  - type: Sprite
+    sprite: _Scp/Objects/Weapons/SMGs/mpx/big.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Scp/Objects/Weapons/SMGs/mpx/tiny.rsi
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,3,2
+    sprite: _Scp/Objects/Weapons/SMGs/mpx/tiny.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -3
+    maxAngle: -25
+  - type: Gun
+    minAngle: 6
+    maxAngle: 45
+    angleIncrease: 2.5
+    angleDecay: 18
+    fireRate: 10
+    selectedMode: FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+    availableModes:
+    - FullAuto
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePistolSubMachineGunSP
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - MagazinePistolSubMachineGun
+          - MagazineMP5
+          - MagazineCaselessRifle
+          - MagazinePistolHighCapacity
+          - MagazinePistolSubMachineGun
+          - MagazinePistolDPSubMachineGun
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePistolSP
+        priority: 1
+        whitelist:
+          tags:
+          - CartridgePistol
+          - CartridgePistolDP
+          - CartridgeCaselessRifle
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance
+  

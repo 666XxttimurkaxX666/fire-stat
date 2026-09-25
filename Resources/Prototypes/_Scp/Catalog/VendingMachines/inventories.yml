@@ -119,7 +119,7 @@
     ClothingNeckShoulderPatchYellow: 5
     BoxCardboardShoulderPatches: 2
     ClothingEyesGlassesSecurityGuard: 3
-    ClothingEyesEyepatchHudSecurity: 2
+    ClothingMaskNeckGaiter: 3
     ClothingMaskSecurityBandBlack: 3
     ClothingNeckMantleSecurity: 3
     ClothingNeckKailoRen: 2
@@ -156,9 +156,11 @@
     Tourniquet: 5
     FlashlightSeclite: 5
     RiotShield: 2
-    RiotLaserShield: 2
+    ClothingHeadHelmetSecuritylight: 3
     RiotBulletShield: 2
     CombatKnife: 3
+    PouchAmmo: 3
+    PouchDrop: 3
     Bola: 6
     RadioHandheldExternalAdministrativeZoneSecurityService: 5
     RadioHandheldHeavyContainmentSecurityService: 5

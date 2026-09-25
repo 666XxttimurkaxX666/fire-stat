@@ -691,4 +691,17 @@
       - id: WeaponRifleAR18M
       - id: ClothingBeltMtfAmmoWeaponRifleAR18M
 
+- type: entity
+  parent: BaseMtfStorageCrateWeapon
+  id: MtfStorageCrateSubMachineGunSIGMPX
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Storage
+    grid:
+    - 0,0,6,3
+  - type: StorageFill
+    contents:
+      - id: WeaponSubMachineGunSIGMPX
+      - id: ClothingBeltMtfAmmoWeaponSubMachineGunSIGMPX
+
 

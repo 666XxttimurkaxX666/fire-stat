@@ -18,3 +18,6 @@ ent-ClothingHeadCapBlackSquadLeader = squad leader cap
 ent-ClothingHeadHatCapBlackSquadLeader = squad leader cap
     .desc = A regulation cap issued to squad leaders. Durable, practical, and a clear mark of authority.
     .suffix = SCP Guard
+ent-ClothingHeadHelmetSecuritylight = tactical helmet
+    .desc = The Foundation Security tactical helmet features a built - in flashlight—unlike the standard model — while offering the same level of protection.
+    .suffix = SCP Guard

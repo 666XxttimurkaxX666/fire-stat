@@ -85,13 +85,13 @@
   color: "#2e4b5c"
   longRange: true
 
-# Ниже под удаление на будущее.
 - type: radioChannel
-  id: InternalTribunalService
-  name: chat-radio-internal-tribunal-service
-  keycode: 'б'
-  frequency: 2333
-  color: "#c27ba0"
+  id: MobileTaskForce
+  name: chat-radio-task-force
+  keycode: 'т'
+  frequency: 2336
+  color: "#3c41c3"
+  longRange: true
 
 - type: radioChannel
   id: InternalSecurity
@@ -99,3 +99,12 @@
   keycode: 'ю'
   frequency: 2334
   color: "#8e4747"
+  longRange: true
+
+# Ниже под удаление на будущее.
+- type: radioChannel
+  id: InternalTribunalService
+  name: chat-radio-internal-tribunal-service
+  keycode: 'б'
+  frequency: 2333
+  color: "#c27ba0"

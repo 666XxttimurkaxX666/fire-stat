@@ -4,7 +4,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Pouches/large_explosive.rsi
+    sprite: _Scp/Clothing/Pouches/large_explosive.rsi #Fire Edit
     layers:
     - state: icon
   - type: Appearance
@@ -23,7 +23,7 @@
   description: It can carry grenades, plastic explosives, mine boxes, and other explosives.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Pouches/large_explosive.rsi
+    sprite: _Scp/Clothing/Pouches/large_explosive.rsi #Fire Edit
   - type: Storage
     maxItemSize: Normal
     grid:
@@ -92,7 +92,7 @@
   description: It can carry ammo boxes and magazines.
   components:
   - type: Sprite
-    sprite: _RMC14/Objects/Clothing/Pouches/large_ammo_mag.rsi
+    sprite: _Scp/Clothing/Pouches/large_ammo_mag.rsi #Fire Edit
   - type: Storage
     maxItemSize: Small
     grid:

@@ -22,3 +22,6 @@ ent-ClothingHeadCapBlackSquadLeader = кепка командира отряда
 ent-ClothingHeadHatCapBlackSquadLeader = кепка командира отряда
     .desc = Стандартная кепка, выдаваемая командирам отрядов. Прочная, практичная и явный знак власти.
     .suffix = SCP охрана
+ent-ClothingHeadHelmetSecuritylight = тактический шлем
+    .desc = Тактический шлем службы безопасности фонда, имеет встроенный фонарик в отличии от обычного, но защищает также.
+    .suffix = SCP охрана
