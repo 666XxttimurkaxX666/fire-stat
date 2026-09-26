@@ -1,0 +1,35 @@
+﻿- type: entity
+  id: ScpRadio
+  parent: BaseItem
+  name: vintage radio
+  description: Vintage old radio. It plays jazz!
+  suffix: Decorative
+  components:
+  - type: Sprite
+    sprite: _Scp/Objects/Misc/radio.rsi
+    state: icon
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/_Scp/Effects/Radio/static.ogg
+      params:
+        volume: -8
+        range: 5
+    soundDeactivate:
+      path: /Audio/_Scp/Effects/Radio/toggle.ogg
+      params:
+        volume: -10
+        range: 5
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/_Scp/Effects/vintage_song.ogg
+      params:
+        volume: -8
+        range: 5
+  - type: TriggerOnActivate
+  - type: ItemToggleOnTrigger
+  - type: UseDelay
+    delay: 2
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,1
