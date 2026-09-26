@@ -96,7 +96,7 @@
   - type: GrowingKudzu
   - type: Kudzu
     growthLevel: 1
-    growthTickChance: 0.1
+    growthTickChance: 0.05
     spreadChance: 0.1
     spriteVariants: 3
   - type: DeleteOnTrigger
@@ -118,11 +118,11 @@
 #  - type: ProjectileGrenade
 #    fillPrototype: Scp059CrystalProjectile
 #    capacity: 20
-  - type: PointLight
-    color: LightBlue
-    radius: 3
-    energy: 4
-    netsync: false
+#  - type: PointLight лагает
+#    color: LightBlue
+#    radius: 3
+#    energy: 4
+#    netsync: false
 
 - type: entity
   id: Scp059Rock
