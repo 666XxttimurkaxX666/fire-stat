@@ -164,6 +164,9 @@
   id: Scp714
 
 - type: Tag
+  id: Scp2020
+
+- type: Tag
   id: Scp2022
 
 - type: Tag
@@ -198,6 +201,9 @@
 
 - type: Tag
   id: Scp208Clothing
+
+- type: Tag
+  id: Scp2020Clothing
 
 - type: Tag
   id: ScpSocks

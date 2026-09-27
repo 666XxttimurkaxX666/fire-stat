@@ -62,7 +62,7 @@
     - ScpResearch
     - ScpResearchAdvanced
   - type: Loadout
-    prototypes: [ Scp007Gear ]
+    prototypes: [ Scp007FormalGear ]
   - type: Cuffable
   - type: Tag
     tags:
@@ -88,6 +88,16 @@
       phobiaType: Necrophobia
       uponComeCloser: None
     - type: WatchingTarget
+
+- type: startingGear
+  id: Scp007FormalGear
+  equipment:
+    id: KeyCardPassEmpty
+    shoes: ClothingShoesBootsLaceup
+    jumpsuit: ClothingUniformSapientScp
+    belt: ClothingBeltStorageWaistbag
+    pants: ClothingPantsManStripe
+    socks: ClothingKneeWhite
 
 - type: startingGear
   id: Scp007Gear

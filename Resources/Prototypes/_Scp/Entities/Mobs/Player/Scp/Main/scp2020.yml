@@ -7,7 +7,16 @@
   - MobCombat
   - MobBloodstream
   - AppearanceScpHumanoid
+  - StripableInventoryBase
+  - InventoryBase
   components:
+  - type: Inventory
+    templateId: scp2020
+  - type: RestrictedEquipment
+    targetSlots: INNERCLOTHING
+    whitelist:
+      tags:
+      - Scp2020Clothing
   - type: SlowOnDamage
     speedModifierThresholds:
       100: 0.9
@@ -80,3 +89,17 @@
       phobiaType: Necrophobia
       uponComeCloser: None
     - type: WatchingTarget
+  - type: Loadout
+    prototypes: [ Scp2020FormalGear ]
+  - type: Tag
+    tags:
+    - FootstepSound
+    - DoorBumpOpener
+    - Scp2020
+
+- type: startingGear
+  id: Scp2020FormalGear
+  equipment:
+    jumpsuit: ClothingUniformScp2020
+    belt: ClothingBeltStorageWaistbag
+    shoes: ClothingShoesBootsLaceup

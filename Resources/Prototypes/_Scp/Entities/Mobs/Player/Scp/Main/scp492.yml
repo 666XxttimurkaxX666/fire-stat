@@ -81,3 +81,11 @@
     jumpsuit: UniformSecurityShortsRed
     belt: ClothingBeltStorageWaistbag
     bra: ClothingBraTshirtBlack
+
+- type: startingGear
+  id: Scp492FormalGear
+  equipment:
+    id: KeyCardServicePersonnel
+    jumpsuit: ClothingUniformSapientScp
+    belt: ClothingBeltStorageWaistbag
+    shoes: ClothingShoesBootsLaceup
