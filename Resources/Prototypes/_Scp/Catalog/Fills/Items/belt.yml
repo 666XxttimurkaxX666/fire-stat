@@ -274,3 +274,14 @@
       - id: MagazineBoxHeavyRifleSP
         amount: 2
 
+- type: entity
+  parent: ClothingBeltMtfAmmo
+  id: ClothingBeltMtfAmmoWeaponSubMachineGunSIGMPX
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+      - id: MagazinePistolSubMachineGunSP
+        amount: 5
+      - id: MagazineBoxPistolSP
+        amount: 2

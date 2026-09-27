@@ -6,3 +6,5 @@ scp106-shop-blade-name = { ent-Scp106BareBlade }
 scp106-shop-blade-desc = { ent-Scp106BareBlade.desc }
 scp106-shop-puddle-name = { ent-Scp106PuddleSpawnAction }
 scp106-shop-puddle-desc = { ent-Scp106PuddleSpawnAction.desc }
+shop-name-sig-mpx-name = Box with SIG MPX
+shop-name-sig-mpx-desc = A box containing a SIG MPX submachine gun and an ammunition belt.

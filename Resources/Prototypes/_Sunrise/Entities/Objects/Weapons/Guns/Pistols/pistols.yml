@@ -105,9 +105,9 @@
   suffix: Sunrise
   components:
   - type: Sprite
-    sprite: _Sunrise/Objects/Weapons/Guns/Pistols/glock22_metus.rsi
+    sprite: _Scp/Objects/Weapons/Guns/Pistols/glock22_metus.rsi #Fire Edit
   - type: Item
-    sprite: _Sunrise/Objects/Weapons/Guns/Pistols/glock22_metus.rsi
+    sprite: _Scp/Objects/Weapons/Guns/Pistols/glock22_metus.rsi #Fire Edit
   - type: Tag
     tags:
     - LockerPistol # Fire Edit
@@ -124,16 +124,16 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazinePistolHighCapacityRubber
+        startingItem: MagazinePistolHighCapacity # Fire Edit
         insertSound: /Audio/_Sunrise/Weapons/Guns/Pistols/glock22/glock22_reload.ogg
         ejectSound: /Audio/_Sunrise/Weapons/Guns/Pistols/glock22/glock22_unload.ogg
         priority: 2
         whitelist:
           tags:
-          - MagazinePistolHighCapacityRubber
+          - MagazinePistolHighCapacity # Fire Edit
       gun_chamber:
         name: Chamber
-        startingItem: CartridgePistolRubber
+        startingItem: MagazinePistolHighCapacitySP # Fire Edit
         priority: 1
         whitelist:
           tags:

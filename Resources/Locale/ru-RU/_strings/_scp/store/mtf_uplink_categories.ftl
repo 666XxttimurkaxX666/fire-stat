@@ -5,3 +5,5 @@ store-category-equipment-belts = Подсумки
 store-category-scpprimaryarms = Основное вооружение
 store-category-scientific-equipment = Научное оборудование
 store-category-scpspecweapon = Специализированное вооружение
+store-category-scprocket = Одноразовые гранатомёты
+store-category-scpbetaflame = Отравляющие средства

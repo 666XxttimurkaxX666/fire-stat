@@ -39,3 +39,5 @@ ent-ClothingBeltMtfAmmoBR64 = { ent-ClothingBeltMtfAmmo }
 ent-ClothingBeltSheathFilledScp3288 = { ent-ClothingBeltSheathFilled }
     .desc = { ent-ClothingBeltSheathFilled.desc }
     .suffix = SCP-3288
+ent-ClothingBeltMtfAmmoWeaponSubMachineGunSIGMPX = { ent-ClothingBeltMtfAmmo }
+    .desc = { ent-ClothingBeltMtfAmmo.desc }

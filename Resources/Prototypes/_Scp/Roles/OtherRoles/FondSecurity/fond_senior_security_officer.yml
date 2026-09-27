@@ -34,7 +34,7 @@
     neck: ClothingNeckCloakWhite
     belt: ScpClothingBeltSecurityWebbingFilled
     id: KeyCardFondSeniorSecurityOfficer
-    ears: ClothingHeadsetAltMTF
+    ears: ClothingHeadsetAltRegionalAdministration
     pocket1: PinpointerUniversal
   storage:
     belt:

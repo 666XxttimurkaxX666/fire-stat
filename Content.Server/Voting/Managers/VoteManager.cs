@@ -59,7 +59,7 @@ namespace Content.Server.Voting.Managers
         private readonly StandardVoteType[] _standardVoteTypeValues = Enum.GetValues<StandardVoteType>();
 
         private readonly SoundSpecifier _voteAudio = new SoundPathSpecifier("/Audio/_Sunrise/voting.ogg");
-        private EntityUid? _voteAudioStream;
+        // private EntityUid? _voteAudioStream; // Fire edit - отключение музыки голосования
 
         public void Initialize()
         {
@@ -233,7 +233,8 @@ namespace Content.Server.Voting.Managers
 
             var entries = options.Options.Select(o => new VoteEntry(o.data, o.text)).ToArray();
 
-            if (_voteAudioStream != null && _entityManager.EntityExists(_voteAudioStream))
+            // Fire edit start - отключение ГРЕБАНОЙ музыки голосования
+            /*if (_voteAudioStream != null && _entityManager.EntityExists(_voteAudioStream))
             {
                 _entityManager.System<SharedAudioSystem>().Stop(_voteAudioStream);
             }
@@ -244,7 +245,8 @@ namespace Content.Server.Voting.Managers
                 audio.ResolveSound(_voteAudio),
                 Filter.Broadcast().RemovePlayers(_ignoredMusicClients),
                 true,
-                AudioParams.Default.WithLoop(true).WithVolume(-10f))!.Value.Entity;
+                AudioParams.Default.WithLoop(true).WithVolume(-10f))!.Value.Entity;*/
+            // Fire edit end
 
             // Sunrise-Start
             if (_entityManager.System<GameTicker>().RunLevel == GameRunLevel.PreRoundLobby)
@@ -490,7 +492,7 @@ namespace Content.Server.Voting.Managers
 
             if (activeVotes < 1)
             {
-                _entityManager.System<SharedAudioSystem>().Stop(_voteAudioStream);
+                // _entityManager.System<SharedAudioSystem>().Stop(_voteAudioStream); // Fire edit - отключение музыки голосования
                 if (_entityManager.System<GameTicker>().RunLevel == GameRunLevel.PreRoundLobby)
                 {
                     if (_cfg.GetCVar(SunriseCCVars.VotePause))

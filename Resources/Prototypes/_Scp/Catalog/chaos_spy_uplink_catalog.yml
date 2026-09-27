@@ -468,6 +468,17 @@
   - !type:ListingLimitedStockCondition
     stock: 2
 
+- type: listing
+  id: ChaosSpyUplinkChaosSpyClothingBackpackSatchelSmugglerUnanchored
+  productEntity: ClothingBackpackSatchelSmugglerUnanchored
+  cost:
+    SupplyPoint: 4
+  categories:
+  - ChaosSpyOther
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+
 # Not for sale
 - type: listing
   id: ChaosSpyUplinkUplinkImplanter

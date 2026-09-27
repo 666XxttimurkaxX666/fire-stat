@@ -142,6 +142,9 @@
   name: cartridge (12,7mm)
   parent: BaseCartridgeRifleHeavy
   components:
+  - type: Tag                        #Fire Edit
+    tags:
+      - CartridgeRifleHeavy127MMM
   - type: CartridgeAmmo
     proto: BulletRifleHeavy127mm
   - type: Sprite

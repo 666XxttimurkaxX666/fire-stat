@@ -24,3 +24,41 @@
   - type: Tag
     tags:
     - HandGrenadeAmmo
+
+- type: entity
+  parent: SmokeGrenade
+  id: FlameGasGrenade
+  name: Flame Gas Grenade
+  description: A grenade containing an extremely dangerous, toxic incendiary gas. It is recommended to run 10 meters away after throwing it.
+  components:
+  - type: Sprite
+    sprite: _Scp/Objects/Weapons/Grenades/flame.rsi
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 10
+    spreadAmount: 30
+    smokePrototype: AdminInstantEffectFlameSmoke10
+    solution:
+      reagents:
+      - ReagentId: TearGas
+        Quantity: 20
+
+- type: entity
+  parent: SmokeGrenade
+  id: ToxinGasGrenade
+  name: Gas Grenade
+  description: A grenade containing an extremely dangerous, toxic gas. It is recommended to put on a gas mask before use-unless you value your lungs.
+  components:
+  - type: Sprite
+    sprite: _Scp/Objects/Weapons/Grenades/toxic.rsi
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 10
+    spreadAmount: 30
+    smokePrototype: AdminInstantEffectToxinSmoke10
+    solution:
+      reagents:
+      - ReagentId: TearGas
+        Quantity: 20

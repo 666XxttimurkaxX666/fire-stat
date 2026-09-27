@@ -10,3 +10,6 @@ ent-PouchExplosiveFilledLethal = { ent-PouchExplosive }
 ent-PouchExplosiveFilledIncendiary = { ent-PouchExplosive }
     .desc = { ent-PouchExplosive.desc }
     .suffix = Заполненный | Зажигательные
+ent-PouchExplosiveFilledGasGren = { ent-PouchExplosive }
+    .desc = { ent-PouchExplosive.desc }
+    .suffix = Заполненный | Отравляющие

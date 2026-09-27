@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "license": "CLA",
+    "copyright": "by peperino0290_92944 for SCP: Project Fire",
+    "size": {
+        "x": 64,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "base"
+        }
+    ]
+}

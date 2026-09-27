@@ -5846,3 +5846,113 @@
     message: Карта Sector-02 обновлена
   id: 542
   url: https://github.com/makura-games/project-fire/pull/1163
+- author: MrZero1984
+  time: '2026-09-25T14:12:38.0000000+00:00'
+  changes:
+  - type: Add
+    message: Шпионам Повстанцев Хаоса была добавлена сумка контрабандиста в аплинк за 4 очка снабжения.
+  - type: Add
+    message: Ню-7 получили в своё распоряжение набор из трёх одноразовых гранатомётов стоимостью в 7 очков снабжения.
+  - type: Add
+    message: Бета-7 получили в своё распоряжение набор из трёх одноразовых термобарических гранатомётов стоимостью в 7 очков снабжения.
+  - type: Add
+    message: Отряд спецназа ГРУ получил в своё распоряжение новую разгрузку, шлем Рысь-Т и облегчённый бронежилет.
+  - type: Tweak
+    message: Лейтенант в отряде ГРУ теперь выступает в качестве медика.
+  - type: Tweak
+    message: АК-103 в аплинке штурмовиков Повстанцев Хаоса теперь поступает в комплекте с четырьма магазинами (2 SP, 2 FMJ).
+  - type: Tweak
+    message: Спрайты всех аптечек и наборов для лечения были перерисованы.
+  - type: Tweak
+    message: 'Спрайты иконок : противогаза, сапог и шлема Повстанцев Хаоса были перерисованы.'
+  - type: Tweak
+    message: Пистолет-пулемёт Вектор был перерисован.
+  - type: Tweak
+    message: Спрайты снаряжения отряда ГРУ были перерисованы.
+  id: 543
+  url: https://github.com/makura-games/project-fire/pull/1164
+- author: MrZero1984
+  time: '2026-09-25T14:50:20.0000000+00:00'
+  changes:
+  - type: Add
+    message: Добавлен РШ-12
+  id: 544
+  url: https://github.com/makura-games/project-fire/pull/1162
+- author: Wardex
+  time: '2026-09-25T14:51:23.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: Мусор теперь не переноситься в следующий раунд при режиме "Рейд Повстанцев Хаоса"
+  - type: Tweak
+    message: Музыка голосования отключена
+  id: 545
+  url: https://github.com/makura-games/project-fire/pull/1165
+- author: Wardex
+  time: '2026-09-25T15:18:30.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: 'Обновлены карты: Compact, Standard, Modular, Sector-02'
+  id: 546
+  url: https://github.com/makura-games/project-fire/pull/1168
+- author: MrZero1984
+  time: '2026-09-25T15:45:09.0000000+00:00'
+  changes:
+  - type: Add
+    message: Добавлен тактический шлем СБ со встроенным фонариком и сунут в СБтех.
+  - type: Add
+    message: Добавлен Пистолет-Пулемёт SIG MPX и сразу отправлен в планшет МОГ.
+  - type: Add
+    message: В ОхранШкаф был добавлен адекватный шейный гетр.
+  - type: Add
+    message: Добавлен отдельный ключ шифрования МОГ.
+  - type: Add
+    message: Гарнитура Регионального Управления теперь имеет ещё и ключ шифрования МОГ.
+  - type: Add
+    message: В СБтех были добавлены подсумок для магазинов и общий подсумок.
+  - type: Add
+    message: Альфа-1 и Омега-1 получили мощный рельсотрон в качестве специального вооружения.
+  - type: Tweak
+    message: Офицеры Службы Безопасности Фонда пересели с гарнитур МОГ на гарнитуры Регионального Управления.
+  - type: Tweak
+    message: Тюремный глок теперь принимает все виды автопистолетных магазинов.
+  - type: Tweak
+    message: Спрайты подсумков были изменены.
+  - type: Tweak
+    message: Спрайт тюремного глок изменён.
+  - type: Remove
+    message: Удалён противололазерный щит из СБтеха.
+  - type: Remove
+    message: Монокуляр СБ был удалён из ОхранШкафа.
+  - type: Remove
+    message: Из-за появления собственного ключа шифрования, МОГ потеряли ключ шифрования Регионального Управления.
+  id: 547
+  url: https://github.com/makura-games/project-fire/pull/1166
+- author: Data_Deleted
+  time: '2026-09-25T15:47:19.0000000+00:00'
+  changes:
+  - type: Remove
+    message: Удален весь не вписывающийся контент из логистики
+  - type: Remove
+    message: Удалены крафты паладинской брони и паладинского шлема(так как имба и не вписывается)
+  - type: Tweak
+    message: Добавлено новое оружие в закупки логистики
+  - type: Tweak
+    message: Директору в шкафчик за место станеров выдан дигл
+  - type: Tweak
+    message: Теперь магазины p90 стоят адекватную цену
+  id: 548
+  url: https://github.com/makura-games/project-fire/pull/1167
+- author: timur
+  time: '2026-09-26T11:34:53.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: Рост SCP-059 замедлен
+  id: 549
+  url: https://github.com/makura-games/project-fire/pull/1170
+- author: datadeleted
+  time: '2026-09-26T11:42:39.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: Теперь все сервера рнд автоматом заменились на правильные.
+  id: 550
+  url: https://github.com/makura-games/project-fire/pull/1169

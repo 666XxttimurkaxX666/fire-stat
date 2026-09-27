@@ -30,3 +30,5 @@ ent-EncryptionKeyChaos = { ent-EncryptionKey }
     .desc = { ent-EncryptionKey.desc }
 ent-EncryptionKeyGRU = { ent-EncryptionKey }
     .desc = { ent-EncryptionKey.desc }
+ent-EncryptionKeyMobileTaskForce = mobile task force encryption key
+    .desc = A small encryption chip for a headset.

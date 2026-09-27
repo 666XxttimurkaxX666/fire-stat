@@ -34,7 +34,7 @@
     outerClothing: ClothingOuterArmorBulletproof
     belt: ScpClothingBeltSecurityWebbingFilled
     id: KeyCardFondSecurityOfficer
-    ears: ClothingHeadsetAltMTF
+    ears: ClothingHeadsetAltRegionalAdministration
     pocket1: PinpointerUniversal
   storage:
     belt:

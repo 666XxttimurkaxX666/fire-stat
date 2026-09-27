@@ -637,6 +637,7 @@
     - ScpUplinkMtfStorageCrateWeaponRifleAsh12
     - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
     - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
 
@@ -661,6 +662,34 @@
     - ScpUplinkMtfStorageCrateWeaponRifleAsh12
     - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
     - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
+    whitelist:
+    - ScpUplinkMtfUnlockPrimaryArms
+
+- type: listing
+  id: ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
+  productEntity: MtfStorageCrateSubMachineGunSIGMPX
+  name: shop-name-sig-mpx-name
+  description: shop-name-sig-mpx-desc
+  icon: { sprite: _Scp/Interface/Misc/mtf_store_icon.rsi, state: MPX }
+  cost:
+    SupplyPoint: 2
+  categories:
+  - ScpPrimaryArms
+  conditions:
+  - !type:BuyBeforeCondition
+    blacklist:
+    - ScpUplinkMtfStorageCrateSubMachineGunMP5
+    - ScpUplinkMtfStorageCrateSubMachineGunP90
+    - ScpUplinkMtfStorageCrateShotgunCombat
+    - ScpUplinkMtfStorageCrateShotgunBulldog
+    - ScpUplinkWeaponEarthGovLaserRifle
+    - ScpUplinkWeaponEarthGovLaserSniper
+    - ScpUplinkMtfStorageCrateWeaponRifleAK103
+    - ScpUplinkMtfStorageCrateWeaponRifleAsh12
+    - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
+    - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
 
@@ -685,6 +714,7 @@
     - ScpUplinkMtfStorageCrateWeaponRifleAsh12
     - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
     - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
 
@@ -711,6 +741,7 @@
     - ScpUplinkMtfStorageCrateWeaponRifleAsh12
     - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
     - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
@@ -743,6 +774,7 @@
     - ScpUplinkMtfStorageCrateWeaponRifleAsh12
     - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
     - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
@@ -781,6 +813,7 @@
     - ScpUplinkMtfStorageCrateWeaponRifleAsh12
     - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
     - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
@@ -821,6 +854,7 @@
     - ScpUplinkMtfStorageCrateWeaponRifleAsh12
     - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
     - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
@@ -859,6 +893,7 @@
     - ScpUplinkMtfStorageCrateWeaponRifleAsh12
     - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
     - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
@@ -897,6 +932,7 @@
     - ScpUplinkMtfStorageCrateWeaponRifleAsh12
     - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
     - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
@@ -2127,6 +2163,52 @@
   - !type:ListingLimitedStockCondition
     stock: 1
 
+# Ручные гранатомёты
+- type: listing
+  id: ScpUplinMtfStorageCrateDisposableRocketLauncher
+  productEntity: MtfStorageCrateDisposableRocketLauncher
+  name: shop-name-rocketbox
+  description: shop-desc-rocketbox
+  icon: { sprite: _Scp/Interface/Misc/mtf_store_icon.rsi, state: rocket_box3 }
+  cost:
+    SupplyPoint: 7
+  categories:
+  - ScpRocket
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+  - !type:BuyerJobCondition
+    blacklist:
+    - MHLeader # Б-7
+    - MHSpecialist
+    - MHCadet
+    - NTFLeader # Э-11
+    - NTFSpecialist
+    - NTFCadet
+
+# Отравляющие вещества
+- type: listing
+  id: ScpUplinMtfStorageCrateDisposableRocketLauncherIncendiary
+  productEntity: MtfStorageCrateDisposableRocketLauncherIncendiary
+  name: shop-name-Incendiaryrocketbox
+  description: shop-desc-Incendiaryrocketbox
+  icon: { sprite: _Scp/Interface/Misc/mtf_store_icon.rsi, state: Incendiary_rocket_box3 }
+  cost:
+    SupplyPoint: 7
+  categories:
+  - Scpbetaflame
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
+  - !type:BuyerJobCondition
+    blacklist:
+    - HDLeader # Ню-7
+    - HDSpecialist
+    - HDCadet
+    - NTFLeader # Э-11
+    - NTFSpecialist
+    - NTFCadet
+
 # Взрывчатка
 - type: listing
   id: ScpUplinkMtfStorageCrateGrenadeFragTimer
@@ -2264,6 +2346,7 @@
     - ScpUplinkWeaponEarthGovLaserMG
     - ScpUplinkPowerpackMinigunMG100
     - ScpUplinkClothingBackpackPhlogistonTankScp
+    - ScpUplinkWeaponGodlikeXRay
     whitelist:
     - ScpUplinkMtfUnlockSpecWeapon
   - !type:BuyerJobCondition
@@ -2289,6 +2372,7 @@
     - ScpUplinkWeaponEarthGovLaserMG
     - ScpUplinkPowerpackMinigunMG100
     - ScpUplinkClothingBackpackPhlogistonTankScp
+    - ScpUplinkWeaponGodlikeXRay
     whitelist:
     - ScpUplinkMtfUnlockSpecWeapon
   - !type:BuyerJobCondition
@@ -2314,6 +2398,7 @@
     - ScpUplinkWeaponEarthGovLaserMG
     - ScpUplinkPowerpackMinigunMG100
     - ScpUplinkClothingBackpackPhlogistonTankScp
+    - ScpUplinkWeaponGodlikeXRay
     whitelist:
     - ScpUplinkMtfUnlockSpecWeapon
   - !type:BuyerJobCondition
@@ -2337,6 +2422,7 @@
     - ScpUplinkWeaponEarthGovLaserMG
     - ScpUplinkPowerpackMinigunMG100
     - ScpUplinkClothingBackpackPhlogistonTankScp
+    - ScpUplinkWeaponGodlikeXRay
     whitelist:
     - ScpUplinkMtfUnlockSpecWeapon
   - !type:BuyerJobCondition
@@ -2362,6 +2448,7 @@
     - ScpUplinkWeaponEarthGovLaserMG
     - ScpUplinkPowerpackMinigunMG100
     - ScpUplinkClothingBackpackPhlogistonTankScp
+    - ScpUplinkWeaponGodlikeXRay
     whitelist:
     - ScpUplinkMtfUnlockSpecWeapon
   - !type:BuyerJobCondition
@@ -2369,6 +2456,33 @@
     - MHLeader # Б-7
     - MHSpecialist
     - MHCadet
+
+- type: listing
+  id: ScpUplinkWeaponGodlikeXRay
+  productEntity: WeaponGodlikeXRay
+  icon: { sprite: _Scp/Interface/Misc/mtf_store_icon.rsi, state: relsa }
+  categories:
+  - ScpSpecWeapon
+  conditions:
+  - !type:BuyBeforeCondition
+    blacklist:
+    - ScpUplinkMtfStorageCrateMachineGunMG60
+    - ScpUplinkMtfStorageCrateGrenadeLauncherGL70
+    - ScpUplinkMtfStorageCrateRifleBauer127
+    - ScpUplinkWeaponEarthGovLaserMG
+    - ScpUplinkPowerpackMinigunMG100
+    - ScpUplinkClothingBackpackPhlogistonTankScp
+    - ScpUplinkWeaponGodlikeXRay
+    whitelist:
+    - ScpUplinkMtfUnlockSpecWeapon
+  - !type:BuyerJobCondition
+    blacklist:
+    - MHLeader # Б-7
+    - MHSpecialist
+    - MHCadet
+    - HDLeader # Ню-7
+    - HDSpecialist
+    - HDCadet
 
 - type: listing
   id: ScpUplinkClothingBackpackPhlogistonTankScp
@@ -2385,6 +2499,7 @@
     - ScpUplinkWeaponEarthGovLaserMG
     - ScpUplinkPowerpackMinigunMG100
     - ScpUplinkClothingBackpackPhlogistonTankScp
+    - ScpUplinkWeaponGodlikeXRay
     whitelist:
     - ScpUplinkMtfUnlockSpecWeapon
   - !type:BuyerJobCondition
@@ -2426,6 +2541,7 @@
     - ScpUplinkMtfStorageCrateWeaponRifleAsh12
     - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
     - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
@@ -2458,6 +2574,7 @@
     - ScpUplinkMtfStorageCrateWeaponRifleAsh12
     - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
     - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition
@@ -2490,6 +2607,7 @@
     - ScpUplinkMtfStorageCrateWeaponRifleAsh12
     - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
     - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
 
@@ -2516,6 +2634,7 @@
     - ScpUplinkMtfStorageCrateWeaponRifleAsh12
     - ScpUplinkMtfStorageCrateWeaponSubMachineGunNewVector
     - ScpUplinkMtfStorageCrateWeaponRifleAR18M
+    - ScpUplinkMtfStorageCrateSubMachineGunSIGMPX
     whitelist:
     - ScpUplinkMtfUnlockPrimaryArms
   - !type:BuyerJobCondition

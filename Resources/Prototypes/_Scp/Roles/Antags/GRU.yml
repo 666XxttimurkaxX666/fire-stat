@@ -20,14 +20,14 @@
   id: GRULeaderGear
   equipment:
     jumpsuit: ClothingUniformGRU
-    back: MtfTacticalBackpack
-    shoes: ClothingShoesBootsSecurityGuard
+    back: ClothingBackpackMessengerGRU
+    shoes: ClothingShoesBootsUSSPFilled
     head: ClothingHeadHatBeretCommand
     mask: ClothingMaskGRU
     eyes: ClothingEyesNVDSec
     gloves: ClothingHandsGlovesMtfMilitary
     outerClothing: ClothingOuterArmorGRU
-    belt: ClothingBeltMtfMedicalFilledOperative
+    belt: ClothingBeltGRUrigFilled
     ears: ClothingHeadsetGRU
     pocket1: GRUAccessBreakerLimited
   storage:
@@ -64,26 +64,50 @@
     raffle:
       settings: short
   - type: Loadout
-    prototypes: [ GRUSpecialistGear ]
+    prototypes: [ GRUCadetGear ]
   - type: TimedRemoveComponents
     removeAfter: 2
     components:
     - type: Implanted
 
 - type: startingGear
-  id: GRUSpecialistGear
+  id: GRUCadetGear
   equipment:
     jumpsuit: ClothingUniformGRU
-    back: MtfTacticalBackpack
-    shoes: ClothingShoesBootsSecurityGuard
+    back: ClothingBackpackMessengerGRU
+    shoes: ClothingShoesBootsUSSPFilled
     head: ClothingHelmetGRU
     mask: ClothingMaskGRU
     eyes: ClothingEyesGlassesSecurity
     gloves: ClothingHandsGlovesMtfMilitary
     outerClothing: ClothingOuterArmorGRU
+    belt: ClothingBeltGRUrigFilled
+    ears: ClothingHeadsetGRU
+    pocket1: GRUAccessBreakerLimited
+  storage:
+    back:
+    - Crowbar
+
+- type: startingGear
+  id: GRUSpecialistGear
+  equipment:
+    jumpsuit: ClothingUniformGRU
+    back: MtfTacticalBackpackMed
+    shoes: ClothingShoesBootsUSSPFilled
+    head: ClothingHelmetGRU
+    mask: ClothingMaskGRU
+    eyes: ClothingEyesGlassesSecurity
+    gloves: ClothingHandsGlovesMtfMilitary
+    outerClothing: ClothingOuterArmorLightGRU
     belt: ClothingBeltMtfMedicalFilledOperative
     ears: ClothingHeadsetGRU
     pocket1: GRUAccessBreakerLimited
   storage:
     back:
     - Crowbar
+    - DefibrillatorCompact
+    - ChemistryBottleOmnizine
+    - Hypospray
+    - AirlossAutoInjector
+    - AirlossAutoInjector
+    - AirlossAutoInjector
