@@ -156,19 +156,19 @@
 
 - type: entity
   name: SCP-208 spawner
-  suffix: 50%
   id: SpawnScp208
-  parent: MarkerBase
+  parent: SpawnPointJobBase
   components:
   - type: Sprite
     layers:
     - state: green
     - sprite: _Scp/Mobs/Scp/scp-208.rsi
       state: scp-208
-  - type: RandomSpawner
-    prototypes:
-      - Scp208
-    chance: .50
+  - type: SpawnPoint
+    spawn_type: Job
+    job_id: Scp208
+  - type: PreferredSpawn
+    preferredSpawnTypes: [ Job ]
 
 - type: entity
   name: SCP-2295 spawner
@@ -215,77 +215,87 @@
 - type: entity
   name: SCP-527 spawner
   id: SpawnScp527
-  parent: MarkerBase
+  parent: SpawnPointJobBase
   components:
   - type: Sprite
     layers:
     - state: green
     - sprite: _Scp/Mobs/Scp/scp-527.rsi
       state: scp-527
-  - type: ConditionalSpawner
-    prototypes:
-    - Scp527
+  - type: SpawnPoint
+    spawn_type: Job
+    job_id: Scp527
+  - type: PreferredSpawn
+    preferredSpawnTypes: [ Job ]
 
 - type: entity
   name: SCP-007 spawner
   id: SpawnScp007
-  parent: MarkerBase
+  parent: SpawnPointJobBase
   components:
   - type: Sprite
     layers:
     - state: green
     - sprite: _Scp/Mobs/Scp/scp-007.rsi
       state: scp-007
-  - type: ConditionalSpawner
-    prototypes:
-    - Scp007
+  - type: SpawnPoint
+    spawn_type: Job
+    job_id: Scp007
+  - type: PreferredSpawn
+    preferredSpawnTypes: [ Job ]
 
 - type: entity
   name: SCP-2020 spawner
   id: SpawnScp2020
-  parent: MarkerBase
+  parent: SpawnPointJobBase
   components:
   - type: Sprite
     layers:
     - state: green
     - sprite: _Scp/Mobs/Scp/scp-2020.rsi
       state: scp-2020
-  - type: ConditionalSpawner
-    prototypes:
-    - Scp2020
+  - type: SpawnPoint
+    spawn_type: Job
+    job_id: Scp2020
+  - type: PreferredSpawn
+    preferredSpawnTypes: [ Job ]
 
 - type: entity
   name: SCP-4449 spawner
   id: SpawnScp4449
-  parent: MarkerBase
+  parent: SpawnPointJobBase
   components:
   - type: Sprite
     layers:
     - state: green
     - sprite: _Scp/Mobs/Scp/scp-4449.rsi
       state: scp-4449
-  - type: ConditionalSpawner
-    prototypes:
-    - Scp4449
+  - type: SpawnPoint
+    spawn_type: Job
+    job_id: Scp4449
+  - type: PreferredSpawn
+    preferredSpawnTypes: [ Job ]
 
 - type: entity
   name: SCP-492 spawner
   id: SpawnScp492
-  parent: MarkerBase
+  parent: SpawnPointJobBase
   components:
   - type: Sprite
     layers:
     - state: green
     - sprite: _Scp/Mobs/Scp/scp-492.rsi
       state: scp-492
-  - type: ConditionalSpawner
-    prototypes:
-    - Scp492
+  - type: SpawnPoint
+    spawn_type: Job
+    job_id: Scp492
+  - type: PreferredSpawn
+    preferredSpawnTypes: [ Job ]
 
 - type: entity
   name: SCP-457 spawner
   id: SpawnScp457
-  parent: MarkerBase
+  parent: SpawnPointJobBase
   components:
   - type: Sprite
     layers:
@@ -301,7 +311,7 @@
 - type: entity
   name: SCP-247 spawner
   id: SpawnScp247
-  parent: MarkerBase
+  parent: SpawnPointJobBase
   components:
   - type: Sprite
     layers:
@@ -313,28 +323,3 @@
     job_id: Scp247
   - type: PreferredSpawn
     preferredSpawnTypes: [ Job ]
-
-# Рандомная выдача одного из нескольких сцп похожих характеристик
-
-- type: entity
-  name: random friendly sapient SCP spawner
-  id: SpawnScp
-  parent: MarkerBase
-  components:
-  - type: Sprite
-    layers:
-    - state: green
-    - sprite: _Scp/Mobs/Scp/scp-527.rsi # TODO: анимка где показываются несколько разумных сцп
-      state: scp-527
-  - type: RandomSpawner
-    rarePrototypes:
-      - Scp208
-    rareChance: 0.1
-    prototypes:
-      - Scp527
-      - Scp007
-      - Scp2020
-      - Scp4449
-      - Scp492
-    chance: 0.9
-    offset: 0.0
