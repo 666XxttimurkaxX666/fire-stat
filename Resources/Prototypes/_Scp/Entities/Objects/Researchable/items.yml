@@ -272,11 +272,11 @@
     steps: 6
     zeroVisible: true
   - type: Battery
-    maxCharge: 1500
-    startingCharge: 1500
+    maxCharge: 1000
+    startingCharge: 0
   - type: BatteryAmmoProvider
     proto: UltraXrayLaser
-    fireCost: 750
+    fireCost: 1000
   - type: Wieldable
   - type: UseDelay
     delay: 0.5
