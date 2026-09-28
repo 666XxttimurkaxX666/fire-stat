@@ -22,7 +22,6 @@ public sealed class SharedScp208System : EntitySystem
     [Dependency] private readonly DamageableSystem _damageable = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedBloodstreamSystem _bloodstream = default!;
-    [Dependency] private readonly StandingStateSystem _standing = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
 
     public override void Initialize()
@@ -102,7 +101,7 @@ public sealed class SharedScp208System : EntitySystem
 
         _audio.PlayPredicted(ent.Comp.HealingEndSound, ent, ent);
 
-        if (_mobState.IsAlive(target) && HasDamageToHeal(target, damageable, ent.Comp))
+        if (HasDamageToHeal(target, damageable, ent.Comp))
             TryStartHealing(ent, target);
 
         args.Handled = true;
@@ -112,13 +111,7 @@ public sealed class SharedScp208System : EntitySystem
     {
         errorMessage = null;
 
-        if (_standing.IsDown(ent.Owner))
-            return false;
-
         if (!TryComp<DamageableComponent>(target, out var damageable))
-            return false;
-
-        if (!_mobState.IsAlive(target))
             return false;
 
         if (!HasDamageToHeal(target, damageable, ent.Comp))
