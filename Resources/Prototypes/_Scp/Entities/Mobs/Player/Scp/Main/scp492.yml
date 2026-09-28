@@ -79,6 +79,8 @@
   - type: Cuffable
   - type: Body
   - type: PirateAccent
+  - type: ScpRestriction
+    canTakeStaminaDamage: false
 
 - type: startingGear
   id: Scp492Gear

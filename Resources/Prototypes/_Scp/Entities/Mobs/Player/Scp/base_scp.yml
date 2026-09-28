@@ -230,6 +230,7 @@
     canPull: true
     canStandingState: true
     canMobCollide: true
+    canTakeStaminaDamage: true
   - type: RotationVisuals
     defaultRotation: 90
     horizontalRotation: 90
@@ -250,3 +251,4 @@
   - type: Climbing
   - type: DamageForceSay
   - type: Blindable
+  - type: Stamina
