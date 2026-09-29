@@ -7960,7 +7960,7 @@ entities:
       canCollide: False
     - type: InsideEntityStorage
       storage: 512
-- proto: WeldingFuelTank
+- proto: WeldingFuelTankFull
   entities:
   - uid: 1090
     components:
