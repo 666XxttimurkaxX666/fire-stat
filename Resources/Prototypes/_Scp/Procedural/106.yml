@@ -245,9 +245,9 @@
   - !type:LimitedEntityDunGen
     entity: StairsDown106
 
-#  - !type:LimitedEntityDunGen
-#    entity: Scp106MonsterFakeOldMan
-#    limit: 1
+  - !type:LimitedEntityDunGen
+    entity: Scp106MonsterFakeOldMan
+    limit: 1
 
   - !type:LimitedEntityDunGen
     entity: PuddleScp106Reagent200

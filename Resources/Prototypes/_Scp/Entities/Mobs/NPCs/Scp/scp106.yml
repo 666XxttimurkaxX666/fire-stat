@@ -53,10 +53,15 @@
     animation: WeaponArcClaw
     damage:
       types:
-        Slash: 3
+        Slash: 2
         Structural: 20
   - type: Scp
     class: Keter
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Scp106Reagent
+        Quantity: 100
 
 - type: entity
   parent: BaseMobScp106Monster
@@ -166,6 +171,13 @@
     spawned:
       - id: Scp106Cloth
         amount: 2
+  - type: AmbientSound
+    enabled: true
+    volume: -5
+    range: 6
+    sound:
+      path: /Audio/_Scp/Scp106/Servants/breathing.ogg
+  - type: SoundWhileAlive
 
 - type: entity
   parent: BaseMobScp106Monster
@@ -261,6 +273,13 @@
     - actionId: Scp106PuddleSpawnAction
       minRange: 0
       maxRange: 6
+  - type: AmbientSound
+    enabled: true
+    volume: 2
+    range: 6
+    sound:
+      path: /Audio/_Scp/Scp106/Servants/crying.ogg
+  - type: SoundWhileAlive
 
 - type: entity
   parent: 
@@ -337,6 +356,13 @@
     - AnomarchologyResearcherGear
     - ServicePersonnelGear
     - GeneralTechnicalSpecialistGear
+  - type: AmbientSound
+    enabled: true
+    volume: 2
+    range: 6
+    sound:
+      path: /Audio/_Scp/Scp106/Servants/voices.ogg
+  - type: SoundWhileAlive
 
 - type: entity
   parent: Scp106MonsterFakeHuman
@@ -389,11 +415,10 @@
     delay: 5
   - type: UseDelayOnMeleeHit
 
-
 - type: entity
   parent: BaseMobScp106Monster
-  id: Scp106MonsterFakeOldMan
-  categories: [HideSpawnMenu] # хммм
+  id: Scp106MonsterFakeOldMan # небольшой пранк
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _Scp/Mobs/Scp/scp-106.rsi
@@ -404,7 +429,7 @@
   - type: AmbientSound
     enabled: true
     volume: -10
-    range: 3
+    range: 4
     sound:
       path: /Audio/_Scp/Scp106/breath.ogg
   - type: GuideHelp
@@ -460,7 +485,7 @@
     soundHit: /Audio/_Scp/Scp106/hit.ogg
     damage:
       types:
-        Cellular: 10
+        Cellular: 2 # достаточно
   - type: AnyDamageSound
     sound:
       collection: HurtScp106
