@@ -426,6 +426,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
+      500: Dead
   - type: AmbientSound
     enabled: true
     volume: -10
