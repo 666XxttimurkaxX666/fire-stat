@@ -61,3 +61,23 @@
   - type: ContainerContainer
     containers:
       entity_storage: !type:Container
+  - type: Rummageable
+    table: !type:NestedSelector
+      tableId: DClassRummageLoot
+
+- type: entityTable
+  id: DClassRummageLoot
+  table: !type:GroupSelector
+    children:
+    - id: RandomSpawner100
+      weight: 50
+    - id: SheetSteel1
+      weight: 10
+    - id: EmptyFlashlightLantern
+      weight: 10
+    - id: PowerCellSmall
+      weight: 10
+    - id: ShardGlass
+      weight: 10
+    - id: Gauze # бинт
+      weight: 10
