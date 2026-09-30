@@ -62,7 +62,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: [ClothingEyesHudBase, ShowSecurityIcons, BaseSecurityContraband]
+  parent: [ClothingEyesHudBase, BaseSecurityContraband] # Fire edit блять зачем они этот неудобный квадрат юзают
   id: ClothingEyesHudSecurity
   name: security hud
   description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records.
@@ -88,7 +88,7 @@
     sprite: Clothing/Eyes/Hud/command.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Hud/command.rsi
-  - type: ShowJobIcons
+#  - type: ShowJobIcons Fire edit
   - type: Tag
     tags:
     - PetWearable
@@ -174,7 +174,7 @@
   - type: ShowThirstIcons
 
 - type: entity
-  parent: [ClothingEyesHudBase, ShowSecurityIcons, ShowMedicalIcons, BaseSecurityCommandContraband]
+  parent: [ClothingEyesHudBase, ShowMedicalIcons, BaseSecurityCommandContraband] # Fire edit
   id: ClothingEyesHudMedSec
   name: medsec hud
   description: An eye display that looks like a mixture of medical and security huds.
@@ -189,7 +189,7 @@
   - type: AddWantedStatus # Sunrise-edit
 
 - type: entity
-  parent: [ClothingEyesHudBase, ShowSecurityIcons, ShowMedicalIcons]
+  parent: [ClothingEyesHudBase, ShowMedicalIcons] # Fire edit
   id: ClothingEyesHudMultiversal
   name: multiversal hud
   description: Filler

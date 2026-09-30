@@ -10,6 +10,13 @@
   - StripableInventoryBase
   - AppearanceScpHumanoid
   components:
+  - type: Clumsy # не умеет
+    clumsyDefaultStunTime: 1
+    gunShootFailStunTime: 1
+    clumsyDefib: false
+    clumsyHypo: false
+    clumsySound:
+      path: /Audio/Effects/chopstickbreak.ogg
   - type: SoundWhileAlive
   - type: AutoGhostRole
     disconnectDelay: 600
@@ -65,7 +72,7 @@
   - type: Buckle
   - type: Stripping
   - type: StandingState
-  - type: Pacified
+#  - type: Pacified
   - type: UserInterface
     interfaces:
       enum.StrippingUiKey.Key:

@@ -118,7 +118,7 @@
     children:
     - id: BureaucraticError
     - id: ClericalError
-    - id: ScpCockroachMigration
+#    - id: ScpCockroachMigration
     - id: GreytideVirus
     - id: IonStorm
     - id: MassHallucinations
@@ -126,7 +126,7 @@
     - id: MouseMigration
     - id: RandomSentience
     - id: SolarFlare
-    - id: VentClog
+#    - id: VentClog
 
 - type: entityTable
   id: ScpEventsTable

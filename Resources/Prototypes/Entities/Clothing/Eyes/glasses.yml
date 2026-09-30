@@ -166,7 +166,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
+  parent: [ClothingEyesBase, BaseSecurityContraband] # Fire edit
   id: ClothingEyesGlassesSecurity
   name: ballistic glasses
   description: Ballistic glasses used by the military and special forces. Has a built-in security visor.
