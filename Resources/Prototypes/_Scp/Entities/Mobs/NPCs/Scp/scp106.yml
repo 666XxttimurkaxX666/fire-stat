@@ -358,7 +358,7 @@
     - GeneralTechnicalSpecialistGear
   - type: AmbientSound
     enabled: true
-    volume: 2
+    volume: -10
     range: 6
     sound:
       path: /Audio/_Scp/Scp106/Servants/voices.ogg

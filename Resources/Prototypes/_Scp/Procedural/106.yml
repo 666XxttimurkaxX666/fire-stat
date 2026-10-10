@@ -41,9 +41,6 @@
       path: /Audio/_Scp/Scp106/laugh.ogg
     positional: true
     targetUser: false
-  - type: GuideHelp
-    guides:
-    - ScpResearch
 
 - type: entity
   parent: BaseStructure
@@ -73,17 +70,12 @@
   - type: KnockdownOnTrigger
     knockdownAmount: 2
     targetUser: true
-  - type: DeleteOnTrigger
-  - type: RepulseAttractOnTrigger
-    speed: 50
   - type: EmitSoundOnTrigger
     sound:
-      path: /Audio/_Scp/Scp106/laugh.ogg
+      path: /Audio/_Scp/Scp106/horror.ogg
     positional: true
     targetUser: false
-  - type: GuideHelp
-    guides:
-    - ScpResearch
+  - type: ScramOnTrigger # телепортирует лестницу в рандомное место
 
 - type: entityTable
   id: BackroomsEntrance
@@ -99,6 +91,15 @@
       amount: 1
 
 - type: entityTable
+  id: BackroomsCorridorMonsters
+  table: !type:GroupSelector
+    children:
+    - id: Scp106MonsterFakeCorpse
+      amount: 1
+    - id: LootSpawnerRandomAnomalyItem
+      amount: 1
+
+- type: entityTable
   id: BackroomsCorridorEntities
   table: !type:GroupSelector
     children:
@@ -107,15 +108,21 @@
     - id: ScpMobRandomClassDCorpse
       amount: 1
     - id: PuddleScp106Reagent200
-      amount: 1
+      amount: 2
     - id: Shiv
-      amount: 1
+      amount: 2
     - id: FakeItemScp106
       amount: 1
-    - id: Scp106MonsterFakeCorpse
+    - id: BarrelFlaming
       amount: 1
-    - id: LootSpawnerRandomAnomalyItem
+    - id: MachineFrameDestroyed
       amount: 1
+    - id: Rack
+      amount: 1
+    - id: DecalSpawnerDirtWide
+      weight: 15
+    - id: PuddleBlood
+    - id: PuddleVomit
 
 - type: entityTable
   id: BackroomsFloorLights
@@ -197,6 +204,10 @@
 
   - !type:CorridorClutterDunGen
     contents: BackroomsCorridorEntities
+    chance: 0.3
+
+  - !type:CorridorClutterDunGen
+    contents: BackroomsCorridorMonsters
     chance: 0.01
 
   - !type:CorridorClutterDunGen
@@ -268,6 +279,12 @@
     minCount: 5
     maxCount: 8
     contents: BackroomsMobs
+
+  - !type:MiddleConnectionDunGen
+    count: 2
+    overlapCount: 3
+    tile: ScpFloorFlesh106
+    contents: BackroomsFloorLights
 
   # TODO: Add Mobs/Items.
   # For items -> LimitedEntityDunGen
