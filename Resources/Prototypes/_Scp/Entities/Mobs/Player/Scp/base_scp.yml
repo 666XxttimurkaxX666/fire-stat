@@ -177,7 +177,15 @@
   - type: ProximityReceiver
   - type: StealTarget
     stealGroup: Scp
-
+  - type: KillGlobalSound
+    sound:
+      collection: DistanceKillHuman
+      params:
+        volume: -10
+        variation: 0.125
+    originWhitelist:
+      components:
+      - Scp
 
 - type: entity # Для добрых SCP: 131, 999 и т.д.
   abstract: true
@@ -185,4 +193,3 @@
   - BaseScpComponents
   - BaseFriendlyScpArtifactMajor
   id: BaseScpFriendly
-

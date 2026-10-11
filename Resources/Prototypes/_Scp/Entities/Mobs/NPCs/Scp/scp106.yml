@@ -9,6 +9,15 @@
   abstract: true
   suffix: SCP-106 mob
   components:
+  - type: KillGlobalSound
+    sound:
+      collection: DistanceKillHuman
+      params:
+        volume: -10
+        variation: 0.125
+    originWhitelist:
+      components:
+      - Scp
   - type: ToggleableNightVision
     effect: ScpEffectNightVision
   - type: Climbing
