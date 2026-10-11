@@ -18,6 +18,7 @@
     originWhitelist:
       components:
       - Scp
+    chance: 0.8
   - type: ToggleableNightVision
     effect: ScpEffectNightVision
   - type: Climbing
