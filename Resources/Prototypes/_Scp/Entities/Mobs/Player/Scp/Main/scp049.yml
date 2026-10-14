@@ -72,7 +72,7 @@
   - type: Buckle
   - type: Stripping
   - type: StandingState
-#  - type: Pacified
+  - type: Pacified
   - type: UserInterface
     interfaces:
       enum.StrippingUiKey.Key:
