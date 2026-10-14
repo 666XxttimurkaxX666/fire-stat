@@ -11,7 +11,6 @@
   icon: JobIconScp208
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp208
   alwaysShowInBanPanel: true
   applyTraits: false
@@ -28,7 +27,6 @@
   icon: JobIconScp492
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp492
   alwaysShowInBanPanel: true
   applyTraits: false
@@ -60,7 +58,6 @@
   icon: JobIconScp4449
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp4449
   alwaysShowInBanPanel: true
   applyTraits: false
@@ -78,7 +75,6 @@
   icon: JobIconScp007
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp007
   alwaysShowInBanPanel: true
   applyTraits: false
@@ -185,7 +181,6 @@
   icon: JobIconScp527
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp527
   alwaysShowInBanPanel: true
   applyTraits: false
@@ -202,7 +197,6 @@
   icon: JobIconScp2020
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp2020
   alwaysShowInBanPanel: true
   applyTraits: false
