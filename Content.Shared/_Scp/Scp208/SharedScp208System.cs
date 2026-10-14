@@ -16,12 +16,12 @@ namespace Content.Shared._Scp.Scp208;
 
 public sealed partial class SharedScp208System : EntitySystem
 {
-    [Dependency] private readonly SharedActionsSystem _actions = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
-    [Dependency] private readonly DamageableSystem _damageable = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly SharedBloodstreamSystem _bloodstream = default!;
+    [Dependency] private SharedActionsSystem _actions = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private SharedDoAfterSystem _doAfter = default!;
+    [Dependency] private DamageableSystem _damageable = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private SharedBloodstreamSystem _bloodstream = default!;
 
     public override void Initialize()
     {
@@ -35,10 +35,10 @@ public sealed partial class SharedScp208System : EntitySystem
     }
 
     private void OnStartup(Entity<Scp208Component> ent, ref ComponentStartup args)
-	{
-		_actions.AddAction(ent, ref ent.Comp.Action, ent.Comp.ActionHealId);
-		Dirty(ent);
-	}
+    {
+        _actions.AddAction(ent, ref ent.Comp.Action, ent.Comp.ActionHealId);
+        Dirty(ent);
+    }
 
     private void OnShutdown(Entity<Scp208Component> ent, ref ComponentShutdown args)
     {
