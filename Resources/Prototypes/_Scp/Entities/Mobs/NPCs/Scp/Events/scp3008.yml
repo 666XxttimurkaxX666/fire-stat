@@ -99,7 +99,7 @@
     sound:
       params:
         variation: 0.5
-      path: /Audio/_Scp/Scp3008/VOICE.ogg
+      path: /Audio/_Scp/Events/Scp3008/VOICE.ogg
 
 
 - type: entity
@@ -151,7 +151,7 @@
     sound:
       params:
         variation: 0.15
-      path: /Audio/_Scp/Scp3008/VOICE.ogg
+      path: /Audio/_Scp/Events/Scp3008/VOICE.ogg
 
 
 - type: entity
@@ -205,4 +205,4 @@
     sound:
       params:
         variation: 0.15
-      path: /Audio/_Scp/Scp3008/VOICE.ogg
+      path: /Audio/_Scp/Events/Scp3008/VOICE.ogg
