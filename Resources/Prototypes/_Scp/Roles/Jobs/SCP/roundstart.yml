@@ -45,7 +45,6 @@
   icon: JobIconScp999
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp999
   applyTraits: false
 
@@ -96,7 +95,6 @@
   icon: JobIconScp049
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp049
   applyTraits: false
 
@@ -112,7 +110,6 @@
   icon: JobIconScp082
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp082
   applyTraits: false
 
@@ -128,7 +125,6 @@
   icon: JobIconScp096
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp096
   applyTraits: false
 
@@ -144,7 +140,6 @@
   icon: JobIconScp173
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp173
   applyTraits: false
 
@@ -160,7 +155,6 @@
   icon: JobIconScp247
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp247
   applyTraits: false
 
@@ -176,7 +170,6 @@
   icon: JobIconScp457
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp457
   applyTraits: false
 
@@ -227,7 +220,6 @@
   icon: JobIconScp106
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp106
   applyTraits: false
 
@@ -243,7 +235,6 @@
   icon: JobIconScp939
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp939
   applyTraits: false
 
@@ -259,6 +250,5 @@
 #  icon: TODO
   joinNotifyCrew: false
   overrideConsoleVisibility: false
-  canBeAntag: false
   jobEntity: Scp3288
   applyTraits: false
