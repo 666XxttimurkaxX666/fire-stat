@@ -17,6 +17,8 @@
     - ScpRecontainment
     - ScpScientificEquipment
     - ScpSpecWeapon
+    - ScpRocket
+    - Scpbetaflame
     currencyWhitelist:
     - SupplyPoint
     balance:
@@ -128,6 +130,7 @@
     - ScpExplosive
     - ScpMedical
     - ScpAdditional
+    - ScpRocket
     currencyWhitelist:
     - SupplyPoint
     balance:
@@ -150,6 +153,7 @@
     - ScpMedical
     - ScpAdditional
     - ScpSpecWeapon
+    - ScpRocket
     currencyWhitelist:
     - SupplyPoint
     balance:
@@ -172,6 +176,7 @@
     - ScpMedical
     - ScpAdditional
     - ScpScientificEquipment
+    - Scpbetaflame
     currencyWhitelist:
     - SupplyPoint
     balance:
@@ -194,6 +199,7 @@
     - ScpAdditional
     - ScpScientificEquipment
     - ScpSpecWeapon
+    - Scpbetaflame
     currencyWhitelist:
     - SupplyPoint
     balance:
@@ -217,6 +223,8 @@
     - ScpMedical
     - ScpAdditional
     - ScpRecontainment
+    - ScpRocket
+    - Scpbetaflame
     currencyWhitelist:
     - SupplyPoint
     balance:
@@ -240,6 +248,8 @@
     - ScpAdditional
     - ScpRecontainment
     - ScpSpecWeapon
+    - ScpRocket
+    - Scpbetaflame
     currencyWhitelist:
     - SupplyPoint
     balance:

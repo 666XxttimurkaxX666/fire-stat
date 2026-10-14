@@ -10,7 +10,6 @@
   startingGear: FondSecurityOfficerGear
   icon: JobFondSecurityOfficer
   supervisors: ghost-role-information-fond-security-officer-supervisors
-  canBeAntag: false
   radioBold: false
   weight: 810
   overrideConsoleVisibility: false
@@ -34,7 +33,7 @@
     outerClothing: ClothingOuterArmorBulletproof
     belt: ScpClothingBeltSecurityWebbingFilled
     id: KeyCardFondSecurityOfficer
-    ears: ClothingHeadsetAltMTF
+    ears: ClothingHeadsetAltRegionalAdministration
     pocket1: PinpointerUniversal
   storage:
     belt:

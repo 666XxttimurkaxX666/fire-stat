@@ -1,0 +1,85 @@
+- type: entity
+  name: BaseWeaponRSH12
+  parent: BaseItem
+  id: BaseWeaponRSH12
+  description: BOOM
+  abstract: true
+  components:
+  - type: Sprite
+    state: icon
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+    storedOffset: 0,-6
+  - type: Tag
+    tags:
+    - Sidearm
+    - LockerPistol
+  - type: CanDualWield
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt
+  - type: AmmoCounter
+  - type: Gun
+    selectedMode: SemiAuto
+    fireRate: 1.5
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+  - type: UseDelay
+    delay: 0.66
+  - type: ContainerContainer
+    containers:
+      revolver-ammo: !type:Container
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+      - CartridgeRifleHeavy127MMM
+    proto: CartridgeRifleHeavy127mm
+    capacity: 5
+    chambers: [ True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null ]
+    soundEject:
+      path: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+  - type: StaticPrice
+    price: 50000
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RevolversPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RevolversDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RevolversDrop
+  - type: EmitSoundOnCollide
+    sound:
+      collection: RevolversCollide
+
+- type: entity
+  name: RSH-12
+  description: The Assault Revolver uses a 12.7 mm cartridge. It is ideal for special forces.
+  parent: BaseWeaponRSH12
+  id: WeaponRevolverRSH12
+  components:
+  - type: Sprite
+    sprite: _Scp/Objects/Weapons/Guns/Pistols/RSH12/big.rsi
+  - type: Clothing
+    sprite: _Scp/Objects/Weapons/Guns/Pistols/RSH12/tiny.rsi
+  - type: Item
+    sprite: _Scp/Objects/Weapons/Guns/Pistols/RSH12/tiny.rsi
+  - type: Gun
+    fireRate: 3
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
+  - type: StealTarget
+    stealGroup: OfficerHandgun
+    

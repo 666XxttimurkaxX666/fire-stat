@@ -24,19 +24,20 @@ using Content.Shared.NPC.Systems;
 using Content.Shared.Zombies;
 using Robust.Shared.Audio;
 using Robust.Shared.Timing;
+using Content.Server._Scp.MetaGarbage;
 
 namespace Content.Server._Scp.GameTicking.Rules;
 
-public sealed class ChaosRaidRuleSystem : GameRuleSystem<ChaosRaidRuleComponent>
+public sealed partial class ChaosRaidRuleSystem : GameRuleSystem<ChaosRaidRuleComponent>
 {
-    [Dependency] private readonly AntagSelectionSystem _antag = default!;
-    [Dependency] private readonly ObjectivesSystem _objectives = default!;
-    [Dependency] private readonly MindSystem _mind = default!;
-    [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly StationSystem _station = default!;
-    [Dependency] private readonly RoundEndSystem _roundEnd = default!;
-    [Dependency] private readonly NpcFactionSystem _npcFaction = default!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
+    [Dependency] private AntagSelectionSystem _antag = default!;
+    [Dependency] private ObjectivesSystem _objectives = default!;
+    [Dependency] private MindSystem _mind = default!;
+    [Dependency] private ChatSystem _chat = default!;
+    [Dependency] private StationSystem _station = default!;
+    [Dependency] private RoundEndSystem _roundEnd = default!;
+    [Dependency] private NpcFactionSystem _npcFaction = default!;
+    [Dependency] private IGameTiming _gameTiming = default!;
 
     public override void Initialize()
     {
@@ -71,6 +72,14 @@ public sealed class ChaosRaidRuleSystem : GameRuleSystem<ChaosRaidRuleComponent>
             return;
 
         component.TargetComplex = eligible[0];
+
+        // Выключаем перенос мусора из этого раунда (иначе будет очень много мусора от рейдеров)
+        if (TryComp<MetaGarbageTargetComponent>(component.TargetComplex, out var metaGarbageTargetComp))
+        {
+            metaGarbageTargetComp.SpawnPercent = 0f;
+            metaGarbageTargetComp.ReagentSaveModifiers.Clear();
+        }
+
         AddRaidHelpObjectiveToExistingSpies();
     }
 
@@ -358,12 +367,15 @@ public sealed class ChaosRaidRuleSystem : GameRuleSystem<ChaosRaidRuleComponent>
         var spyRuleQuery = EntityQueryEnumerator<ChaosSpyRuleComponent, AntagSelectionComponent>();
         while (spyRuleQuery.MoveNext(out _, out var spyRule, out var antag))
         {
-            foreach (var (mindId, _) in antag.AssignedMinds)
+            foreach (var antagProtoId in antag.AssignedMinds.Values)
             {
-                if (!TryComp<MindComponent>(mindId, out var mind))
-                    continue;
+                foreach (var (mindId, _) in antagProtoId)
+                {
+                    if (!TryComp<MindComponent>(mindId, out var mind))
+                        continue;
 
-                _mind.TryAddObjective(mindId, mind, spyRule.ChaosRaidHelpObjectiveProtoId);
+                    _mind.TryAddObjective(mindId, mind, spyRule.ChaosRaidHelpObjectiveProtoId);
+                }
             }
         }
     }

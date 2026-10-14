@@ -12,3 +12,4 @@ chat-radio-logistics-service = Логистика
 chat-radio-food-and-sanitation-service = Сервис
 chat-radio-chaos = Повстанцы
 chat-radio-gru = ГРУ-П
+chat-radio-task-force = Оперативная Группа

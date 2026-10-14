@@ -15,3 +15,20 @@
     sprite: _Scp/Clothing/Head/Helmets/gru.rsi
   - type: Clothing
     sprite: _Scp/Clothing/Head/Helmets/gru.rsi
+
+- type: entity
+  parent: ClothingHeadHelmetPubg
+  id: ClothingHeadHelmetRisTgru
+  name: Lynx‑T
+  description: A Russian titanium assault armor helmet, developed by order of a special unit of the Russian Ministry of Internal Affairs.
+  components:
+  - type: Sprite
+    sprite: _Scp/Clothing/Head/Helmets/rist.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-up
+      map: ["foldedLayer"]
+      visible: false
+  - type: Clothing
+    sprite: _Scp/Clothing/Head/Helmets/rist.rsi

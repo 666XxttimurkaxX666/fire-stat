@@ -47,3 +47,15 @@
     contents:
       - id: GrenadeIncendiary
         amount: 6
+
+- type: entity
+  parent: PouchExplosive
+  id: PouchExplosiveFilledGasGren
+  suffix: Filled Gas
+  components:
+  - type: StorageFill
+    contents:
+      - id: FlameGasGrenade
+        amount: 3
+      - id: ToxinGasGrenade
+        amount: 3

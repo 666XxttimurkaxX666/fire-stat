@@ -8,6 +8,7 @@
     containers:
       key_slots:
       - EncryptionKeyRegionalAdministration
+      - EncryptionKeyMobileTaskForce
       - EncryptionKeyFacilityMaster
   - type: Sprite
     sprite: Clothing/Ears/Headsets/centcom.rsi

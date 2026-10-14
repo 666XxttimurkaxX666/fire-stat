@@ -16,6 +16,21 @@
     - state: crypt_blue
     - state: raf_label
 
+# Мобильная Оперативная Группа
+- type: entity
+  parent: [ EncryptionKey, BaseCentcommContraband ]
+  id: EncryptionKeyMobileTaskForce
+  components:
+  - type: EncryptionKey
+    channels:
+    - MobileTaskForce
+    defaultChannel: MobileTaskForce
+  - type: Sprite
+    sprite: _Scp/Objects/Devices/encryption_keys.rsi
+    layers:
+    - state: crypt_black
+    - state: mtf_label
+
 # Администрация
 
 - type: entity
@@ -59,7 +74,7 @@
     tags:
     - EncryptionCommand
 
-# Мобильная Оперативная Группа
+# Мобильная Оперативная Группа Мастер
 
 - type: entity
   parent: [ EncryptionKey, BaseCentcommContraband ]
@@ -67,7 +82,7 @@
   components:
   - type: EncryptionKey
     channels:
-    - RegionalAdministration
+    - MobileTaskForce
     - Administration
     - HeavyContainmentSecurityService
     - ExternalAdministrativeZoneSecurityService
@@ -76,7 +91,7 @@
     - EngineeringTechnicalService
     - LogisticsService
     - FoodAndSanitationService
-    defaultChannel: RegionalAdministration
+    defaultChannel: MobileTaskForce
   - type: Sprite
     sprite: _Scp/Objects/Devices/encryption_keys.rsi
     layers:

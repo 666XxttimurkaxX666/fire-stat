@@ -30,3 +30,5 @@ ent-EncryptionKeyChaos = тёмно-зелёный ключ шифрования
     .desc = Полезнее и практичнее, чем ключ шифрования фонда.
 ent-EncryptionKeyGRU = кроваво-красный ключ шифрования
     .desc = { ent-EncryptionKeyChaos.desc }
+ent-EncryptionKeyMobileTaskForce = ключ шифрования мобильной оперативной группы
+    .desc = Небольшой шифрующий чип для гарнитуры.

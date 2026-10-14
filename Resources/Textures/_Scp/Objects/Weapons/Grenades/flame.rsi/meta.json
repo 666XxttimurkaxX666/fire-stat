@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "license": "CLA",
+  "copyright": "by _Mr_Zero_ for SCP: Project Fire",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "primed"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}
