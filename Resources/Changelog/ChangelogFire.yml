@@ -5956,3 +5956,19 @@
     type: Fix
   id: 551
   time: '2025-01-07T17:31:44.662891+00:00'
+- author: timur
+  time: '2026-10-13T19:06:05.0000000+00:00'
+  changes:
+  - type: Remove
+    message: Убран эффект телепортации от узлов
+  id: 552
+  url: https://github.com/makura-games/project-fire/pull/1171
+- author: timur
+  time: '2026-10-13T19:12:32.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: рельсовый испепелитель теперь имеет возможность только на один выстрел
+  - type: Tweak
+    message: теперь после создания рельсового испепелителя необходимо зарядить его
+  id: 553
+  url: https://github.com/makura-games/project-fire/pull/1174
