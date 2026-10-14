@@ -14,7 +14,7 @@ using Content.Shared.Damage.Systems;
 
 namespace Content.Shared._Scp.Scp208;
 
-public sealed class SharedScp208System : EntitySystem
+public sealed partial class SharedScp208System : EntitySystem
 {
     [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
