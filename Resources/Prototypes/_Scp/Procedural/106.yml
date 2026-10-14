@@ -72,7 +72,7 @@
     targetUser: true
   - type: EmitSoundOnTrigger
     sound:
-      path: /Audio/_Scp/Scp106/horror.ogg
+      path: /Audio/_Scp/Scp106/onbackrooms.ogg
     positional: true
     targetUser: false
   - type: ScramOnTrigger # телепортирует лестницу в рандомное место
