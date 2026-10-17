@@ -57,7 +57,7 @@
       behaviors:
       - !type:PlaySoundBehavior
         sound:
-          path: /Audio/Weapons/guitarsmash.ogg
+          path: /Audio/Effects/poster_broken.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           Soap:
