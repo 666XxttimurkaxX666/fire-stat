@@ -84,6 +84,7 @@
 - type: entity
   parent: [BaseItem, StorePresetUplink, BaseSyndicateContraband]
   id: BaseUplinkRadio
+  categories: [ HideSpawnMenu ] # Fire edit
   name: syndicate uplink
   description: Suspiciously looking old radio...
   suffix: Empty
@@ -113,6 +114,7 @@
 - type: entity
   parent: BaseUplinkRadio
   id: BaseUplinkRadio20TC
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: 20 TC
   components:
   - type: Store
@@ -122,6 +124,7 @@
 - type: entity
   parent: BaseUplinkRadio
   id: BaseUplinkRadio25TC
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: 25 TC
   components:
   - type: Store
@@ -132,6 +135,7 @@
 - type: entity
   parent: BaseUplinkRadio
   id: BaseUplinkRadio40TC
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: 40 TC, NukeOps
   components:
   - type: Store
@@ -144,6 +148,7 @@
 - type: entity
   parent: BaseUplinkRadio
   id: BaseUplinkRadio60TC
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: 60 TC, LoneOps
   components:
   - type: Store
@@ -156,6 +161,7 @@
 - type: entity
   parent: BaseUplinkRadio
   id: BaseUplinkRadio0TC
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: NukeOps
   components:
   - type: Store
@@ -169,7 +175,7 @@
   parent: BaseUplinkRadio
   id: BaseUplinkRadioDebug
   suffix: DEBUG
-  categories: [ Debug ] # Sunrise added
+  categories: [ Debug, HideSpawnMenu ] # Fire edit
   components:
   - type: Store
     balance:
@@ -181,7 +187,7 @@
   parent: BaseUplinkRadio
   id: BaseUplinkRadioDebug999
   suffix: DEBUG, NukeOps
-  categories: [ Debug ] # Sunrise added
+  categories: [ Debug, HideSpawnMenu ] # Fire edit
   components:
   - type: Store
     balance:

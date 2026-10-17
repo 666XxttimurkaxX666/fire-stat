@@ -1,5 +1,8 @@
 - type: entity
-  parent: BaseStructure
+  parent: 
+  - BaseStructure
+  - SolutionTank
+  - SolutionHuge
   id: TableSink
   name: sink counter
   description: Wide metal counter with a built-in sink.
@@ -63,13 +66,13 @@
     bonkDamage:
       types:
         Blunt: 4
-  - type: PlaceableSurface
+#  - type: PlaceableSurface
   - type: Fixtures
     fixtures:
       fix1:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.25,-0.25,1.20,0.25"
+          bounds: "-0.25,0,1.20,0.45"
         density: 55
         mask:
         - TableMask

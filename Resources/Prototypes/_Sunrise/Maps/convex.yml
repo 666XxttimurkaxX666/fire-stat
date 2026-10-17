@@ -2,7 +2,7 @@
 #- type: gameMap
 #  id: SunriseConvex
 #  mapName: 'Convex'
-#  mapPath: /Maps/_Sunrise/Station/convex.yml
+#  mapPath: /Maps/_Sunrise/Station/OutPool/convex.yml
 #  minPlayers: 0
 #  maxRandomOffset: 0
 #  randomRotation: false
@@ -129,4 +129,3 @@
 #          - HumanitarianAid
 #          - PersonnelRecovery
 #          - CrewEducation
-#
