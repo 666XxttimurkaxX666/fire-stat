@@ -1,0 +1,13 @@
+﻿- type: soundCollection
+  id: DistanceKillHuman
+  files:
+  - /Audio/_Scp/Voice/Human/DistanceKill/scream1.ogg
+  - /Audio/_Scp/Voice/Human/DistanceKill/scream2.ogg
+  - /Audio/_Scp/Voice/Human/DistanceKill/scream3.ogg
+  - /Audio/_Scp/Voice/Human/DistanceKill/scream4.ogg
+  - /Audio/_Scp/Voice/Human/DistanceKill/scream5.ogg
+  - /Audio/_Scp/Voice/Human/DistanceKill/scream6.ogg
+  - /Audio/_Scp/Voice/Human/DistanceKill/scream7.ogg
+  - /Audio/_Scp/Voice/Human/DistanceKill/scream8.ogg
+  - /Audio/_Scp/Voice/Human/DistanceKill/ToZone2.ogg
+  - /Audio/_Scp/Voice/Human/DistanceKill/ToZone3.ogg

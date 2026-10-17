@@ -1,0 +1,44 @@
+- type: entity
+  id: ScpProtectiveCovering
+  parent: BaseStructure
+  name: protective covering
+  description: Special bulletproof glass covering for lamps and other wall structures.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,0.3,0.5,0.5"
+        density: 200
+        mask:
+        - None
+        layer:
+        - TabletopMachineLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+          params:
+            volume: -6
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetRGlass1:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Sprite
+    sprite: _Scp/Structures/protective_covering.rsi
+    state: icon
+    drawdepth: Mobs
+  - type: Damageable

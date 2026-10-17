@@ -115,3 +115,13 @@
       params:
         volume: 1.0
         variation: 0.125
+  - type: KillGlobalSound # он парентится от добрых сцп так что приходится так
+    sound:
+      collection: DistanceKillHuman
+      params:
+        volume: -5
+        variation: 0.125
+    originWhitelist:
+      components:
+      - Scp
+    chance: 0.8

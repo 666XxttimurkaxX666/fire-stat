@@ -5956,3 +5956,59 @@
     type: Fix
   id: 551
   time: '2025-01-07T17:31:44.662891+00:00'
+- author: timur
+  time: '2026-10-13T19:06:05.0000000+00:00'
+  changes:
+  - type: Remove
+    message: Убран эффект телепортации от узлов
+  id: 552
+  url: https://github.com/makura-games/project-fire/pull/1171
+- author: timur
+  time: '2026-10-13T19:12:32.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: рельсовый испепелитель теперь имеет возможность только на один выстрел
+  - type: Tweak
+    message: теперь после создания рельсового испепелителя необходимо зарядить его
+  id: 553
+  url: https://github.com/makura-games/project-fire/pull/1174
+- author: timur
+  time: '2026-10-14T10:19:47.0000000+00:00'
+  changes:
+  - type: Add
+    message: в измерении SCP-106 появился новый монстр, который выдаёт себя за самого SCP-106
+  - type: Add
+    message: добавлена структура защитного покрытия, которую можно использовать для защиты светильников от урона
+  - type: Add
+    message: трём монстрам из измерения SCP-106 были добавлены свои эмбиенты
+  - type: Add
+    message: теперь Д класс может рыться в мусорках и унитазах для получения ресурсов
+  - type: Add
+    message: теперь SCP-101 может притягивать несколько предметов внутрь себя как мусорный мешок
+  - type: Tweak
+    message: урон монстров в измерении SCP-106 понижен с трёх до двух режущих
+  - type: Tweak
+    message: при большой дозировке SCP-2022 существо начнёт светиться
+  - type: Tweak
+    message: время для SCP-457 снижено до 120 часов
+  - type: Tweak
+    message: время для SCP-082 снижено до 120 часов
+  - type: Tweak
+    message: время для SCP-247 снижено до 100 часов
+  - type: Fix
+    message: исправлен баг с замедлением SCP-457 на клее и других липких жидкостях
+  - type: Fix
+    message: исправлен баг с отображением кофеварки под столами
+  - type: Fix
+    message: исправлен баг с неверным отображением поворота спрайта SCP-082, SCP-2295, SCP-1508 при сне
+  - type: Fix
+    message: исправлен баг с неверным отображением большого количества конфет в SCP-330
+  id: 554
+  url: https://github.com/makura-games/project-fire/pull/1172
+- author: timur
+  time: '2026-10-14T10:24:45.0000000+00:00'
+  changes:
+  - type: Add
+    message: Теперь в далеке проигрывается страшный эмбиент, когда SCP убивает человека
+  id: 555
+  url: https://github.com/makura-games/project-fire/pull/1181
