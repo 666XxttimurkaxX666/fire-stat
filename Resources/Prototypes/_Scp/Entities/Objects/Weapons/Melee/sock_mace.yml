@@ -73,4 +73,4 @@
   - type: DamageOnHit # ломается после 4-5 ударов
     damage:
       types:
-        Blunt: 5
+        Blunt: 6
