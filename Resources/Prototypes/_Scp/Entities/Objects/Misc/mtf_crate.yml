@@ -323,7 +323,7 @@
   - type: StorageFill
     contents:
       - id: WeaponPistolG22
-      - id: MagazinePistol
+      - id: MagazinePistolHighCapacitySP
         amount: 3
       - id: MagazineBoxPistolSP
 

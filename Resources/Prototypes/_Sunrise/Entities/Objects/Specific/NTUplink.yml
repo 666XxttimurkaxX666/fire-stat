@@ -32,6 +32,7 @@
 - type: entity
   parent: BaseUplinkNTERT
   id: UplinkNTERTAmber
+  categories: [ HideSpawnMenu ] # Fire edit
   name: Bluespace ERT visionary
   description: Ultra-innovative portable bluespace teleporter.
   suffix: 75BC, 75C, Amber
@@ -55,6 +56,7 @@
 - type: entity
   parent: BaseUplinkNTERT
   id: UplinkNTERTRed
+  categories: [ HideSpawnMenu ] # Fire edit
   name: Bluespace ERT visionary
   description: Ultra-innovative portable bluespace teleporter.
   suffix: 100BC, 100C, Red
@@ -79,6 +81,7 @@
 - type: entity
   parent: BaseUplinkNTERT
   id: UplinkNTERTGamma
+  categories: [ HideSpawnMenu ] # Fire edit
   name: Bluespace ERT visionary
   description: Ultra-innovative portable bluespace teleporter.
   suffix: 200BC, 200C, Gamma
@@ -103,6 +106,7 @@
 - type: entity
   parent: BaseUplinkNTERT
   id: UplinkNTERTEpsilon
+  categories: [ HideSpawnMenu ] # Fire edit
   name: Bluespace DeathSquad visionary
   description: Ultra-innovative portable bluespace teleporter.
   suffix: Epsilon
@@ -155,7 +159,7 @@
   name: Bluespace ERT visionary
   description: Ultra-innovative portable bluespace teleporter.
   suffix: DEBUG
-  categories: [ Debug ]
+  categories: [ Debug, HideSpawnMenu ] # Fire edit
   components:
   - type: Sprite
     sprite: _Sunrise/Objects/Devices/nt_uplink.rsi
@@ -268,6 +272,7 @@
 - type: entity
   parent: BaseClothingHandsPowerGlovesUplinkNTERT
   id: ClothingHandsPowerGlovesUplinkNTERTAmber
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: Uplink, Amber
   #categories: [ HideSpawnMenu ]
   components:
@@ -279,6 +284,7 @@
 - type: entity
   parent: BaseClothingHandsPowerGlovesUplinkNTERT
   id: ClothingHandsPowerGlovesUplinkNTERTAmberLeader
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: Uplink, Amber, Leader
   #categories: [ HideSpawnMenu ]
   components:
@@ -290,6 +296,7 @@
 - type: entity
   parent: ClothingHandsPowerGlovesUplinkNTERTAmber
   id: ClothingHandsPowerGlovesUplinkNTERTRed
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: Uplink, Red
   #categories: [ HideSpawnMenu ]
   components:
@@ -305,6 +312,7 @@
 - type: entity
   parent: BaseClothingHandsPowerGlovesUplinkNTERT
   id: ClothingHandsPowerGlovesUplinkNTERTRedLeader
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: Uplink, Red, Leader
   #categories: [ HideSpawnMenu ]
   components:
@@ -320,6 +328,7 @@
 - type: entity
   parent: ClothingHandsPowerGlovesUplinkNTERTAmber
   id: ClothingHandsPowerGlovesUplinkNTERTGamma
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: Uplink, Gamma
   #categories: [ HideSpawnMenu ]
   components:
@@ -335,6 +344,7 @@
 - type: entity
   parent: BaseClothingHandsPowerGlovesUplinkNTERT
   id: ClothingHandsPowerGlovesUplinkNTERTGammaLeader
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: Uplink, Gamma, Leader
   #categories: [ HideSpawnMenu ]
   components:
@@ -350,6 +360,7 @@
 - type: entity
   parent: ClothingHandsPowerGlovesUplinkNTERTAmber
   id: ClothingHandsPowerGlovesUplinkNTERTCBURN
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: Uplink, CBURN
   name: CBURN Power Gloves
   #categories: [ HideSpawnMenu ]
@@ -374,6 +385,7 @@
 - type: entity
   parent: ClothingHandsPowerGlovesUplinkNTERTAmber
   id: ClothingHandsPowerGlovesUplinkNTERTEpsilon
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: Uplink, Epsilon
   name: Power Gloves
   components:

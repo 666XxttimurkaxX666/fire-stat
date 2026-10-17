@@ -12,6 +12,10 @@
   parent: CommonMTFLeader
   randomizeName: false
   components:
+  - type: CustomBriefing
+    briefingText: ghost-role-briefing-mtf-LLH
+    briefingSound:
+      path: /Audio/_Scp/Themes/MTFs/LLH.ogg
   - type: GhostRole
     name: ghost-role-information-mtf-leader-LLH-name
     description: ghost-role-information-mtf-leader-description
@@ -41,6 +45,10 @@
   parent: CommonMTFOperative
   randomizeName: false
   components:
+  - type: CustomBriefing
+    briefingText: ghost-role-briefing-mtf-LLH
+    briefingSound:
+      path: /Audio/_Scp/Themes/MTFs/LLH.ogg
   - type: GhostRole
     name: ghost-role-information-mtf-specialist-LLH-name
     description: ghost-role-information-mtf-specialist-description

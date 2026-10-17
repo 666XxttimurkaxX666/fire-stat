@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "license": "CLA",
+  "copyright": "by peperino0290_92944 (discord) for SCP: Project Fire",
+  "states": [
+    {
+      "name": "necksnap"
+    }
+  ]
+}

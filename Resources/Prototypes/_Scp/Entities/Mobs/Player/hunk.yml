@@ -1,0 +1,17 @@
+- type: startingGear
+  id: HunkGear
+  equipment:
+    jumpsuit: ClothingUniformHUNK
+    back: PouchAmmoFilledSMG
+    shoes: ClothingShoesBootsCombat
+    ears: ClothingHeadsetAltRegionalAdministration
+    mask: HunkGasMask
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: HUNKVEST2
+    id: KeyCardFondSeniorSecurityOfficer
+    belt: ClothingBeltHUNKFilled
+    suitstorage: WeaponSubMachineGunSIGMPX
+    pocket1: NeckSnapImplant
+    pocket2: HunkWeapon
+  inhand:
+  - Implanter

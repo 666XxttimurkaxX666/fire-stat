@@ -101,3 +101,15 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
+
+- type: entity
+  parent: ClothingHeadSecurityBeret
+  id: ClothingHeadSecurityEliteBeret
+  name: officer's beret
+  description: An elite officer's beret featuring the golden Foundation emblem, awarded to distinguished personnel of the Security Department and O4 Command.
+  components:
+  - type: Sprite
+    sprite: _Sunrise/Clothing/Head/Hats/beret_tsfelite.rsi
+  - type: Clothing
+    sprite: _Sunrise/Clothing/Head/Hats/beret_tsfelite.rsi
+    

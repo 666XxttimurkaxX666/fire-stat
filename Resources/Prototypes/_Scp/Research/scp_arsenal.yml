@@ -371,3 +371,17 @@
   defaultToScpScale: 0.1 # Fire Edit
   recipeUnlocks:
   - ClothingBackpackElectropack
+
+# наши собственные исследования
+- type: technology
+  id: scp_Swatarmor
+  name: research-technology-swat-armor
+  icon:
+    sprite: _Scp/Clothing/OuterClothing/Armor/SWAT.rsi
+    state: icon
+  discipline: scp_arsenal
+  tier: 2
+  cost: 5000
+  defaultToScpScale: 0.1
+  recipeUnlocks:
+  - SwatArmorRecipe

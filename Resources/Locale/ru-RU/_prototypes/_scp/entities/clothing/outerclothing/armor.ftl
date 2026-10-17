@@ -17,3 +17,6 @@ ent-ClothingOuterArmorSecurityBulletproof = пуленепробиваемый �
 ent-ClothingOuterArmorSecurityRiotLight = облегченная противоударная броня
     .desc = Облегчённый вариант стандартной противоударной брони. Обеспечивает высокую мобильность, но при этом придаёт носителю тревожный и внушительный вид.
     .suffix = { ent-ClothingOuterArmorSecurity.suffix }
+ent-HUNKVEST2 = бронежилет модели H
+    .desc = Чёрный и прочный бронежилет модели H с подсумками. Такой носил некий оперативник Ханк.
+    .suffix = Ханк
