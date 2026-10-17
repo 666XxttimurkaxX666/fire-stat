@@ -6012,3 +6012,34 @@
     message: Теперь в далеке проигрывается страшный эмбиент, когда SCP убивает человека
   id: 555
   url: https://github.com/makura-games/project-fire/pull/1181
+- author: timur
+  time: '2026-10-17T11:04:56.0000000+00:00'
+  changes:
+  - type: Add
+    message: Добавлена эмоция плюшевого писка для SCP-2295
+  id: 556
+  url: https://github.com/makura-games/project-fire/pull/1191
+- author: tmiur
+  time: '2026-10-17T11:07:24.0000000+00:00'
+  changes:
+  - type: Fix
+    message: Исправлен баг с невозможностью для SCP-082 надеть одежду
+  - type: Fix
+    message: Исправлен баг с исчезновением свойств интегры и SCP-714
+  - type: Fix
+    message: Исправлен баг с невозможностью налить воды из столешницы с раковиной
+  - type: Tweak
+    message: Время для SCP-457 снижено до 120 часов
+  - type: Tweak
+    message: Время для SCP-082 снижено до 120 часов
+  - type: Tweak
+    message: Время для SCP-247 снижено до 100 часов
+  id: 557
+  url: https://github.com/makura-games/project-fire/pull/1188
+- author: timur
+  time: '2026-10-17T11:05:28.0000000+00:00'
+  changes:
+  - type: Tweak
+    message: Теперь носок-булава рвётся после 4 - 5 ударов по другому существу
+  id: 558
+  url: https://github.com/makura-games/project-fire/pull/1190
