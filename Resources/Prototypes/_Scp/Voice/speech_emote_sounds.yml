@@ -14,6 +14,13 @@
     Whistle:
       path: /Audio/_Scp/Scp082/whistle.ogg
 
+- type: emoteSounds
+  id: SCP2295
+  params:
+    variation: 0.1
+  sounds:
+    Scp2295Squeak:
+      path: /Audio/_Scp/Scp2295/squeak.ogg
 
 - type: emote
   id: Pain
@@ -46,3 +53,15 @@
   chatTriggers:
     - сжимает зубы
     - стиснул зубы
+
+- type: emote
+  id: Scp2295Squeak
+  name: chat-emote-name-scp-2295-squeak
+  category: Vocal
+  icon: Interface/Emotes/weh.png
+  whitelist:
+    tags:
+    - Scp2295
+  chatMessages: ["chat-emote-msg-scp-2295-squeak"]
+  chatTriggers:
+    - пип
