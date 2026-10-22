@@ -38,6 +38,7 @@
     class: Safe
   - type: ScpRestriction
     canBePulled: true
+    canBeDisarmed: true
     canMobCollide: true
   - type: Scp999
     states:
@@ -196,6 +197,20 @@
         1
   - type: InputMover
   - type: MobMover
+  - type: ComplexInteraction
+  - type: Hands
+    hands:
+      main:
+        location: Middle
+        whitelist:
+          components:
+          - Edible
+          tags:
+          - Payload
+    sortedHands:
+    - main
+    activeHandId: main
+  - type: Pacified
 
 - type: speechSounds
   id: Scp999Speech
