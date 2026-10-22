@@ -47,3 +47,5 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Damageable
+  - type: TTS
+    voice: 314Zabolotniy
