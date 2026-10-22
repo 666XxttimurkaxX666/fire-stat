@@ -1,6 +1,6 @@
 ﻿#-----------------КОМАНДИР
 - type: entity
-  parent: MobHuman
+  parent: MobHumanChaos
   suffix: CHAOS | ANTAG
   id: MobHumanChaosLeader
   components:
@@ -12,27 +12,19 @@
       settings: short
     mindRoles:
     - MindRoleGhostRoleTeamAntagonist
-  - type: GhostTakeoverAvailable
-  - type: NpcFactionMember
-    factions:
-    - Chaos
-  - type: Loadout
-    prototypes: [ ChaosLeaderGear ]
-    roleLoadout: [ RoleSurvivalNukie ]
-  - type: RandomHumanoidAppearance
-    randomizeName: false
-  - type: ZombieImmune
-  - type: Scp049Protection
   - type: RandomMetadata
     nameSegments:
     - NamesChaosLeader
     - LastNamesChaos
     nameFormat: name-format-ert
+  - type: Loadout
+    prototypes: [ ChaosLeaderGear ]
+    roleLoadout: [ RoleSurvivalNukie ]
 
 
 #-----------------МЕДИК
 - type: entity
-  parent: MobHuman
+  parent: MobHumanChaos
   suffix: CHAOS | ANTAG
   id: MobHumanChaosMedic
   components:
@@ -44,21 +36,14 @@
       settings: short
     mindRoles:
     - MindRoleGhostRoleTeamAntagonist
-  - type: GhostTakeoverAvailable
-  - type: NpcFactionMember
-    factions:
-    - Chaos
-  - type: Loadout
-    prototypes: [ ChaosMedicGear ]
-  - type: RandomHumanoidAppearance
-    randomizeName: false
-  - type: ZombieImmune
-  - type: Scp049Protection
   - type: RandomMetadata
     nameSegments:
     - NamesChaosMedic
     - LastNamesChaos
     nameFormat: name-format-ert
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ ChaosMedicGear ]
 
 
 #-----------------ВОИН
@@ -67,6 +52,10 @@
   suffix: CHAOS | ANTAG
   id: MobHumanChaos
   components:
+  - type: CustomBriefing
+    briefingText: chaos-raider-welcome-neutral
+    briefingSound:
+      path: /Audio/_Scp/Themes/The_Chaos_Insurgency_Theme.ogg
   - type: GhostRole
     name: ghost-role-information-chaos-name
     description: ghost-role-information-chaos-description

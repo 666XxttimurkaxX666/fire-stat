@@ -471,8 +471,6 @@
 - type: listing
   id: ChaosSpyUplinkChaosSpyClothingBackpackSatchelSmugglerUnanchored
   productEntity: ClothingBackpackSatchelSmugglerUnanchored
-  cost:
-    SupplyPoint: 4
   categories:
   - ChaosSpyOther
   conditions:

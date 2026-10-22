@@ -6,3 +6,18 @@
     sprite: _Scp/Clothing/Uniforms/chaosins.rsi
   - type: Clothing
     sprite: _Scp/Clothing/Uniforms/chaosins.rsi
+
+- type: entity
+  id: ClothingUniformHUNK
+  parent: ClothingUniformBase
+  name: black uniform
+  description: A special uniform set for an elite special forces unit. This particular one belongs to the commander.
+  suffix: HUNK
+  components:
+    - type: Sprite
+      sprite: _Scp/Clothing/Uniforms/HUNK.rsi
+    - type: Clothing
+      sprite: _Scp/Clothing/Uniforms/HUNK.rsi
+    - type: SuitSensor
+      randomMode: false
+      mode: SensorOff

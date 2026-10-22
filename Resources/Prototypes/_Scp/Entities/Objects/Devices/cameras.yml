@@ -19,3 +19,26 @@
   - type: GuideHelp
     guides:
     - ScpResearchAdvanced
+
+- type: entity
+  parent: BaseItem
+  id: ScpBasePortableSurveillanceCameraMonitor
+  name: ScpBasePortableSurveillanceCameraMonitor
+  components:
+  - type: SurveillanceCameraMonitor
+  - type: Sprite
+    sprite: _Scp/Objects/Tools/scp_monitor.rsi
+    state: icon
+  - type: ActivatableUI
+    key: enum.SurveillanceCameraMonitorUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.SurveillanceCameraMonitorUiKey.Key:
+        type: SurveillanceCameraMonitorBoundUserInterface
+  - type: DeviceNetwork
+    deviceNetId: Wired
+    receiveFrequencyId: SurveillanceCamera
+    transmitFrequencyId: SurveillanceCamera
+  - type: WiredNetworkConnection
+  - type: Appearance
+

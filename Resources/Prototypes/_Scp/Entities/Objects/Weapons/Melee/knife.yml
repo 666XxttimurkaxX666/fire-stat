@@ -18,3 +18,26 @@
       path: /Audio/_Sunrise/Medical/Surgery/scalpel1.ogg
       params:
         variation: 0.125
+
+- type: entity
+  name: Tactical Tomahawk
+  parent: [BaseSecurityCargoContraband, CombatKnife]
+  id: HunkWeapon
+  description: An incredibly sharp tactical tomahawk; if you really wanted to, you could use it to open a powered-up airlock. The letter "V" is engraved on the handle.
+  suffix: HUNK
+  components:
+  - type: Sprite
+    sprite: _Scp/Objects/Weapons/Melee/tactical_axe.rsi
+    state: icon
+  - type: MeleeWeapon
+    attackRate: 2.0
+    damage:
+      types:
+        Slash: 15
+  - type: Item
+    sprite: _Scp/Objects/Weapons/Melee/tactical_axe.rsi
+    storedSprite: null
+  - type: Prying
+    speedModifier: 1.5
+    pryPowered: true
+    useSound: /Audio/Items/jaws_pry.ogg #ИЛИ /Audio/Items/crowbar.ogg, посмотрим увидим

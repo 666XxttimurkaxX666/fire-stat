@@ -104,21 +104,43 @@
   - type: DynamicRuleCost
     cost: 50
 
+- type: entity
+  id: ScpSmallChaosRaid
+  parent: BaseChaosRaidRule
+  components:
+  - type: ChaosRaidRule
+  - type: StationEvent
+    earliestStart: 60
+    weight: 10
+    duration: null
+    minimumPlayers: 30
+  - type: LoadMapRule
+    mapPath: /Maps/_Scp/Nonstation/ShuttleChaosPlanet.yml
+  - type: AntagRandomObjectives
+    sets:
+    - groups: ChaosRaidObjectiveGroups
+      maxPicks: 4
+    maxDifficulty: 3
+  - type: AntagSelection
+    antags:
+    - !type:LinearAntagCount
+      proto: SmallChaosRaiderFighter
+      range:
+        min: 3
+        max: 3
+
 - type: entityTable
   id: ScpVanillaEventsTable
   table: !type:AllSelector
     children:
-    - id: BureaucraticError
     - id: ClericalError
-    - id: ScpCockroachMigration
+#    - id: ScpCockroachMigration
     - id: GreytideVirus
-    - id: IonStorm
     - id: MassHallucinations
-    - id: MimicVendorRule
     - id: MouseMigration
     - id: RandomSentience
     - id: SolarFlare
-    - id: VentClog
+#    - id: VentClog
 
 - type: entityTable
   id: ScpEventsTable
@@ -129,3 +151,4 @@
     - id: AirlockManEater
     - id: SpawnScp133Paper
     - id: SpawnScp3199Egg
+    - id: ScpSmallChaosRaid

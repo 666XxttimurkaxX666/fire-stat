@@ -63,7 +63,7 @@
   id: DeathRattleImplantMTF
   components:
     - type: RattleOnTrigger
-      radioChannel: RegionalAdministration
+      radioChannel: MobileTaskForce
 
 - type: entity
   parent: BoxErtImplants
@@ -258,7 +258,7 @@
   id: NamesSpecialist
   values:
     prefix: names-mtf-specialist-first-dataset-
-    count: 1
+    count: 2
 
 - type: localizedDataset
   id: NamesCadet

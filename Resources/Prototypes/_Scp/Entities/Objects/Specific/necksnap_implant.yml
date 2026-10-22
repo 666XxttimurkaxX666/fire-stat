@@ -1,0 +1,80 @@
+- type: entity
+  id: ActionNeckSnapBRUH
+  parent: BaseImplantAction
+  name: NeckSnap
+  description: NeckSnap
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    useDelay: 180
+    icon:
+      sprite: _Scp/Objects/Specific/NECKSNAP.rsi
+      state: necksnap
+    itemIconStyle: BigAction
+    sound: !type:SoundPathSpecifier
+      path: /Audio/_Scp/Scp173/necksnap1.ogg
+  - type: TargetAction
+    range: 1
+    interactOnMiss: false
+  - type: EntityTargetAction
+    event: !type:Scp049KillLivingBeingAction
+    canTargetSelf: false
+    whitelist:
+      components:
+      - MobState
+    blacklist:
+      components:
+      - Scp
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: NeckSnapImplantBRUH
+  name: the commander's hands
+  description: An implant that lets you snap an opponent's neck without training, experience, or any of that other crap.
+  suffix: 180 Sec | For Players
+  components:
+  - type: SubdermalImplant
+    implantAction: ActionNeckSnapBRUH
+  - type: Scp049
+    actions: []
+
+- type: entity
+  id: ActionNeckSnap
+  parent: BaseImplantAction
+  name: NeckSnap
+  description: NeckSnap
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Action
+    useDelay: 20
+    icon:
+      sprite: _Scp/Objects/Specific/NECKSNAP.rsi
+      state: necksnap
+    itemIconStyle: BigAction
+    sound: !type:SoundPathSpecifier
+      path: /Audio/_Scp/Scp173/necksnap1.ogg
+  - type: TargetAction
+    range: 1
+    interactOnMiss: false
+  - type: EntityTargetAction
+    event: !type:Scp049KillLivingBeingAction
+    canTargetSelf: false
+    whitelist:
+      components:
+      - MobState
+    blacklist:
+      components:
+      - Scp
+
+      
+- type: entity
+  parent: BaseSubdermalImplant
+  id: NeckSnapImplant
+  name: the commander's hands
+  description: An implant that lets you snap an opponent's neck without training, experience, or any of that other crap.
+  suffix: 20 Sec | HUNK
+  components:
+  - type: SubdermalImplant
+    implantAction: ActionNeckSnap
+  - type: Scp049
+    actions: []

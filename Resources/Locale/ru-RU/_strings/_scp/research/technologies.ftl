@@ -10,3 +10,4 @@ research-technology-agent-type-solution = Раствор агентного ти
 research-technology-anomalous-resonance-laser = Аномальный резонансный лазер
 research-technology-anomalous-optical-destructor = Аномально-оптический деструктор
 research-technology-conscious-inversion = Психохимический инвертор «Атараксия»
+research-technology-swat-armor = Броня Swat
