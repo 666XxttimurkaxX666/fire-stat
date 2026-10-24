@@ -256,6 +256,17 @@
     - 195,210,200,215
     - 210,210,215,215
 
+
+    - 0,230,23,235
+    - 50,230,73,235
+    - 192,230,215,235
+
+- type: dungeonRoomPack
+  id: IkeaRoomsPack23x5
+  size: 23,5
+  rooms:
+    - 0,0,23,5
+
 - type: entity
   parent: ScpWallConcreteLightContainment
   id: Scp3008Wall
@@ -287,6 +298,13 @@
       amount: 1
 
 - type: entityTable
+  id: 3008CorridorLights
+  table: !type:GroupSelector
+    children:
+    - id: PoweredFloorlight
+      amount: 1
+
+- type: entityTable
   id: 3008Entrance
   table: !type:GroupSelector
     children:
@@ -295,6 +313,13 @@
     - id: ScpWoodDoor
       amount: 1
     - id: ScpMetalDoor
+      amount: 1
+
+- type: entityTable
+  id: 3008WallsLights
+  table: !type:GroupSelector
+    children:
+    - id: PoweredlightLED
       amount: 1
 
 - type: entityTable
@@ -362,25 +387,22 @@
   - !type:CornerClutterDunGen
     contents: BaseClutter
 
+  - !type:EntranceFlankDunGen
+    tile: ScpFloorSteel
+    contents: 3008WallsLights
+
+  - !type:CorridorClutterDunGen
+    contents: 3008CorridorLights
+    chance: 0.01
+
   - !type:CorridorClutterDunGen
     contents: 3008CorridorEntities
     chance: 0.001
 
   - !type:MobsDunGen
-    minCount: 40
-    maxCount: 60
+    minCount: 60
+    maxCount: 80
     contents: 3008Mobs
-
-  - !type:PrototypeDunGen
-    proto: VGRoidFill
-    inheritDungeons: All
-  # Ores
-  - !type:OreDunGen
-    replacement: IronRock
-    entity: SunriseVGRoidIronRockIronCrabChance # Sunrise-edit
-    count: 30 # Sunrise-edit
-    minGroupSize: 10
-    maxGroupSize: 15
 
   # TODO: Add Mobs/Items.
   # For items -> LimitedEntityDunGen

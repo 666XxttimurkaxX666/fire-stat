@@ -157,3 +157,21 @@
   offset: 18,24
   tags:
   - IkeaRooms
+
+# 23x5
+
+- type: dungeonRoom
+  id: IkeaRooms23x5a
+  size: 23,5
+  atlas: /Maps/_Scp/ikea_rooms.yml
+  offset: 0,30
+  tags:
+  - IkeaRooms
+
+- type: dungeonRoom
+  id: IkeaRooms23x5b
+  size: 23,5
+  atlas: /Maps/_Scp/ikea_rooms.yml
+  offset: 0,36
+  tags:
+  - IkeaRooms
