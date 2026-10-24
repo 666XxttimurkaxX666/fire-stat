@@ -516,7 +516,6 @@
     wall: Scp3008Wall
     cornerWall: Scp3008Wall
     tile: ScpFloorSteel
-    flags: Rooms
 
   - !type:AutoCablingDunGen
     entity: CableApcExtension
