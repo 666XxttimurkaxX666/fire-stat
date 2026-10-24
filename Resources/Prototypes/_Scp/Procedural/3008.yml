@@ -404,8 +404,6 @@
   id: 3008CorridorEntities
   table: !type:GroupSelector
     children:
-    - id: Scp3008MusicBox
-      amount: 1
     - id: Scp3008Label1
       amount: 1
     - id: Scp3008Label2
@@ -424,10 +422,27 @@
       amount: 1
 
 - type: entityTable
+  id: 3008CorridorEntities2
+  table: !type:GroupSelector
+    children:
+    - id: Scp3008MusicBox
+      amount: 1
+    - id: JanitorialTrolley
+      amount: 1
+    - id: ScpChairOfficeLight
+      amount: 1
+    - id: ComfyChair
+      amount: 1
+    - id: ScpTableWood
+      amount: 1
+    - id: ComfyChairRed
+      amount: 1
+
+- type: entityTable
   id: 3008CorridorLights
   table: !type:GroupSelector
     children:
-    - id: PoweredFloorlight
+    - id: PoweredlightLED
       amount: 1
 
 - type: entityTable
@@ -520,6 +535,10 @@
   - !type:CorridorClutterDunGen
     contents: 3008CorridorLights
     chance: 0.01
+
+  - !type:CorridorClutterDunGen
+    contents: 3008CorridorEntities2
+    chance: 0.001
 
   - !type:CorridorClutterDunGen
     contents: 3008CorridorEntities
