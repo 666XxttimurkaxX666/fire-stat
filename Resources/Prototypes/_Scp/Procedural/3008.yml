@@ -374,11 +374,53 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
 
+- type: entity
+  parent: PosterBase
+  id: Scp3008Label1
+  components:
+  - type: Sprite
+    drawdepth: Effects
+    sprite: _Scp/Structures/Furniture/ikea_label.rsi
+    state: label1
+  - type: SpriteFade
+
+- type: entity
+  parent: Scp3008Label1
+  id: Scp3008Label2
+  components:
+  - type: Sprite
+    sprite: _Scp/Structures/Furniture/ikea_label.rsi
+    state: label2
+
+- type: entity
+  parent: Scp3008Label1
+  id: Scp3008Label3
+  components:
+  - type: Sprite
+    sprite: _Scp/Structures/Furniture/ikea_label.rsi
+    state: label3
+
 - type: entityTable
   id: 3008CorridorEntities
   table: !type:GroupSelector
     children:
     - id: Scp3008MusicBox
+      amount: 1
+    - id: Scp3008Label1
+      amount: 1
+    - id: Scp3008Label2
+      amount: 1
+    - id: Scp3008Label3
+      amount: 1
+    - id: FoodPacketChocolateTrash
+      amount: 1
+    - id: FoodPacketChipsTrash
+      amount: 1
+    - id: FoodPacketEnergyTrash
+      amount: 1
+    - id: FoodPacketCnDsTrash
+      amount: 1
+    - id: FoodPacketBoritosTrash
       amount: 1
 
 - type: entityTable
