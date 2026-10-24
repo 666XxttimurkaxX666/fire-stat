@@ -354,7 +354,7 @@
 - type: entity
   parent: ScpWallConcreteLightContainment
   id: Scp3008Wall
-  category: [HideSpawnMenu]
+  categories: [HideSpawnMenu]
   components:
   - type: RCDDeconstructable
     cost: 666
@@ -476,7 +476,7 @@
   table: !type:GroupSelector
     children:
     - id: BasicScp3008
-      amount: 3
+      amount: 2
     - id: StrongScp3008
       amount: 1
     - id: TallScp3008
@@ -554,8 +554,8 @@
     chance: 0.005
 
   - !type:MobsDunGen
-    minCount: 200
-    maxCount: 220
+    minCount: 150
+    maxCount: 180
     contents: 3008Mobs
 
   # TODO: Add Mobs/Items.
