@@ -59,7 +59,7 @@
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-
+  - type: ComplexInteraction # чтобы могли открывать двери
 
 - type: entity
   id: BasicScp3008
@@ -123,7 +123,7 @@
         Blunt: 15
         Structural: 40
   - type: StaminaDamageOnHit
-    damage: 20
+    damage: 5
 
 
 - type: entity
@@ -138,7 +138,7 @@
         Blunt: 15
         Structural: 40
   - type: StaminaDamageOnHit
-    damage: 20
+    damage: 5
   - type: MovementSpeedModifier
     baseWalkSpeed: 2.5
     baseSprintSpeed: 2.5
@@ -180,7 +180,7 @@
     baseWalkSpeed: 3.5
     baseSprintSpeed: 3.5
   - type: UseDelay
-    delay: 5
+    delay: 20
   - type: UseDelayOnMeleeHit
   - type: MeleeThrowOnHit
     stunTime: 0.2
