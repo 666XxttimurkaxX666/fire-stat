@@ -476,7 +476,7 @@
   table: !type:GroupSelector
     children:
     - id: BasicScp3008
-      amount: 1
+      amount: 3
     - id: StrongScp3008
       amount: 1
     - id: TallScp3008
@@ -498,7 +498,7 @@
 #    tile: ScpFloorSteel
 
   - !type:WormCorridorDunGen
-    width: 10
+    width: 15
     tile: ScpFloorSteel
     maxAngleChange: 0
     count: 1
@@ -516,17 +516,27 @@
     wall: Scp3008Wall
     cornerWall: Scp3008Wall
     tile: ScpFloorSteel
-
-  - !type:JunctionDunGen
-    width: 2
-    tile: ScpFloorSteel
-    contents: BaseAirlockScp
+    flags: Rooms
 
   - !type:AutoCablingDunGen
     entity: CableApcExtension
 
-  - !type:CornerClutterDunGen
-    contents: BaseClutter
+  - !type:CorridorDecalSkirtingDunGen
+    cardinalDecals:
+      South: BrickTileWhiteLineS
+      East: BrickTileWhiteLineE
+      North: BrickTileWhiteLineN
+      West: BrickTileWhiteLineW
+    cornerDecals:
+      SouthEast: BrickTileWhiteCornerSe
+      SouthWest: BrickTileWhiteCornerSw
+      NorthEast: BrickTileWhiteCornerNe
+      NorthWest: BrickTileWhiteCornerNw
+    pocketDecals:
+      SouthWest: BrickTileWhiteInnerSw
+      SouthEast: BrickTileWhiteInnerSe
+      NorthWest: BrickTileWhiteInnerNw
+      NorthEast: BrickTileWhiteInnerNe
 
   - !type:EntranceFlankDunGen
     tile: ScpFloorSteel
@@ -542,11 +552,11 @@
 
   - !type:CorridorClutterDunGen
     contents: 3008CorridorEntities
-    chance: 0.001
+    chance: 0.005
 
   - !type:MobsDunGen
-    minCount: 100
-    maxCount: 150
+    minCount: 200
+    maxCount: 220
     contents: 3008Mobs
 
   # TODO: Add Mobs/Items.
