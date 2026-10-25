@@ -158,6 +158,46 @@
   tags:
   - IkeaRooms
 
+- type: dungeonRoom
+  id: IkeaRooms5x5u
+  size: 5,5
+  atlas: /Maps/_Scp/ikea_rooms.yml
+  offset: 24,0
+  tags:
+  - IkeaRooms
+
+- type: dungeonRoom
+  id: IkeaRooms5x5v
+  size: 5,5
+  atlas: /Maps/_Scp/ikea_rooms.yml
+  offset: 24,6
+  tags:
+  - IkeaRooms
+
+- type: dungeonRoom
+  id: IkeaRooms5x5w
+  size: 5,5
+  atlas: /Maps/_Scp/ikea_rooms.yml
+  offset: 24,12
+  tags:
+  - IkeaRooms
+
+- type: dungeonRoom
+  id: IkeaRooms5x5x
+  size: 5,5
+  atlas: /Maps/_Scp/ikea_rooms.yml
+  offset: 24,18
+  tags:
+  - IkeaRooms
+
+- type: dungeonRoom
+  id: IkeaRooms5x5y
+  size: 5,5
+  atlas: /Maps/_Scp/ikea_rooms.yml
+  offset: 24,24
+  tags:
+  - IkeaRooms
+
 # 23x5
 
 - type: dungeonRoom
@@ -173,5 +213,13 @@
   size: 23,5
   atlas: /Maps/_Scp/ikea_rooms.yml
   offset: 0,36
+  tags:
+  - IkeaRooms
+
+- type: dungeonRoom
+  id: IkeaRooms23x5c
+  size: 23,5
+  atlas: /Maps/_Scp/ikea_rooms.yml
+  offset: 0,42
   tags:
   - IkeaRooms
