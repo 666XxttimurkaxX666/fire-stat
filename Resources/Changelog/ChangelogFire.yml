@@ -6129,3 +6129,21 @@
     message: Удалена большая часть ванильных ивентов которые не вписывались в сеттинг сцп или же были просто раздражающими без дополнения в гемплей.
   id: 563
   url: https://github.com/makura-games/project-fire/pull/1176
+- author: Data_deleted
+  time: '2026-10-18T11:45:52.0000000+00:00'
+  changes:
+  - type: Fix
+    message: Геймрул Маленького рейда Повстанцев Хаоса теперь делает роли призраков, а не крадёт людей из раунда.
+  id: 564
+  url: https://github.com/makura-games/project-fire/pull/1193
+- author: timur
+  time: '2026-10-24T19:42:34.0000000+00:00'
+  changes:
+  - type: Fix
+    message: исправлен баг с невозможностью разорвать маску и узду для SCP-096 с SCP-939
+  - type: Fix
+    message: исправлен баг с невозможностью сломать яйца SCP-3199
+  - type: Fix
+    message: исправлен баг с невозможностью нанести урон SCP предметам
+  id: 565
+  url: https://github.com/makura-games/project-fire/pull/1194
