@@ -381,11 +381,20 @@
   suffix: SCP-3008
   components:
   - type: AmbientSound
+    enabled: false
     range: 75
     volume: -13
     sound:
       path: /Audio/_Scp/Events/Scp3008/IKEA.ogg
   - type: AmbientOnPowered
+  - type: Battery
+    netsync: false
+    maxCharge: 50
+    startingCharge: 0
+  - type: AnnouncementSpeaker
+    range: 20
+    enabled: false
+    requiresPower: true
 
 - type: entity
   parent:
