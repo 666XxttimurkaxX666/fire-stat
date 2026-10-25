@@ -66,6 +66,11 @@
   - type: RotationVisuals
     defaultRotation: 90
     horizontalRotation: 90
+  - type: SoundWhileAlive
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        150: Dead
 
 - type: entity
   id: BasicScp3008
