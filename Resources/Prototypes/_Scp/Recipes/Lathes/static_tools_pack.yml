@@ -1,0 +1,22 @@
+# Тактический шлем
+- type: latheRecipe
+  id: ClothingHeadHelmetSecuritylight
+  result: ClothingHeadHelmetSecuritylight
+  categories:
+  - Weapons
+  completetime: 8
+  materials:
+    Steel: 1000
+    Glass: 300
+    Plastic: 300
+
+# Баллистические очки
+- type: latheRecipe
+  id: ClothingEyesGlassesSecurity
+  result: ClothingEyesGlassesSecurity
+  categories:
+  - Weapons
+  completetime: 3
+  materials:
+    Steel: 50
+    Plastic: 50

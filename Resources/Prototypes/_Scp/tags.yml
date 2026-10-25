@@ -198,3 +198,6 @@
 
 - type: Tag
   id: CartridgeRifleHeavy127MMM
+
+- type: Tag
+  id: MagazineMP5

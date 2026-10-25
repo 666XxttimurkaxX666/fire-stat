@@ -25,3 +25,6 @@ ent-ClothingHeadHatCapBlackSquadLeader = кепка командира отря�
 ent-ClothingHeadHelmetSecuritylight = тактический шлем
     .desc = Тактический шлем службы безопасности фонда, имеет встроенный фонарик в отличии от обычного, но защищает также.
     .suffix = SCP охрана
+ent-ClothingHeadSecurityEliteBeret = офицерский берет
+    .desc = Элитный офицерский берет с золотой эмблемой фонда для отличившихся сотрудников службы безопасности и Штаба О4.
+    .suffix = SCP охрана

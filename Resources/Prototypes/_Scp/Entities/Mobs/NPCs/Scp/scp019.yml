@@ -8,11 +8,20 @@
   name: ???
   abstract: true
   components:
+    - type: KillGlobalSound
+      sound:
+        collection: DistanceKillHuman
+        params:
+          volume: -10
+          variation: 0.125
+      originWhitelist:
+        components:
+        - Scp
+      chance: 0.8
     - type: ToggleableNightVision
       effect: ScpEffectNightVision
     - type: Climbing
     - type: Damageable
-      damageContainer: Biological
       damageModifierSet: FleshMob
     - type: HTN
       rootTask:

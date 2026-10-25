@@ -109,7 +109,6 @@
     sound:
       path: /Audio/_Scp/Scp3199/breath.ogg
 
-
 - type: entity
   id: Scp3199Adult
   parent:

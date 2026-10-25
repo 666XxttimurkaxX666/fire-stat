@@ -70,3 +70,51 @@
       - id: MagazineLightRifleSP
       - id: MagazineLightRifleFMJ
       - id: MagazineLightRifleFMJ
+
+- type: entity
+  parent: BaseChaosStorageCrate
+  id: ChaosStorageCrateWeaponShotgunCycler
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Storage
+    grid:
+    - 0,0,8,3
+  - type: StorageFill
+    contents:
+      - id: WeaponShotgunCycler
+      - id: BoxLethalshot
+      - id: BoxLethalshot
+      - id: SpeedLoaderShellShotgun
+      - id: SpeedLoaderShellShotgun
+
+- type: entity
+  parent: BaseChaosStorageCrate
+  id: ChaosStorageCrateWeaponShotgunTrenchgun4034Sawn
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Storage
+    grid:
+    - 0,0,8,3
+  - type: StorageFill
+    contents:
+      - id: WeaponShotgunTrenchgun4034Sawn
+      - id: BoxLethalshot
+      - id: BoxLethalshot
+      - id: SpeedLoaderShellShotgun
+      - id: SpeedLoaderShellShotgun
+
+- type: entity
+  parent: BaseChaosStorageCrate
+  id: ChaosStorageCrateSunriseWeaponSubMachineGunUzi
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Storage
+    grid:
+    - 0,0,8,3
+  - type: StorageFill
+    contents:
+      - id: SunriseWeaponSubMachineGunUzi
+      - id: MagazinePistolSubMachineGunSP
+      - id: MagazinePistolSubMachineGunSP
+      - id: MagazinePistolSubMachineGunSP
+      - id: MagazineBoxPistolSP

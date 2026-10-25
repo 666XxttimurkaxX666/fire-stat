@@ -11,6 +11,10 @@
   id: RRHLeader
   parent: CommonMTFLeader
   components:
+  - type: CustomBriefing
+    briefingText: ghost-role-briefing-mtf-RRH
+    briefingSound:
+      path: /Audio/_Scp/Themes/MTFs/RRH.ogg
   - type: GhostRole
     name: ghost-role-information-mtf-leader-RRH-name
     description: ghost-role-information-mtf-leader-description
@@ -39,6 +43,10 @@
   id: RRHSpecialist
   parent: CommonMTFOperative
   components:
+  - type: CustomBriefing
+    briefingText: ghost-role-briefing-mtf-RRH
+    briefingSound:
+      path: /Audio/_Scp/Themes/MTFs/RRH.ogg
   - type: GhostRole
     name: ghost-role-information-mtf-specialist-RRH-name
     description: ghost-role-information-mtf-specialist-description

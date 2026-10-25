@@ -53,6 +53,17 @@
       forceEnableEmergencyLights: true
       shuttleTime: 600
 
+    scpWhite:
+      announcement: alert-level-scpWhite-announcement
+      sound:
+        path: /Audio/Misc/delta.ogg
+        params:
+          volume: -1
+      color: White
+      emergencyLightColor: White
+      forceEnableEmergencyLights: true
+      shuttleTime: 600
+
     scpGray:
       announcement: alert-level-scpGray-announcement
       sound:
@@ -90,7 +101,7 @@
     scpPurple:
       announcement: alert-level-scpPurple-announcement
       sound:
-        path: /Audio/Misc/delta_alt.ogg
+        path: /Audio/_Scp/Misc/delta_alt.ogg
         params:
           volume: -3
       disableSelection: true
@@ -102,7 +113,7 @@
     scpBlack:
       announcement: alert-level-scpBlack-announcement
       sound:
-        path: /Audio/Misc/delta_alt.ogg
+        path: /Audio/_Scp/Misc/delta_alt.ogg
         params:
           volume: -5
       color: DarkSlateGray

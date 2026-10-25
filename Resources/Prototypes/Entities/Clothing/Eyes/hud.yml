@@ -62,7 +62,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: [ClothingEyesHudBase, ShowSecurityIcons, BaseSecurityContraband]
+  parent: [ClothingEyesHudBase, BaseSecurityContraband] # Fire edit блять зачем они этот неудобный квадрат юзают
   id: ClothingEyesHudSecurity
   name: security hud
   description: A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records.
@@ -88,7 +88,7 @@
     sprite: Clothing/Eyes/Hud/command.rsi
   - type: Clothing
     sprite: Clothing/Eyes/Hud/command.rsi
-  - type: ShowJobIcons
+#  - type: ShowJobIcons Fire edit
   - type: Tag
     tags:
     - PetWearable
@@ -112,8 +112,8 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingEyesHudBase
-  id: ClothingEyesHudFriedOnion
+  parent: [SolutionFood, SolutionSmall, ClothingEyesHudBase]
+  id: ClothingEyesHudFriedOnion # It's been too long since I've had good onion rings...
   name: fried onion goggles
   description: Filler
   components:
@@ -123,13 +123,11 @@
     sprite: Clothing/Eyes/Hud/friedonion.rsi
   - type: ShowHungerIcons
   - type: Edible
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 3
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 3
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 30
   - type: FlavorProfile
     flavors:
       - onion
@@ -174,7 +172,7 @@
   - type: ShowThirstIcons
 
 - type: entity
-  parent: [ClothingEyesHudBase, ShowSecurityIcons, ShowMedicalIcons, BaseSecurityCommandContraband]
+  parent: [ClothingEyesHudBase, ShowMedicalIcons, BaseSecurityCommandContraband] # Fire edit
   id: ClothingEyesHudMedSec
   name: medsec hud
   description: An eye display that looks like a mixture of medical and security huds.
@@ -189,7 +187,7 @@
   - type: AddWantedStatus # Sunrise-edit
 
 - type: entity
-  parent: [ClothingEyesHudBase, ShowSecurityIcons, ShowMedicalIcons]
+  parent: [ClothingEyesHudBase, ShowMedicalIcons] # Fire edit
   id: ClothingEyesHudMultiversal
   name: multiversal hud
   description: Filler

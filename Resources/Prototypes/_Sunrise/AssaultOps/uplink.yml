@@ -1,6 +1,7 @@
 - type: entity
   parent: BaseUplinkRadio
   id: UplinkRadioAssaultOperatives0TC
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: AssaultOps
   components:
   - type: Store
@@ -14,6 +15,7 @@
 - type: entity
   parent: BaseUplinkRadio
   id: UplinkRadioAssaultOperatives40TC
+  categories: [ HideSpawnMenu ] # Fire edit
   suffix: AssaultOps
   components:
   - type: Store

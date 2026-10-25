@@ -49,3 +49,12 @@
   storage:
     back:
     - Dinkystar
+
+# головешка
+- type: loadout
+  id: ScpLoadoutClothingHeadSecurityEliteBeret
+  equipment:
+    head: ClothingHeadSecurityEliteBeret
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ScpSecurityVeteranClothingTimer

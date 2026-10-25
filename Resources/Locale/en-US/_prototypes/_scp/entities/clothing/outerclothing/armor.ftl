@@ -15,3 +15,6 @@ ent-ClothingOuterArmorSecurityBulletproof = security ballistic vest
 ent-ClothingOuterArmorSecurityRiotLight = lightweight riot armor suit
     .desc = A lightweight variant of the standard riot armor. Offers high mobility while still exuding an unsettling, imposing presence.
     .suffix = { ent-ClothingOuterArmorSecurity.suffix }
+ent-HUNKVEST2 = Model H body armor
+    .desc = A black, durable Model H body armor vest with pouches. This is the type worn by a certain operative named Hunk.
+    .suffix = HUNK

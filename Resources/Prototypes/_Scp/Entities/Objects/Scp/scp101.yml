@@ -45,6 +45,8 @@
     keysIn: [ EndEat ]
     container: [ storagebase ]
   - type: Storage
+    quickInsert: true
+    areaInsert: true
     showVerb: false
     storageInsertSound: /Audio/_Sunrise/FleshCult/flesh_cultist_mutation.ogg
     maxItemSize: Large
@@ -60,3 +62,5 @@
   - type: Tag
     tags:
     - Scp101
+  - type: MagnetPickup
+  - type: Dumpable
