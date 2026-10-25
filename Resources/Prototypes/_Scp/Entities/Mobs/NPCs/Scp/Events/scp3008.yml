@@ -62,6 +62,10 @@
   - type: ComplexInteraction # чтобы могли открывать двери
   - type: RepeatingTrigger
     delay: 600 # 10 min
+  - type: StandingState
+  - type: RotationVisuals
+    defaultRotation: 90
+    horizontalRotation: 90
 
 - type: entity
   id: BasicScp3008
