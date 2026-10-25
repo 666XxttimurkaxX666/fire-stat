@@ -375,6 +375,19 @@
         acts: [ "Destruction" ]
 
 - type: entity
+  id: WallHornScp3008
+  parent: SunriseWallhornWhite
+  name: loudspeaker
+  suffix: SCP-3008
+  components:
+  - type: AmbientSound
+    range: 75
+    volume: -13
+    sound:
+      path: /Audio/_Scp/Events/Scp3008/IKEA.ogg
+  - type: AmbientOnPowered
+
+- type: entity
   parent:
   - ScpDebugInvisibleAPCRecharging
   - ScpDebugInvisibleSubstationRecharging
@@ -452,7 +465,9 @@
   id: 3008CorridorEntities2
   table: !type:GroupSelector
     children:
-    - id: Scp3008MusicBox
+#    - id: Scp3008MusicBox
+#      amount: 1
+    - id: WallHornScp3008
       amount: 1
     - id: JanitorialTrolley
       amount: 1
