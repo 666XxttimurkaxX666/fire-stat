@@ -375,6 +375,33 @@
         acts: [ "Destruction" ]
 
 - type: entity
+  parent:
+  - ScpDebugInvisibleAPCRecharging
+  - ScpDebugInvisibleSubstationRecharging
+  - ScpDebugInvisibleGenerator
+  id: Scp3008Energy
+  name: scp 3008 battery
+  components:
+  - type: Apc
+    maxLoad: 9999999
+  - type: BatterySelfRecharger
+    autoRechargeRate: 99999999
+  - type: RepeatingTrigger
+    delay: 600 # 10 min
+  - type: PolymorphOnTrigger
+    polymorph: DayToNight
+
+- type: entity # пустышка
+  parent: ScpDebugInvisibleGenerator
+  id: Scp3008EnergyOff
+  name: scp 3008 battery off
+  components:
+  - type: RepeatingTrigger
+    delay: 600 # 10 min
+  - type: PolymorphOnTrigger
+    polymorph: NightToDay
+
+- type: entity
   parent: PosterBase
   id: Scp3008Label1
   components:
@@ -436,6 +463,8 @@
     - id: ScpTableWood
       amount: 1
     - id: ComfyChairRed
+      amount: 1
+    - id: MobRoomba
       amount: 1
 
 - type: entityTable

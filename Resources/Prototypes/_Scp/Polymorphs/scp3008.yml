@@ -75,3 +75,29 @@
     revertOnDeath: false
     revertOnDelete: false
     ignoreAllowRepeatedMorphs: true
+
+- type: polymorph
+  id: DayToNight
+  configuration:
+    entity: Scp3008EnergyOff
+    forced: true
+    inventory: None
+    transferName: false
+    transferDamage: false
+    revertOnCrit: false
+    revertOnDeath: false
+    revertOnDelete: false
+    ignoreAllowRepeatedMorphs: true
+
+- type: polymorph
+  id: NightToDay
+  configuration:
+    entity: Scp3008Energy
+    forced: true
+    inventory: None
+    transferName: false
+    transferDamage: false
+    revertOnCrit: false
+    revertOnDeath: false
+    revertOnDelete: false
+    ignoreAllowRepeatedMorphs: true
