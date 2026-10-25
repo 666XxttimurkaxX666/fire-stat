@@ -45,6 +45,8 @@
         true
       NavPry: !type:Bool
         true
+      NavInteract: !type:Bool
+        true
   - type: NPCRetaliation
     attackMemoryLength: 10
   - type: FactionException
