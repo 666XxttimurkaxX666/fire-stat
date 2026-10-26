@@ -223,3 +223,11 @@
   offset: 0,42
   tags:
   - IkeaRooms
+
+- type: dungeonRoom
+  id: IkeaRooms23x5d
+  size: 23,5
+  atlas: /Maps/_Scp/ikea_rooms.yml
+  offset: 0,48
+  tags:
+  - IkeaRooms
