@@ -112,3 +112,20 @@
   - type: Construction
     graph: ScpSeat
     node: chairWoodWings
+
+- type: entity
+  id: ScpThrone
+  parent: ScpChair
+  components:
+  - type: Sprite
+    scale: 1.3, 1.3
+    sprite: _Scp/Structures/Furniture/throne.rsi
+    state: throne
+
+- type: entity
+  id: Scp082Throne
+  parent: ScpThrone
+  suffix: SCP-082
+  components:
+  - type: Sprite
+    scale: 2, 2
