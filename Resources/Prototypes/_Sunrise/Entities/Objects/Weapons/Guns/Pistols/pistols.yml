@@ -133,7 +133,7 @@
           - MagazinePistolHighCapacity # Fire Edit
       gun_chamber:
         name: Chamber
-        startingItem: MagazinePistolHighCapacitySP # Fire Edit
+        startingItem: CartridgePistolSP # Fire Edit
         priority: 1
         whitelist:
           tags:

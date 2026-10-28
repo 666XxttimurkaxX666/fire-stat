@@ -16,17 +16,6 @@
     stock: 1
 
 - type: listing
-  id: ChaosUplinkWeaponRifleSKM24
-  productEntity: WeaponRifleSKM24
-  cost:
-    SupplyPoint: 5
-  categories:
-  - ChaosWeaponRifle
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
-
-- type: listing
   id: ChaosUplinkWeaponDragunov
   productEntity: WeaponSniperDragunov
   cost:
@@ -39,9 +28,12 @@
 
 - type: listing
   id: ChaosUplinkWeaponShotgunCycler
-  productEntity: WeaponShotgunCycler
+  name: shop-name-cyclerbox
+  description: shop-desc-cyclerbox
+  productEntity: ChaosStorageCrateWeaponShotgunCycler
+  icon: { sprite: _Starlight/Objects/Weapons/Guns/Shotguns/cycler.rsi, state: icon  }
   cost:
-    SupplyPoint: 15
+    SupplyPoint: 16
   categories:
   - ChaosWeaponRifle
   conditions:
@@ -50,7 +42,10 @@
 
 - type: listing
   id: ChaosUplinkWeaponTrenchgun4034Sawn
-  productEntity: WeaponShotgunTrenchgun4034Sawn
+  name: Trenchgun4034
+  description: chaos-catalog-weapon-Trenchgun4034-description
+  icon: { sprite: _Sunrise/Objects/Weapons/Guns/Shotguns/trenchgun_l_4034_sawn/big.rsi, state: icon  }
+  productEntity: ChaosStorageCrateWeaponShotgunTrenchgun4034Sawn
   cost:
     SupplyPoint: 10
   categories:
@@ -60,10 +55,13 @@
     stock: 1
 
 - type: listing
-  id: ChaosUplinkWeaponLecter
-  productEntity: WeaponRifleLecter
+  id: ChaosUplinkWeaponSIGMPX
+  productEntity: MtfStorageCrateSubMachineGunSIGMPX
+  name: shop-name-sig-mpx-name
+  description: shop-name-sig-mpx-desc
+  icon: { sprite: _Scp/Objects/Weapons/SMGs/mpx/big.rsi, state: icon  }
   cost:
-    SupplyPoint: 15
+    SupplyPoint: 20
   categories:
   - ChaosWeaponRifle
   conditions:
@@ -545,7 +543,7 @@
   id: ChaosUplinkClothingOuterArmorChaosHeavyVest
   productEntity: ClothingOuterArmorChaosHeavyVest
   cost:
-    SupplyPoint: 25
+    SupplyPoint: 15
   categories:
   - ChaosEquipment
   conditions:

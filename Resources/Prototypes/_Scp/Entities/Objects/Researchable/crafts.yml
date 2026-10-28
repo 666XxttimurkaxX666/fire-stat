@@ -126,8 +126,17 @@
   result: WeaponGodlikeXRay
   completetime: 120
   materials:
-    Steel: 10000
-    Glass: 2000
-    Gold: 150
-    Silver: 150
-    Uranium: 150
+    Steel: 100000
+    Glass: 20000
+    Gold: 15000
+    Silver: 15000
+    Uranium: 15000
+
+- type: latheRecipe
+  id: SwatArmorRecipe
+  completetime: 10
+  result: ClothingOuterArmorSWAT
+  materials:
+    Plasteel: 1000
+    Steel: 3000
+    Plastic: 3000

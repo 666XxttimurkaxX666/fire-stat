@@ -12,6 +12,10 @@
   parent: CommonMTFLeader
   randomizeName: false
   components:
+  - type: CustomBriefing
+    briefingText: ghost-role-briefing-mtf-NTF
+    briefingSound:
+      path: /Audio/_Scp/Themes/MTFs/NTF.ogg
   - type: GhostRole
     name: ghost-role-information-mtf-leader-NTF-name
     description: ghost-role-information-mtf-leader-description
@@ -36,6 +40,10 @@
   parent: CommonMTFSpecialist
   randomizeName: false
   components:
+  - type: CustomBriefing
+    briefingText: ghost-role-briefing-mtf-NTF
+    briefingSound:
+      path: /Audio/_Scp/Themes/MTFs/NTF.ogg
   - type: GhostRole
     name: ghost-role-information-mtf-specialist-NTF-name
     description: ghost-role-information-mtf-specialist-description
@@ -60,6 +68,10 @@
   parent: CommonMTFCadet
   randomizeName: false
   components:
+  - type: CustomBriefing
+    briefingText: ghost-role-briefing-mtf-NTF
+    briefingSound:
+      path: /Audio/_Scp/Themes/MTFs/NTF.ogg
   - type: GhostRole
     name: ghost-role-information-mtf-cadet-NTF-name
     description: ghost-role-information-mtf-cadet-description

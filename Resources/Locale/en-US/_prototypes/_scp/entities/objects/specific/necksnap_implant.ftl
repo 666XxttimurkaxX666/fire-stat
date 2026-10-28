@@ -1,0 +1,10 @@
+ent-NeckSnapImplantBRUH = the commander's hands
+    .suffix = 180 Sec | For Players
+    .desc = An implant that lets you snap an opponent's neck without training, experience, or any of that other crap.
+ent-NeckSnapImplant = the commander's hands
+    .suffix = 20 Sec | HUNK
+    .desc = An implant that lets you snap an opponent's neck without training, experience, or any of that other crap.
+ent-ActionNeckSnap = Break his neck
+    .desc = Break the enemy's neck.
+ent-ActionNeckSnapBRUH = Break his neck
+    .desc = Break the enemy's neck.

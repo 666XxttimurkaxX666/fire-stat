@@ -21,3 +21,6 @@ ent-ClothingHeadHatCapBlackSquadLeader = squad leader cap
 ent-ClothingHeadHelmetSecuritylight = tactical helmet
     .desc = The Foundation Security tactical helmet features a built - in flashlight—unlike the standard model — while offering the same level of protection.
     .suffix = SCP Guard
+ent-ClothingHeadSecurityEliteBeret = officer's beret
+    .desc = An elite officer's beret featuring the golden Foundation emblem, awarded to distinguished personnel of the Security Department and O4 Command.
+    .suffix = SCP Guard

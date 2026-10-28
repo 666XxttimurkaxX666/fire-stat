@@ -1,6 +1,7 @@
-names-mtf-leader-first-dataset-1 = Командир
-names-mtf-specialist-first-dataset-1 = Специалист
-names-mtf-cadet-first-dataset-1 = Кадет
+names-mtf-leader-first-dataset-1 = Лейтенант
+names-mtf-specialist-first-dataset-1 = Сержант
+names-mtf-specialist-first-dataset-2 = Младший Сержант
+names-mtf-cadet-first-dataset-1 = Ефрейтор
 names-mtf-operative-first-dataset-1 = Оперативник
 names-mtf-operative-last-dataset-1 = Дядя
 names-mtf-operative-last-dataset-2 = Дракон

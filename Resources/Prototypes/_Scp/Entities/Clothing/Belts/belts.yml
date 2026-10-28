@@ -77,3 +77,38 @@
         - id: MagazineLightRifleFMJ
         - id: MagazineLightRifleFMJ
         - id: MagazineLightRifleFMJ
+
+- type: entity
+  parent: [ClothingBeltMilitaryWebbingMedSunrise, ContentsExplosionResistanceBase]
+  id: ClothingBeltHUNK
+  name: Special forces belt
+  description:  It can accommodate various pieces of equipment, such as weapon magazines, grenades, and even small first-aid kits.
+  suffix: HUNK
+  components:
+  - type: Sprite
+    sprite: _Scp/Clothing/Belts/hunk_belt.rsi
+  - type: Clothing
+    sprite: _Scp/Clothing/Belts/hunk_belt.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+
+- type: entity
+  parent: ClothingBeltHUNK
+  id: ClothingBeltHUNKFilled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: MedkitCombatFilled
+        - id: AirlossAutoInjector
+        - id: AirlossAutoInjector
+        - id: CombatMedipen
+        - id: CombatMedipen
+        - id: ExShrapnelGrenade
+        - id: WeaponPistolG22Prison
+        - id: Telebaton
+        - id: MagazinePistolHighCapacityFMJ
+        - id: MagazinePistolHighCapacityFMJ
+        - id: Zipties
+        - id: Zipties

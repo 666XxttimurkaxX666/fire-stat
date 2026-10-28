@@ -21,6 +21,7 @@
     containers:
       key_slots:
       - EncryptionKeyMTFMaster
+      - EncryptionKeyRegionalAdministration
       - EncryptionKeyInternalSecurity
       - EncryptionKeyInternalTribunalService
 
@@ -35,4 +36,5 @@
     containers:
       key_slots:
       - EncryptionKeyMTFMaster
+      - EncryptionKeyRegionalAdministration
       - EncryptionKeyEthicsCommittee

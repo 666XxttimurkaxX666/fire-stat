@@ -391,6 +391,7 @@
   name: Vector Super
   parent: [BaseWeaponSubMachineGun, BaseSyndicateContraband]
   id: WeaponSubMachineGunVector
+  categories: [ HideSpawnMenu ] # Fire edit
   description: An early 30-round Vector Super by Waffle Corp chambered in .40. Effective at short to medium range, it fires in two-round bursts or full auto. Its delayed-blowback system redirects the bolt assembly downward.
   components:
   - type: Sprite

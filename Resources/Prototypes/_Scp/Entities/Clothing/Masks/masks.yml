@@ -37,3 +37,49 @@
     slots:
     - Snout
     hideOnToggle: true
+
+- type: entity
+  parent: [ClothingMaskGasERT, BaseNightVisionDevice, ClothingEyesGlassesSunglasses, ShowSecurityIcons, PowerCellSlotSmallItem]
+  id: HunkGasMask
+  name: gas mask
+  description: A black gas mask with red lenses and built-in night vision. Wearing it makes you want to snap your opponent's neck... I wonder why?....
+  suffix: HUNK
+  components:
+  - type: Sprite
+    sprite: _Scp/Clothing/Mask/HUNKGasMask.rsi
+  - type: Clothing
+    sprite: _Scp/Clothing/Mask/HUNKGasMask.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+    - FullCovered
+  - type: ShowSyndicateIcons
+  - type: ItemToggle
+    predictable: false
+    onUse: false
+    canActivateInhand: false
+    soundActivate:
+      path: /Audio/_Sunrise/Items/Goggles/activate.ogg
+    soundDeactivate:
+      path: /Audio/_Sunrise/Items/Goggles/deactivate.ogg
+    soundFailToActivate:
+      path: /Audio/Machines/button.ogg
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellSmall
+  - type: ToggleCellDraw
+  - type: PowerCellDraw
+    drawRate: 3.5
+    useCharge: 20
+  - type: ComponentToggler
+    parent: true
+    components:
+      - type: NightVision
+        effect: EffectNightVisionSyndie

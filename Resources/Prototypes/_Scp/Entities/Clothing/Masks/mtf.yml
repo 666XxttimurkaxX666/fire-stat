@@ -13,6 +13,10 @@
     tags:
     - WhitelistChameleon
     - FullCovered
+  - type: HideLayerClothing
+    slots:
+    - Hair
+    - Snout
 
 - type: entity
   parent: ClothingMaskGasERT

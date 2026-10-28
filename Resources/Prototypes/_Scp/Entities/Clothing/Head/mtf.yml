@@ -11,7 +11,7 @@
     sprite: _Scp/Clothing/Head/Helmets/MTF/mtf.rsi
 
 - type: entity
-  parent: ClothingHeadHelmetBasic
+  parent: [ClothingHeadHelmetBasic, BaseFoldable, BaseNightVisionDevice, PowerCellSlotSmallItem, ClothingEyesGlassesSunglasses]
   id: ClothingHelmetMtfTactical
   name: tactical helmet
   description: A reinforced protective headgear set. Its design provides resistance against ballistic and other damaging factors.
@@ -19,8 +19,20 @@
   components:
   - type: Sprite
     sprite: _Scp/Clothing/Head/Helmets/MTF/mtf_tactical.rsi
+    layers:
+    - state: icon
+      map: [ "unfoldedLayer" ]
+    - state: icon-up
+      map: ["foldedLayer"]
+      visible: false
   - type: Clothing
     sprite: _Scp/Clothing/Head/Helmets/MTF/mtf_tactical.rsi
+  - type: Appearance
+  - type: Foldable
+    canFoldInsideContainer: true
+  - type: FoldableClothing
+    foldedEquippedPrefix: up
+    foldedHeldPrefix: up
   - type: Armor
     modifiers:
       coefficients:
@@ -31,6 +43,35 @@
         Caustic: 0.95
   - type: ExplosionResistance
     damageCoefficient: 0.75
+  - type: ItemToggle
+    predictable: false
+    onUse: false
+    canActivateInhand: false
+    soundActivate:
+      path: /Audio/_Sunrise/Items/Goggles/activate.ogg
+    soundDeactivate:
+      path: /Audio/_Sunrise/Items/Goggles/deactivate.ogg
+    soundFailToActivate:
+      path: /Audio/Machines/button.ogg
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellSmall
+  - type: ToggleCellDraw
+  - type: PowerCellDraw
+    drawRate: 3.5
+    useCharge: 20
+  - type: ComponentToggler
+    parent: true
+    components:
+      - type: NightVision
+        effect: EffectNightVisionGreen
 
 - type: entity
   parent: [ClothingHeadHelmetBasic, BaseFoldable]

@@ -2,6 +2,7 @@
   name: combat shotgun
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunCombat
+  categories: [ HideSpawnMenu ] # Fire edit
   description: A semi automatic shotgun with tactical furniture and a six-shell capacity underneath.
   components:
   - type: Item
